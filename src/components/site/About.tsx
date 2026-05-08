@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BookOpen, Award, Target, Landmark, ShieldCheck, Heart, Sparkles, Milestone } from "lucide-react";
 import mbLogo from "@/assets/mb-finishing-logo.jpg";
+import { MadeInIndiaLogo } from "./MadeInIndiaLogo";
 
 const PILLARS = [
   {
@@ -95,8 +96,8 @@ export const About = () => {
             </p>
 
             {/* Made in India badge */}
-            <div className="mt-8 inline-flex items-center gap-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/15 p-5 text-amber-900">
-              <span className="size-3.5 rounded-full bg-amber-500 shrink-0" />
+            <div className="mt-8 inline-flex items-center gap-4 rounded-2xl bg-amber-500/10 border border-amber-500/15 p-5 text-amber-900">
+              <MadeInIndiaLogo size={36} />
               <div>
                 <h4 className="font-heading text-xs font-bold uppercase tracking-wider">Made In India Productive Strength</h4>
                 <p className="text-stone-600 text-xs mt-1 leading-relaxed">
