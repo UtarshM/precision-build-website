@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 97%;
+    --foreground: 30 18% 12%;
+
+    --surface: 42 30% 95%;
+    --surface-elevated: 38 24% 91%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 30 18% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 18% 12%;
+
+    --primary: 39 71% 52%;
+    --primary-foreground: 33 25% 10%;
+    --primary-glow: 43 78% 64%;
+
+    --secondary: 40 27% 92%;
+    --secondary-foreground: 30 18% 12%;
+
+    --muted: 36 20% 91%;
+    --muted-foreground: 27 10% 40%;
+
+    --accent: 39 71% 52%;
+    --accent-foreground: 33 25% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 35 20% 82%;
+    --input: 35 20% 82%;
+    --ring: 39 71% 52%;
+
+    --radius: 1rem;
+
+    --gradient-hero:
+      radial-gradient(circle at top left, hsl(39 71% 52% / 0.18), transparent 24%),
+      radial-gradient(circle at top right, hsl(30 18% 12% / 0.12), transparent 26%),
+      linear-gradient(135deg, hsl(40 29% 97%) 0%, hsl(36 32% 92%) 48%, hsl(40 29% 98%) 100%);
+    --gradient-panel: linear-gradient(145deg, hsl(0 0% 100% / 0.92), hsl(42 37% 93% / 0.8));
+    --gradient-dark: linear-gradient(160deg, hsl(30 18% 12%), hsl(28 20% 16%));
+    --gradient-gold: linear-gradient(135deg, hsl(39 71% 52%), hsl(31 74% 43%));
+    --shadow-glow: 0 30px 80px -40px hsl(39 71% 52% / 0.45);
+    --shadow-card: 0 24px 80px -40px hsl(24 26% 11% / 0.24);
+    --shadow-soft: 0 14px 40px -28px hsl(24 26% 11% / 0.16);
+    --transition-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+
+    --sidebar-background: 40 33% 97%;
+    --sidebar-foreground: 30 18% 12%;
+    --sidebar-primary: 39 71% 52%;
+    --sidebar-primary-foreground: 33 25% 10%;
+    --sidebar-accent: 36 20% 91%;
+    --sidebar-accent-foreground: 30 18% 12%;
+    --sidebar-border: 35 20% 82%;
+    --sidebar-ring: 39 71% 52%;
+  }
+
+  .dark {
+    --background: 40 33% 97%;
+    --foreground: 30 18% 12%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    font-feature-settings: "ss01", "cv11", "liga", "kern";
+    background-image:
+      radial-gradient(circle at top left, hsl(var(--primary) / 0.09), transparent 24%),
+      linear-gradient(180deg, hsl(var(--background)), hsl(42 31% 95%));
+  }
+
+  a,
+  button {
+    transition-timing-function: var(--transition-smooth);
+  }
+
+  ::selection {
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+}
+
+@layer components {
+  .glass {
+    @apply border backdrop-blur-2xl;
+    background: linear-gradient(180deg, hsl(0 0% 100% / 0.78), hsl(42 36% 92% / 0.72));
+    border-color: hsl(var(--foreground) / 0.08);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .industrial-badge {
+    @apply inline-flex items-center gap-2 rounded-full border px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.28em];
+    background: hsl(0 0% 100% / 0.66);
+    border-color: hsl(var(--primary) / 0.22);
+    color: hsl(var(--foreground) / 0.74);
+  }
+
+  .section-shell {
+    @apply relative overflow-hidden py-24 md:py-32;
+  }
+
+  .section-shell::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      linear-gradient(90deg, transparent, hsl(var(--foreground) / 0.04), transparent),
+      radial-gradient(circle at top right, hsl(var(--primary) / 0.09), transparent 24%);
+    opacity: 0.7;
+  }
+
+  .section-shell > .container {
+    @apply relative z-10;
+  }
+
+  .premium-panel {
+    @apply rounded-[2rem] border;
+    background: var(--gradient-panel);
+    border-color: hsl(var(--foreground) / 0.08);
+    box-shadow: var(--shadow-card);
+  }
+
+  .dark-panel {
+    @apply rounded-[2rem] border text-white;
+    background: var(--gradient-dark);
+    border-color: hsl(var(--primary) / 0.24);
+    box-shadow: 0 30px 90px -48px hsl(24 26% 8% / 0.7);
+  }
+
+  .metal-card {
+    @apply rounded-[1.75rem] border;
+    background:
+      linear-gradient(180deg, hsl(0 0% 100% / 0.96), hsl(40 31% 94% / 0.92));
+    border-color: hsl(var(--foreground) / 0.08);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .gold-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.7), transparent);
+  }
+
+  .hover-lift {
+    @apply transition-all duration-500 hover:-translate-y-1.5;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  .font-display {
+    font-family: "Cormorant Garamond", serif;
+  }
+}
