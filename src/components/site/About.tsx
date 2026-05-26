@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BookOpen, Award, Target, Landmark, ShieldCheck, Heart, Sparkles, Milestone } from "lucide-react";
 import mbLogo from "@/assets/mb-finishing-logo.png";
+import makeInIndiaImg from "@/assets/make-in-india.png";
 import { MadeInIndiaLogo } from "./MadeInIndiaLogo";
 
 const PILLARS = [
@@ -90,7 +91,7 @@ export const About = () => {
 
               {/* Make in India lion logo inline on the right */}
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Make_In_India.svg"
+                src={makeInIndiaImg}
                 className="h-10 w-auto object-contain shrink-0 opacity-85"
                 alt="Make in India Logo"
               />

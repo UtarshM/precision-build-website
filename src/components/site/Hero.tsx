@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Award, Cog, ShieldCheck } from "lucide-react";
-import { MadeInIndiaLogo } from "./MadeInIndiaLogo";
 import tpm4500TankPolisher from "@/assets/tpm4500-tank-polisher.png";
 import sp1200bSheetPolisher from "@/assets/sp1200b-sheet-polisher.jpg";
 import cg150DoubleHead from "@/assets/cg150-double-head.jpg";
