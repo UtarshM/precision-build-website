@@ -3,6 +3,7 @@ import { Award, Cog, ShieldCheck } from "lucide-react";
 import tpm4500TankPolisher from "@/assets/tpm4500-tank-polisher.png";
 import sp1200bSheetPolisher from "@/assets/sp1200b-sheet-polisher.jpg";
 import cg150DoubleHead from "@/assets/cg150-double-head.jpg";
+import { MadeInIndiaLogo } from "./MadeInIndiaLogo";
 
 const FLASHING_SLIDES = [
   {
@@ -82,11 +83,7 @@ export const Hero = () => {
               
               {/* Premium Made in India Logo Graphic */}
               <div className="inline-flex items-center gap-2.5 rounded-full bg-stone-950/5 border border-stone-950/10 px-3.5 py-1.5 text-[9px] font-bold uppercase tracking-wider text-stone-900">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Make_In_India.svg"
-                  className="h-4.5 w-auto object-contain shrink-0"
-                  alt="Make in India Logo"
-                />
+                <MadeInIndiaLogo size={18} />
                 Made In India
               </div>
             </div>
