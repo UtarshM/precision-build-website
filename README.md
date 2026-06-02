@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# M.B. Finishing Technologies
 
-TODO: Document your project here
+Official website for M.B. Finishing Technologies, showcasing precision-engineered buffing, polishing, and surface finishing machinery.
