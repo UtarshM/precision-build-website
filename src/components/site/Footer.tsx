@@ -33,16 +33,16 @@ export const Footer = () => {
                 className="h-12 w-auto object-contain shrink-0"
               />
               <div className="flex flex-col text-left">
-                <span className="text-[10px] uppercase font-bold text-primary tracking-[0.24em] leading-none">
-                  M.B. Finishing
+                <span className="text-xs uppercase font-black text-primary tracking-[0.08em] leading-none">
+                  M.B. Finishing Technologies
                 </span>
                 <span className="text-[8px] text-white/50 tracking-wider font-semibold uppercase mt-1 leading-none">
-                  Technologies
+                  Redefining Finishing Excellence…
                 </span>
               </div>
             </div>
 
-            <h2 className="font-display text-3xl leading-[1.1] text-white md:text-4xl uppercase font-semibold">
+            <h2 className="font-display text-xl sm:text-2xl leading-[1.2] text-white/90 uppercase font-semibold">
               Delivering world-class buffing & polishing solutions for industries that demand perfection.
             </h2>
             <p className="mt-4 max-w-2xl text-xs leading-relaxed text-white/60">
@@ -124,13 +124,13 @@ export const Footer = () => {
               </div>
               <a
                 href="tel:+919175282992"
-                className="block transition-colors hover:text-white"
+                className="block font-semibold text-white/80 transition-colors hover:text-white text-sm"
               >
                 +91-91752 82992
               </a>
               <a
                 href="tel:+918956648126"
-                className="block transition-colors hover:text-white"
+                className="block font-semibold text-white/80 transition-colors hover:text-white text-sm"
               >
                 +91-89566 48126
               </a>

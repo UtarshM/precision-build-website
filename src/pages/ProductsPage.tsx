@@ -69,6 +69,21 @@ const ProductsPage = () => {
                 </button>
               ))}
             </div>
+
+            {/* Category Description Banner */}
+            {activeCategory !== "all" && (
+              <div className="mt-8 mx-auto max-w-3xl text-center animate-scale-in">
+                <div className="inline-block bg-white border border-stone-200 rounded-2xl px-6 py-4 shadow-soft">
+                  <p className="text-stone-850 font-body text-xs sm:text-sm font-semibold tracking-wide leading-relaxed">
+                    {activeCategory === "sheet" && "Sheet Polishing segment varies as per width from 150mm to 1500mm (VB150, SP300, SP450, SP600, SP1200, SP1500)"}
+                    {activeCategory === "tank" && "Heavy-duty automatic dual-axis shell and dished end polishing solutions for vessel & tank manufacturing."}
+                    {activeCategory === "pipe" && "High-speed centerless round pipe and multi-head square tube polishing systems."}
+                    {activeCategory === "utensil" && "Automated mirror and satin buffing machines for pots, pans, and kitchenware."}
+                    {activeCategory === "custom" && "Special purpose machines custom-engineered for profiles, flats, and complex workpiece geometries."}
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
         </section>
 

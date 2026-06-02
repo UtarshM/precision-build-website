@@ -8,6 +8,9 @@ import tpm4500TankPolisher from "@/assets/tpm4500-tank-polisher.png";
 import flatbarConveyorPolisher from "@/assets/flatbar-conveyor-polisher.png";
 import flatbarConveyorPolisherComparison from "@/assets/flatbar-conveyor-polisher-comparison.jpg";
 import walkBehindSheetPolisher from "@/assets/walk-behind-sheet-polisher.jpg";
+import tpm1500TankPolisher from "@/assets/tpm1500-tank-polisher.png";
+import tpm3000TankPolisher from "@/assets/tpm3000-tank-polisher.png";
+import pip3000DuctPolisher from "@/assets/pip3000-duct-polisher.png";
 
 export type Product = {
   id: string;
@@ -26,12 +29,12 @@ export const products: Product[] = [
   {
     id: "tank-machine",
     category: "tank",
-    name: "TPM-4500SD Vessel & Tank Polishing Machine",
+    name: "TPM4500-SDX Tank & Dishend Polishing Machine",
     usp: "1st company to successfully develop Tank polishing in India",
     image: tpm4500TankPolisher,
     description: "Our flagship heavy-duty gantry tank polishing system designed for automatic internal (ID) and external (OD) polishing of storage tanks, processing vessels, and chemical reactors. Employs a pneumatically loaded, dual-axis tracking arm with robust PLC automation.",
     specs: {
-      "Model Designation": "TPM-4500SD (Column & Boom Gantry)",
+      "Model Designation": "TPM-4500SDX (Column & Boom Gantry)",
       "Spindle Motor Power": "7.5 kW / 10 HP",
       "Spindle / Head Speed": "500 – 3,000 RPM (Variable VFD)",
       "Working Capacity (Shell OD)": "Ø 0.5 – 4.5 meters",
@@ -48,9 +51,9 @@ export const products: Product[] = [
   {
     id: "tpm-2500-tank",
     category: "tank",
-    name: "TPM-1500SD Vessel & Tank Polishing Machine",
+    name: "TPM1500-SD Tank & Dishend Polishing Machine",
     usp: "Medium gantry dual-axis system with HMI interface for tanks up to 1.5m diameter",
-    image: tpm2500TankPolisher,
+    image: tpm1500TankPolisher,
     description: "Advanced medium-capacity gantry tank polishing system designed for automatic internal (ID) and external (OD) polishing of storage tanks and chemical reactors. Ideal for medium-sized vessels.",
     specs: {
       "Model Designation": "TPM-1500SD (Gantry Boom)",
@@ -70,9 +73,9 @@ export const products: Product[] = [
   {
     id: "special-purpose-tank",
     category: "tank",
-    name: "TPM-3000SD Dish End Polishing Machine",
+    name: "TPM3000-SD Tank & Dishend Polishing Machine",
     usp: "Dual-axis automatic arm path tracking designed for elliptical & torispherical dish ends",
-    image: dishEndPolisher,
+    image: tpm3000TankPolisher,
     description: "B2B workhorse built specifically to polish tank heads, torispherical, elliptical, and flat dish ends. Features dynamic pneumatic pressure tracking to avoid thin-spotting metal walls.",
     specs: {
       "Model Designation": "TPM-3000SD (Dished Head Polishing)",
@@ -131,6 +134,26 @@ export const products: Product[] = [
     },
     consumables: ["Continuous Sanding Emery belts (Grit 80-600)", "Four-sided brush wheels", "Dry compound friction bars"],
     applicationLink: "automobile"
+  },
+  {
+    id: "pip-3000-pipe",
+    category: "pipe",
+    name: "PIP-3000 Pipe ID & Duct Polishing Machine",
+    usp: "1st company to successfully develop Pipe ID polishing in India",
+    image: pip3000DuctPolisher,
+    description: "Specialized internal diameter (ID) pipe and duct polishing machine designed for high-efficiency mirror/matt finishing of stainless steel and alloy tubes. Features multi-station automatic expansion polishing heads.",
+    specs: {
+      "Model Designation": "PIP-3000 (Pipe ID & Duct)",
+      "Pipe ID Range": "Ø 22 – 100 mm",
+      "Polishing Length": "1.0 – 3.0 meters",
+      "Number of Stations": "3 Stations",
+      "Polishing Feed Rate": "0.5 – 5.0 m/min",
+      "Consumables": "Flap Wheel / Buffing Wheels",
+      "Total Power Requirement": "13.4 kW / 18 HP",
+      "Achievable Surface Ra": "Ra ≤ 0.4 µm (Sanitary Mirror Finish)"
+    },
+    consumables: ["Emery Flap Wheels (Grit 80-400)", "Cotton Buffing Wheels", "Liquid mirror compound"],
+    applicationLink: "dairy"
   },
 
   // --- SHEET & FLAT SURFACE POLISHING MACHINES ---
@@ -297,7 +320,7 @@ export const clients = [
 
 export const companyStats = [
   { value: "35+", label: "Years Experience" },
-  { value: "100", label: "Team Members" },
-  { value: "1000", label: "Happy Clients" },
-  { value: "1000", label: "Projects Done" },
+  { value: "50+", label: "Team Members" },
+  { value: "80+", label: "Happy Clients" },
+  { value: "200+", label: "Projects Done" },
 ];

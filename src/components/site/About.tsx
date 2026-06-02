@@ -63,10 +63,10 @@ export const About = () => {
       <div className="container">
         
         {/* Main Brand Section */}
-        <div className="grid items-start gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 mb-20">
+        <div className="grid items-stretch gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 mb-20">
           
           {/* Left panel */}
-          <div className="premium-panel p-8 md:p-12 border-black/5 bg-white shadow-soft">
+          <div className="premium-panel h-full flex flex-col justify-between p-8 md:p-12 border-black/5 bg-white shadow-soft">
             
             {/* Logo and Made in India Branding */}
             <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
@@ -114,7 +114,7 @@ export const About = () => {
           </div>
 
           {/* Right Concept Box (Vision, Mission, Values) */}
-          <div className="premium-panel p-8 md:p-12 border-black/5 bg-[#fbf7ef] shadow-soft lg:sticky lg:top-28">
+          <div className="premium-panel h-full flex flex-col p-8 md:p-12 border-black/5 bg-[#fbf7ef] shadow-soft">
             <div className="industrial-badge mb-6">Our Core Focus</div>
             
             {/* Accordion tabs */}

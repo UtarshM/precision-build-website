@@ -89,10 +89,9 @@ export const Hero = () => {
             </div>
 
             <div className="mb-6 max-w-5xl">
-              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl leading-[0.95] tracking-tight text-stone-950 uppercase font-bold">
-                Delivering world-class
-                <span className="block text-primary mt-2">buffing & polishing solutions</span>
-                <span className="block text-stone-700 text-3xl sm:text-4xl mt-3 tracking-normal normal-case font-semibold">
+              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl leading-[1.05] tracking-tight text-stone-950 uppercase font-bold">
+                Delivering world-class <span className="text-primary block sm:inline">buffing & polishing solutions</span>
+                <span className="block text-stone-700 text-2xl sm:text-3xl md:text-4xl mt-3 tracking-normal normal-case font-semibold">
                   for industries that demand perfection.
                 </span>
               </h1>
@@ -149,12 +148,12 @@ export const Hero = () => {
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full h-full object-cover opacity-70 saturate-[0.9]"
+                      className="w-full h-full object-cover opacity-95 saturate-[1.05]"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/20 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-transparent to-transparent" />
                     
                     <div className="absolute bottom-6 left-6 right-6 z-20 text-white">
-                      <h3 className="font-display text-2xl md:text-3xl font-extrabold leading-tight text-white uppercase tracking-tight">
+                      <h3 className="font-display text-lg md:text-xl font-bold leading-tight text-white uppercase tracking-tight bg-stone-950/60 backdrop-blur-[3px] rounded-xl px-4 py-2.5 inline-block">
                         {slide.title}
                       </h3>
                     </div>

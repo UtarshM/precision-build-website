@@ -80,10 +80,10 @@ export const Contact = () => {
                   <Phone className="size-5 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
                 <div>
-                  <div className="text-[10px] font-heading uppercase tracking-widest text-muted-foreground">
+                  <div className="text-[10px] font-body font-bold uppercase tracking-widest text-muted-foreground">
                     Phone
                   </div>
-                  <div className="font-heading text-lg group-hover:text-primary transition-colors text-stone-950">
+                  <div className="font-body text-base font-semibold group-hover:text-primary transition-colors text-stone-950">
                     +91-9175282992
                   </div>
                 </div>
@@ -93,10 +93,10 @@ export const Contact = () => {
                   <Phone className="size-5 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
                 <div>
-                  <div className="text-[10px] font-heading uppercase tracking-widest text-muted-foreground">
+                  <div className="text-[10px] font-body font-bold uppercase tracking-widest text-muted-foreground">
                     Alternate Phone
                   </div>
-                  <div className="font-heading text-lg group-hover:text-primary transition-colors text-stone-950">
+                  <div className="font-body text-base font-semibold group-hover:text-primary transition-colors text-stone-950">
                     +91-8956648126
                   </div>
                 </div>
@@ -106,12 +106,12 @@ export const Contact = () => {
                   <Mail className="size-5 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
                 <div>
-                  <div className="text-[10px] font-heading uppercase tracking-widest text-muted-foreground">
+                  <div className="text-[10px] font-body font-bold uppercase tracking-widest text-muted-foreground">
                     Email
                   </div>
-                  <div className="font-heading text-lg group-hover:text-primary transition-colors text-stone-950 flex flex-col">
+                  <div className="font-body text-base font-semibold group-hover:text-primary transition-colors text-stone-950 flex flex-col">
                     <span>sale@mbtools.in</span>
-                    <span className="text-sm text-stone-500">sales.mbtools@gmail.com</span>
+                    <span className="text-xs text-stone-500 font-medium">sales.mbtools@gmail.com</span>
                   </div>
                 </div>
               </a>
@@ -120,10 +120,10 @@ export const Contact = () => {
                   <MapPin className="size-5 text-primary" />
                 </div>
                 <div>
-                  <div className="text-[10px] font-heading uppercase tracking-widest text-muted-foreground">
+                  <div className="text-[10px] font-body font-bold uppercase tracking-widest text-muted-foreground">
                     M.B. Finishing Technologies
                   </div>
-                  <div className="font-heading text-lg leading-snug text-stone-950">
+                  <div className="font-body text-base font-semibold leading-relaxed text-stone-950">
                     Gat No 669 & 670, Balghare Vasti, Chikhali, Pune - 411062.
                   </div>
                 </div>
