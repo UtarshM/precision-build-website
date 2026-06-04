@@ -13,8 +13,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['"Cormorant Garamond"', "serif"],
-        body: ['"Manrope"', "sans-serif"],
+        heading: ['"Calibri"', '"Segoe UI"', "Arial", "sans-serif"],
+        body: ['"Calibri"', '"Segoe UI"', "Arial", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
