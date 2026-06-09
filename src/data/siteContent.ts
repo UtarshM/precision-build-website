@@ -119,7 +119,7 @@ export const products: Product[] = [
     category: "pipe",
     name: "STP100-16H Square & Rectangular Tube Polishing Machine",
     usp: "16-Head continuous gantry auto-feed system for round, square and rectangular sections",
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=600",
+    image: flatbarConveyorPolisher,
     description: "High-productivity continuous machine designed to polish all four outer sides of square or rectangular hollow tubes in a single continuous linear feeding pass. Heavy industrial B2B workhorse.",
     specs: {
       "Model Designation": "STP100-16H (16 Heads)",
