@@ -122,12 +122,6 @@ const ApplicationPage = () => {
       </Helmet>
 
       <SiteLayout>
-        <PageBanner
-          eyebrow="Applications"
-          title="Finishing excellence across global industries"
-          description="Different metals, strict tolerances, and high aesthetics. Discover how our specialized polishing systems are optimized for your industry's specific surface requirements."
-        />
-
         {/* Interactive Industry Tabs Section */}
         <section className="section-shell bg-[#fbf7ef]">
           <div className="container">
