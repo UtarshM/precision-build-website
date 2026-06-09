@@ -241,26 +241,6 @@ const ApplicationPage = () => {
                     />
                     <div className="absolute inset-0 bg-stone-900/10" />
                   </div>
-
-                  <div className="rounded-[1.75rem] border border-primary/25 bg-stone-950 text-white p-6 shadow-card relative overflow-hidden">
-                    <div className="absolute top-0 right-0 size-24 bg-primary/10 rounded-full blur-xl pointer-events-none" />
-                    <div className="flex gap-4">
-                      <div className="size-11 rounded-full bg-primary/20 flex items-center justify-center shrink-0 text-primary">
-                        <Info className="size-5" />
-                      </div>
-                      <div>
-                        <h4 className="font-display text-xl text-primary font-semibold">
-                          Process Demonstration
-                        </h4>
-                        <p className="text-white/60 text-xs mt-2 italic leading-relaxed">
-                          "{currentIndustry.videoPlaceholderText}"
-                        </p>
-                        <p className="text-white/72 text-xs mt-3 leading-relaxed">
-                          Need raw video demonstrations of our automatic machines running your exact tube, tank, or cooker dimensions? Connect with us to schedule an on-site or video demo.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
