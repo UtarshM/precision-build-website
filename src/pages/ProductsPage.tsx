@@ -44,12 +44,6 @@ const ProductsPage = () => {
       </Helmet>
 
       <SiteLayout>
-        <PageBanner
-          eyebrow="Our Products"
-          title="Industrial machinery engineered to deliver consistent perfection"
-          description="Standard and custom special-purpose polishing machines configured precisely for your workpiece shape, metal thickness, cycle time, and target surface roughness parameters."
-        />
-
         {/* Categories Tab Selector */}
         <section className="py-12 bg-[#faf6ed]">
           <div className="container">
