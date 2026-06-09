@@ -2,52 +2,66 @@ import React from "react";
 
 const CUSTOMER_LOGOS = [
   {
-    name: "XCMG",
+    name: "Metalloy Industries",
+    logo: (
+      <svg className="h-10 w-auto fill-stone-700" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 15h25v10H10zM20 28h25v10H20z" className="fill-amber-500" />
+        <text x="55" y="34" className="font-sans font-black text-xl uppercase fill-stone-800 tracking-wide">METALLOY</text>
+        <text x="55" y="46" className="font-sans font-bold text-[9px] fill-stone-500 tracking-[0.2em]">INDUSTRIES</text>
+      </svg>
+    )
+  },
+  {
+    name: "Apex Cookware",
     logo: (
       <svg className="h-10 w-auto fill-stone-700" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 10h12v40H10zM15 10l20 20-20 20zM35 10v40h12V10z" className="fill-amber-500" />
-        <text x="60" y="38" className="font-sans font-black text-2xl uppercase fill-stone-800 tracking-wider">XCMG</text>
-        <text x="60" y="50" className="font-sans font-bold text-[8px] fill-stone-500">徐工集团</text>
+        <path d="M25 12L10 38h30z" className="fill-stone-800" />
+        <circle cx="25" cy="28" r="6" className="fill-amber-500" />
+        <text x="55" y="34" className="font-sans font-black text-xl uppercase fill-stone-800 tracking-wide">APEX</text>
+        <text x="55" y="46" className="font-sans font-bold text-[9px] fill-stone-500 tracking-[0.2em]">COOKWARE</text>
       </svg>
     )
   },
   {
-    name: "CONSUEGRA",
+    name: "Precision Tubing",
     logo: (
       <svg className="h-10 w-auto fill-stone-700" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="25" cy="30" r="18" fill="none" stroke="currentColor" strokeWidth="4" />
-        <text x="17" y="36" className="font-serif font-black text-lg fill-stone-800">SC</text>
-        <text x="55" y="35" className="font-sans font-black text-lg tracking-widest fill-stone-800">CONSUEGRA</text>
-        <text x="55" y="47" className="font-sans font-medium text-[8px] fill-stone-500 tracking-widest">CHAPISTERIA DE PRECISION</text>
+        <circle cx="25" cy="30" r="15" fill="none" stroke="currentColor" strokeWidth="4" className="stroke-stone-800" />
+        <circle cx="25" cy="30" r="7" fill="none" stroke="currentColor" strokeWidth="3" className="stroke-amber-500" />
+        <text x="55" y="34" className="font-sans font-black text-xl uppercase fill-stone-800 tracking-wide">PRECISION</text>
+        <text x="55" y="46" className="font-sans font-bold text-[9px] fill-stone-500 tracking-[0.15em]">TUBING CORP.</text>
       </svg>
     )
   },
   {
-    name: "Infrico",
+    name: "Stellar Steel",
     logo: (
-      <svg className="h-10 w-auto fill-stone-700" viewBox="0 0 180 60" xmlns="http://www.w3.org/2000/svg">
-        <path d="M15 15l10 10-10 10-10-10z" className="fill-primary" />
-        <path d="M35 15l10 10-10 10-10-10z" className="fill-stone-400" />
-        <text x="55" y="38" className="font-sans font-black text-2xl fill-stone-800 tracking-tight">Infrico</text>
+      <svg className="h-10 w-auto fill-stone-700" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25 12c0 8-2 13-10 13 8 0 10 5 10 13 0-8 2-13 10-13-8 0-10-5-10-13z" className="fill-amber-500" />
+        <text x="55" y="34" className="font-sans font-black text-xl uppercase fill-stone-800 tracking-wide">STELLAR</text>
+        <text x="55" y="46" className="font-sans font-bold text-[9px] fill-stone-500 tracking-[0.15em]">STEEL & COILS</text>
       </svg>
     )
   },
   {
-    name: "FAGOR",
+    name: "Zenith Appliances",
     logo: (
-      <svg className="h-10 w-auto fill-stone-700" viewBox="0 0 180 60" xmlns="http://www.w3.org/2000/svg">
-        <text x="10" y="38" className="font-sans font-black italic text-2xl fill-stone-800 tracking-wider">FAGOR</text>
-        <circle cx="120" cy="30" r="14" className="fill-stone-800" />
-        <path d="M112 30h16M120 22v16" stroke="white" strokeWidth="3" />
+      <svg className="h-10 w-auto fill-stone-700" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="15" width="30" height="30" rx="6" fill="none" stroke="currentColor" strokeWidth="4" className="stroke-stone-800" />
+        <path d="M18 22h14L18 38h14" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" className="stroke-amber-500" />
+        <text x="55" y="34" className="font-sans font-black text-xl uppercase fill-stone-800 tracking-wide">ZENITH</text>
+        <text x="55" y="46" className="font-sans font-bold text-[9px] fill-stone-500 tracking-[0.15em]">APPLIANCES</text>
       </svg>
     )
   },
   {
-    name: "GKN AEROSPACE",
+    name: "Atlas Engineering",
     logo: (
-      <svg className="h-9 w-auto fill-stone-700" viewBox="0 0 260 60" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 20l15 10-15 10v-20zM22 20l15 10-15 10v-20z" className="fill-stone-800" />
-        <text x="45" y="38" className="font-sans font-black text-xl fill-stone-800 tracking-wider">GKN AEROSPACE</text>
+      <svg className="h-10 w-auto fill-stone-700" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25 12L12 38h6l4-9h6l4 9h6z" className="fill-stone-800" />
+        <path d="M20 25h10" fill="none" stroke="currentColor" strokeWidth="3" className="stroke-amber-500" />
+        <text x="55" y="34" className="font-sans font-black text-xl uppercase fill-stone-800 tracking-wide">ATLAS</text>
+        <text x="55" y="46" className="font-sans font-bold text-[9px] fill-stone-500 tracking-[0.15em]">ENGINEERING</text>
       </svg>
     )
   }

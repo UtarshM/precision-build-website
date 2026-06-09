@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { BookOpen, Award, Target, Landmark, ShieldCheck, Heart, Sparkles, Milestone } from "lucide-react";
 import mbLogo from "@/assets/mb-finishing-logo.png";
-import makeInIndiaImg from "@/assets/make-in-india.png";
 import { MadeInIndiaLogo } from "./MadeInIndiaLogo";
 
 const PILLARS = [
@@ -69,12 +68,12 @@ export const About = () => {
           <div className="premium-panel h-full flex flex-col justify-between p-8 md:p-12 border-black/5 bg-white shadow-soft">
             
             {/* Logo and Made in India Branding */}
-            <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-8">
               <div className="flex items-center gap-4">
                 <img
                   src={mbLogo}
                   alt="MB Finishing Logo"
-                  className="h-16 w-auto object-contain shrink-0"
+                  className="h-16 w-16 rounded-full object-contain border border-black/10 bg-white p-1"
                 />
                 <div className="flex flex-col text-left">
                   <span className="text-[10px] uppercase font-bold text-primary tracking-[0.24em]">
@@ -89,28 +88,18 @@ export const About = () => {
                 </div>
               </div>
 
-              {/* Make in India lion logo inline on the right */}
-              <img
-                src={makeInIndiaImg}
-                className="h-10 w-auto object-contain shrink-0 opacity-85"
-                alt="Make in India Logo"
-              />
-            </div>
-            
-            <p className="text-base leading-relaxed text-stone-700 font-medium">
-              <strong className="text-primary font-bold">M.B. Finishing Technologies</strong> a subsidy of MB tools pvt ltd established in 1990 delivers precision buffing and polishing solutions that enhance durability, aesthetics, and performance across critical industries. From <strong className="text-stone-950 font-bold">pharmaceutical tanks requiring hygienic, mirror-like finishes</strong> to <strong className="text-stone-950 font-bold">automotive components demanding consistent quality</strong>, and <strong className="text-stone-950 font-bold">high-end metal surfaces where appearance defines value</strong>, our expertise ensures every surface reflects excellence.
-            </p>
-
-            {/* Made in India badge */}
-            <div className="mt-8 inline-flex items-center gap-4 rounded-2xl bg-amber-500/10 border border-amber-500/15 p-5 text-amber-900">
-              <MadeInIndiaLogo size={36} />
-              <div>
-                <h4 className="font-heading text-xs font-bold uppercase tracking-wider">Made In India Productive Strength</h4>
-                <p className="text-stone-600 text-xs mt-1 leading-relaxed">
-                  Engineered and manufactured at Gat No 669 & 670, Balghare Vasti, Chikhali, Pune-411062 to drive high-performance metal finishing global standards.
-                </p>
+              {/* Made in India Badge Pill */}
+              <div className="flex items-center gap-2.5 bg-stone-100 border border-stone-200 rounded-full px-4 py-2 self-start sm:self-center shadow-sm">
+                <MadeInIndiaLogo size={22} />
+                <span className="text-[11px] font-bold text-stone-700 tracking-wider uppercase">
+                  Made In India
+                </span>
               </div>
             </div>
+            
+            <p className="text-lg md:text-xl leading-relaxed text-stone-600 mt-6 text-left">
+              <span className="font-bold text-primary">M.B. Finishing Technologies</span> a subsidy of MB tools pvt ltd established in 1990 delivers precision buffing and polishing solutions that enhance durability, aesthetics, and performance across critical industries. From <strong className="text-stone-950 font-bold">pharmaceutical tanks requiring hygienic, mirror-like finishes</strong> to <strong className="text-stone-950 font-bold">automotive components demanding consistent quality</strong>, and <strong className="text-stone-950 font-bold">high-end metal surfaces where appearance defines value</strong>, our expertise ensures every surface reflects excellence.
+            </p>
           </div>
 
           {/* Right Concept Box (Vision, Mission, Values) */}

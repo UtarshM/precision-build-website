@@ -18,11 +18,6 @@ const ClientsPage = () => {
       </Helmet>
 
       <SiteLayout>
-        <PageBanner
-          eyebrow="Clients & Industries"
-          title="Valued customers across industrial finishing sectors"
-          description="Our machines are engineered to meet the strict surface finishing requirements of global manufacturers across critical sectors."
-        />
         <CustomerSlider />
         <IndustriesServed />
         <Testimonials />

@@ -15,11 +15,6 @@ const ContactPage = () => {
       </Helmet>
 
       <SiteLayout>
-        <PageBanner
-          eyebrow="Contact Us"
-          title="Talk to our team about your finishing requirement"
-          description="Reach out for product details, machine inquiries, special-purpose requirements or industrial polishing solutions."
-        />
         <Contact />
       </SiteLayout>
     </>

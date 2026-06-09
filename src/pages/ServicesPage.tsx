@@ -88,12 +88,6 @@ const ServicesPage = () => {
       </Helmet>
 
       <SiteLayout>
-        <PageBanner
-          eyebrow="Our Services"
-          title="Engineered support to guarantee finishing excellence"
-          description="We do more than build finishing machinery. We provide ready consumable stocks, technical process consultations, heavy-duty fettling setups, and dedicated engineering support."
-        />
-
         {/* Core Services Section */}
         <section className="section-shell bg-[#fbf7ef]">
           <div className="container">

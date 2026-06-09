@@ -66,7 +66,7 @@ export const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           <div>
             <div className="industrial-badge mb-6">Contact With Us</div>
-            <h2 className="font-heading text-4xl md:text-6xl uppercase tracking-tight leading-[0.95] mb-6 text-balance text-stone-950">
+            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl uppercase tracking-tight leading-[1.1] mb-6 text-balance text-stone-950">
               Professional support for your <span className="text-primary">machine requirements</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-10 max-w-lg">
