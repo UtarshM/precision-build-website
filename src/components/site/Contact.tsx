@@ -10,7 +10,7 @@ const schema = z.object({
   message: z.string().trim().min(10, "Please share your machine requirement").max(1000),
 });
 
-export const Contact = () => {
+export const Contact = ({ isHeroSection = false }: { isHeroSection?: boolean }) => {
   const { toast } = useToast();
   const [submitting, setSubmitting] = useState(false);
   const [form, setForm] = useState({
@@ -49,7 +49,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="py-24 md:py-32 bg-white">
+    <section className={`bg-white pb-24 md:pb-32 ${isHeroSection ? "pt-32 md:pt-40" : "pt-24 md:pt-32"}`}>
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           <div>

@@ -89,7 +89,7 @@ const ServicesPage = () => {
 
       <SiteLayout>
         {/* Core Services Section */}
-        <section className="section-shell bg-[#fbf7ef]">
+        <section className="section-shell bg-[#fbf7ef] pt-32 md:pt-40">
           <div className="container">
             <div className="grid gap-12 lg:grid-cols-1">
               {SERVICES_LIST.map((service, index) => {

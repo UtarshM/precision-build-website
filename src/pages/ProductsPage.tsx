@@ -45,7 +45,7 @@ const ProductsPage = () => {
 
       <SiteLayout>
         {/* Categories Tab Selector */}
-        <section className="py-12 bg-[#faf6ed]">
+        <section className="pt-32 md:pt-40 pb-12 bg-[#faf6ed]">
           <div className="container">
             {/* Tab Buttons */}
             <div className="flex flex-wrap justify-center gap-2.5">

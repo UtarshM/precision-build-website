@@ -72,7 +72,7 @@ export const CustomerSlider = () => {
   const duplicatedLogos = [...CUSTOMER_LOGOS, ...CUSTOMER_LOGOS, ...CUSTOMER_LOGOS];
 
   return (
-    <section className="section-shell bg-white py-16 border-t border-black/5">
+    <section className="section-shell bg-white pt-32 md:pt-40 pb-16 border-t border-black/5">
       <div className="container">
         <div className="mx-auto mb-10 max-w-3xl text-center">
           <h2 className="font-display text-4xl uppercase font-bold text-stone-950 tracking-tight">

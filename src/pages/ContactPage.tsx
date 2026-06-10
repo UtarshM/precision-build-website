@@ -15,7 +15,7 @@ const ContactPage = () => {
       </Helmet>
 
       <SiteLayout>
-        <Contact />
+        <Contact isHeroSection={true} />
       </SiteLayout>
     </>
   );

@@ -123,7 +123,7 @@ const ApplicationPage = () => {
 
       <SiteLayout>
         {/* Interactive Industry Tabs Section */}
-        <section className="section-shell bg-[#fbf7ef]">
+        <section className="section-shell bg-[#fbf7ef] pt-32 md:pt-40">
           <div className="container">
             <div className="text-center mb-12">
               <div className="industrial-badge mx-auto mb-4">Select Industry</div>
