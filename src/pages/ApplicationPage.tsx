@@ -4,6 +4,7 @@ import { PageBanner } from "@/components/site/PageBanner";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { Contact } from "@/components/site/Contact";
 import { Check, Info, ShieldAlert, Zap, Layers, Activity } from "lucide-react";
+import breweryTanksImg from "@/assets/brewery-tanks.png";
 
 const INDUSTRIES_DATA = [
   {
@@ -46,7 +47,7 @@ const INDUSTRIES_DATA = [
       { product: "Piping Systems", req: "Ra ≤ 0.4 µm Sanitary OD Buffing", speed: "Centerless through-feed tube line" }
     ],
     videoPlaceholderText: "Craft brewery fermenter tank body OD mirror polishing demo",
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=600"
+    image: breweryTanksImg
   },
   {
     id: "architectural",
