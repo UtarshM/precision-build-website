@@ -306,18 +306,6 @@ export const galleryItems = products.slice(0, 6).map((product, index) => ({
   span: index === 0 ? "lg:col-span-2 lg:row-span-2" : index === 5 ? "lg:col-span-2" : "",
 }));
 
-export const clients = [
-  "Metalloy Industries",
-  "Apex Cookware Ltd.",
-  "Precision Tubing Corp.",
-  "Stellar Steel & Coils",
-  "Prime Ware Systems",
-  "Global Pipe Solutions",
-  "EverFinish Metals",
-  "Zenith Kitchen Appliances",
-  "Atlas Engineering & Fabricators",
-];
-
 export const companyStats = [
   { value: "35+", label: "Years Experience" },
   { value: "50+", label: "Team Members" },

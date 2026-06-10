@@ -1,7 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { PageBanner } from "@/components/site/PageBanner";
 import { SiteLayout } from "@/components/site/SiteLayout";
-import { Testimonials } from "@/components/site/Testimonials";
 import { WhyChoose } from "@/components/site/WhyChoose";
 import { IndustriesServed } from "@/components/site/IndustriesServed";
 import { CustomerSlider } from "@/components/site/CustomerSlider";
@@ -20,7 +18,6 @@ const ClientsPage = () => {
       <SiteLayout>
         <CustomerSlider />
         <IndustriesServed />
-        <Testimonials />
         <WhyChoose />
       </SiteLayout>
     </>
