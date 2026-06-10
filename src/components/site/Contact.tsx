@@ -7,10 +7,6 @@ const schema = z.object({
   name: z.string().trim().min(2, "Please enter your name").max(100),
   phone: z.string().trim().min(6, "Please enter a valid phone").max(30),
   email: z.string().trim().email("Please enter a valid email").max(255),
-  geometry: z.string().min(1, "Please select workpiece geometry"),
-  material: z.string().min(1, "Please select material type"),
-  surfaceState: z.string().min(1, "Please select current surface state"),
-  targetRa: z.string().min(1, "Please select target surface finish / Ra"),
   message: z.string().trim().min(10, "Please share your machine requirement").max(1000),
 });
 
@@ -21,10 +17,6 @@ export const Contact = () => {
     name: "",
     phone: "",
     email: "",
-    geometry: "Tank/Head",
-    material: "Stainless Steel",
-    surfaceState: "Raw Mill",
-    targetRa: "Mirror Polish (Ra ≤ 0.4 µm)",
     message: ""
   });
 
@@ -51,10 +43,6 @@ export const Contact = () => {
         name: "",
         phone: "",
         email: "",
-        geometry: "Tank/Head",
-        material: "Stainless Steel",
-        surfaceState: "Raw Mill",
-        targetRa: "Mirror Polish (Ra ≤ 0.4 µm)",
         message: ""
       });
     }, 900);
@@ -190,73 +178,6 @@ export const Contact = () => {
                 </div>
               </div>
 
-              {/* Workpiece coordinates dropdowns */}
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div>
-                  <label className="block text-[10px] font-heading uppercase tracking-widest text-muted-foreground mb-2">
-                    Workpiece Geometry
-                  </label>
-                  <select
-                    value={form.geometry}
-                    onChange={(event) => setForm({ ...form, geometry: event.target.value })}
-                    className="w-full rounded-xl px-4 py-3 bg-white border border-primary/15 focus:border-primary focus:outline-none transition-colors text-xs font-semibold text-stone-850"
-                  >
-                    <option value="Tank/Head">Tank/Head</option>
-                    <option value="Round Pipe">Round Pipe</option>
-                    <option value="Square/Rectangular Tube">Square/Rectangular Tube</option>
-                    <option value="Flat Sheet">Flat Sheet</option>
-                    <option value="Profile/Bespoke">Profile/Bespoke</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-[10px] font-heading uppercase tracking-widest text-muted-foreground mb-2">
-                    Material Type
-                  </label>
-                  <select
-                    value={form.material}
-                    onChange={(event) => setForm({ ...form, material: event.target.value })}
-                    className="w-full rounded-xl px-4 py-3 bg-white border border-primary/15 focus:border-primary focus:outline-none transition-colors text-xs font-semibold text-stone-850"
-                  >
-                    <option value="Stainless Steel">Stainless Steel</option>
-                    <option value="Mild Steel">Mild Steel</option>
-                    <option value="Aluminium">Aluminium</option>
-                    <option value="Brass/Copper">Brass/Copper</option>
-                    <option value="Utensils/Cookware">Utensils/Cookware</option>
-                  </select>
-                </div>
-              </div>
-
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div>
-                  <label className="block text-[10px] font-heading uppercase tracking-widest text-muted-foreground mb-2">
-                    Current Surface State
-                  </label>
-                  <select
-                    value={form.surfaceState}
-                    onChange={(event) => setForm({ ...form, surfaceState: event.target.value })}
-                    className="w-full rounded-xl px-4 py-3 bg-white border border-primary/15 focus:border-primary focus:outline-none transition-colors text-xs font-semibold text-stone-850"
-                  >
-                    <option value="Raw Mill">Raw Mill</option>
-                    <option value="Weld Seams">Weld Seams</option>
-                    <option value="Coarse Grits">Coarse Grits</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-[10px] font-heading uppercase tracking-widest text-muted-foreground mb-2">
-                    Target Surface Finish / Ra
-                  </label>
-                  <select
-                    value={form.targetRa}
-                    onChange={(event) => setForm({ ...form, targetRa: event.target.value })}
-                    className="w-full rounded-xl px-4 py-3 bg-white border border-primary/15 focus:border-primary focus:outline-none transition-colors text-xs font-semibold text-stone-850"
-                  >
-                    <option value="Mirror Polish (Ra ≤ 0.4 µm)">Mirror Polish (Ra ≤ 0.4 µm)</option>
-                    <option value="Fine Satin (Ra ≤ 0.8 µm)">Fine Satin (Ra ≤ 0.8 µm)</option>
-                    <option value="Hairline">Hairline</option>
-                    <option value="Coarse">Coarse</option>
-                  </select>
-                </div>
-              </div>
 
               <div>
                 <label className="block text-[10px] font-heading uppercase tracking-widest text-muted-foreground mb-2">
