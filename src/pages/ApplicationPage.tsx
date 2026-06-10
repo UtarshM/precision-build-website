@@ -3,7 +3,8 @@ import { Helmet } from "react-helmet-async";
 import { PageBanner } from "@/components/site/PageBanner";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { Contact } from "@/components/site/Contact";
-import { Check, Info, ShieldAlert, Zap, Layers, Activity } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Check, Info, ShieldAlert, Zap, Layers, Activity, ArrowUpRight } from "lucide-react";
 
 // Local machine image imports
 import tpm3000TankPolisher from "@/assets/tpm3000-tank-polisher.png";
@@ -18,7 +19,11 @@ const INDUSTRIES_DATA = [
     name: "Food & Dairy",
     tagline: "Strict sanitary standards for food-contact surface safety",
     description: "Stainless steel surfaces in milk storage silos, cheese vats, and food conveyors must maintain a roughness value of Ra ≤ 0.8 µm to prevent organic matter accumulation. Our automated belt sanders and sheet polishing systems deliver uniform, easy-to-sanitize finishes.",
-    machines: ["SP1200-3H Sheet Polishing Machine", "TPM-3000SD Dish End Polishing Machine", "TPM-4500SD Vessel & Tank Polishing Machine"],
+    machines: [
+      { name: "SP1200-3H Sheet Polishing Machine", id: "sp-1200b-sheet" },
+      { name: "TPM-3000SD Dish End Polishing Machine", id: "special-purpose-tank" },
+      { name: "TPM-4500SD Vessel & Tank Polishing Machine", id: "tank-machine" }
+    ],
     useCases: [
       { product: "Milk Storage Silos", req: "Ra ≤ 0.8 µm Sanitary Satin", speed: "Wide-belt flat sheet polishing" },
       { product: "Food Processing Vats", req: "Ra ≤ 0.8 µm Matte Finish", speed: "Automatic vessel wall buffing" },
@@ -32,7 +37,11 @@ const INDUSTRIES_DATA = [
     name: "Pharmaceutical",
     tagline: "Ultra-pure sanitary finishes with certified Ra parameters",
     description: "Critical pharmaceutical reactors, sterile mixing vessels, and drug delivery piping require extreme mirror finishes (Ra ≤ 0.2 µm or below) to eliminate microscopic pockets and prevent bacterial colonization. Our PLC-controlled gantry polishers provide repeatable path buffing.",
-    machines: ["TPM-4500SD Vessel & Tank Polishing Machine", "TPM-3000SD Dish End Polishing Machine", "CG-150B-L1 Centerless Round Pipe Polishing Machine"],
+    machines: [
+      { name: "TPM-4500SD Vessel & Tank Polishing Machine", id: "tank-machine" },
+      { name: "TPM-3000SD Dish End Polishing Machine", id: "special-purpose-tank" },
+      { name: "CG-150B-L1 Centerless Round Pipe Polishing Machine", id: "cg150-double-head" }
+    ],
     useCases: [
       { product: "Bio-Reactors", req: "Ra ≤ 0.2 µm Super-Mirror Polish", speed: "Pneumatic pressure tracked dual-axis boom" },
       { product: "Sterile Piping", req: "Internal ID Mirror Buffing", speed: "High-rpm internal pipe polishing setup" },
@@ -46,7 +55,11 @@ const INDUSTRIES_DATA = [
     name: "Beverage & Brewing",
     tagline: "Bright-annealed mirror finishes for tanks and fermenters",
     description: "Brewing vessels, bright beer tanks, and distillery equipment demand corrosion-resistant surfaces. Automated external mirror buffing and internal grit-finishing prevent yeast buildup and maintain product purity during fermentation.",
-    machines: ["TPM-4500SD Vessel & Tank Polishing Machine", "TPM-1500SD Vessel & Tank Polishing Machine", "TPM-3000SD Dish End Polishing Machine"],
+    machines: [
+      { name: "TPM-4500SD Vessel & Tank Polishing Machine", id: "tank-machine" },
+      { name: "TPM-1500SD Vessel & Tank Polishing Machine", id: "tpm-2500-tank" },
+      { name: "TPM-3000SD Dish End Polishing Machine", id: "special-purpose-tank" }
+    ],
     useCases: [
       { product: "Beer Fermenters", req: "Ra ≤ 0.4 µm Bright Polish", speed: "Dual-head automatic gantry shell tracker" },
       { product: "Distillery Copper Stills", req: "High-Gloss Aesthetic Buffing", speed: "Specialized copper compound cotton buffs" },
@@ -60,7 +73,11 @@ const INDUSTRIES_DATA = [
     name: "Automotive",
     tagline: "Precision functional finishes to reduce friction and wear",
     description: "Automotive engine parts, shock absorber piston rods, bumper trims, and exhaust pipes require high-precision finishing. Polishing hydraulic piston rods decreases frictional coefficients and extends seal lifespans, while exhaust trims demand rich mirror aesthetics.",
-    machines: ["CG-150B-L1 Centerless Round Pipe Polishing Machine", "STP100-16H Square & Rectangular Tube Polishing Machine", "VB150-L1 Conveyorised Flat Bar & Profile Polishing Machine"],
+    machines: [
+      { name: "CG-150B-L1 Centerless Round Pipe Polishing Machine", id: "cg150-double-head" },
+      { name: "STP100-16H Square & Rectangular Tube Polishing Machine", id: "square-tube-polisher" },
+      { name: "VB150-L1 Conveyorised Flat Bar & Profile Polishing Machine", id: "flatbar-conveyor-polisher" }
+    ],
     useCases: [
       { product: "Shock Absorber Rods", req: "Ra ≤ 0.05 µm Super-Finish", speed: "Micro-abrasive belt feed polishing" },
       { product: "Exhaust Mufflers", req: "Super-Gloss Bright Polish", speed: "Multi-head indexing table buffing" },
@@ -74,7 +91,11 @@ const INDUSTRIES_DATA = [
     name: "Chemical & Industrial",
     tagline: "Corrosion-resistant metal prep and heavy deburring solutions",
     description: "Industrial chemical storage, acid scrubbers, paper mills, and water treatment tanks need high corrosion resistance. Rough surface preparation is crucial before applying protective linings, and smoothing out weld seams avoids stress-corrosion cracking.",
-    machines: ["TPM-4500SD Vessel & Tank Polishing Machine", "TBP300-2H Trolley Type Polishing Machine", "BGM-50-2H Double-Head Manual Belt Polishing Machine"],
+    machines: [
+      { name: "TPM-4500SD Vessel & Tank Polishing Machine", id: "tank-machine" },
+      { name: "TBP300-2H Trolley Type Polishing Machine", id: "trolley-machine" },
+      { name: "BGM-50-2H Double-Head Manual Belt Polishing Machine", id: "" }
+    ],
     useCases: [
       { product: "Storage Tanks", req: "Weld seam flat grinding", speed: "Boom-mounted heavy gantry grinding wheel" },
       { product: "Chemical Piping", req: "External oxide layer removal", speed: "Centerless dual-head belt grinding" },
@@ -170,14 +191,16 @@ const ApplicationPage = () => {
                     <h4 className="font-heading text-xs tracking-widest uppercase font-bold text-stone-900 mb-3 flex items-center gap-2">
                       <Layers className="size-4 text-primary" /> Recommended Finishing Machines:
                     </h4>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2.5">
                       {currentIndustry.machines.map((machine) => (
-                        <span
-                          key={machine}
-                          className="bg-stone-900 text-white text-[10px] uppercase tracking-wider font-semibold rounded-lg px-3.5 py-2"
+                        <Link
+                          key={machine.name}
+                          to={machine.id ? `/products?id=${machine.id}` : "/products"}
+                          className="inline-flex items-center gap-1.5 bg-stone-950 text-white text-[10.5px] uppercase tracking-wider font-bold rounded-xl px-4 py-2.5 hover:bg-primary hover:text-stone-950 transition-colors shadow-soft border border-white/10"
                         >
-                          {machine}
-                        </span>
+                          {machine.name}
+                          <ArrowUpRight className="size-3.5 shrink-0" />
+                        </Link>
                       ))}
                     </div>
                   </div>

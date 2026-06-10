@@ -23,6 +23,19 @@ const ProductsPage = () => {
   // Modal State for Individual Product Specifications
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
+  // Auto-open product modal if ID is in the URL query params
+  useEffect(() => {
+    const productId = searchParams.get("id");
+    if (productId) {
+      const prod = products.find((p) => p.id === productId);
+      if (prod) {
+        setSelectedProduct(prod);
+      }
+    } else {
+      setSelectedProduct(null);
+    }
+  }, [searchParams]);
+
   // Sync state if category parameter is updated
   const handleCategoryChange = (category: string) => {
     setSearchParams({ category });
@@ -146,7 +159,14 @@ const ProductsPage = () => {
               
               {/* Close Button */}
               <button
-                onClick={() => setSelectedProduct(null)}
+                onClick={() => {
+                  setSelectedProduct(null);
+                  if (searchParams.has("id")) {
+                    const newParams = new URLSearchParams(searchParams);
+                    newParams.delete("id");
+                    setSearchParams(newParams);
+                  }
+                }}
                 className="absolute right-5 top-5 p-2 rounded-full border border-black/5 bg-stone-100 hover:bg-stone-200 text-stone-700 transition-colors"
                 aria-label="Close details"
               >
