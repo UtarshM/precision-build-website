@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BookOpen, Award, Target, Landmark, ShieldCheck, Heart, Sparkles, Milestone } from "lucide-react";
 import mbLogo from "@/assets/mb-finishing-logo.png";
+import makeInIndiaImg from "@/assets/make-in-india.png";
 import { MadeInIndiaLogo } from "./MadeInIndiaLogo";
 
 const PILLARS = [
@@ -73,7 +74,7 @@ export const About = () => {
                 <img
                   src={mbLogo}
                   alt="MB Finishing Logo"
-                  className="h-16 w-16 rounded-full object-contain border border-black/10 bg-white p-1"
+                  className="h-16 w-auto object-contain shrink-0"
                 />
                 <div className="flex flex-col text-left">
                   <span className="text-[10px] uppercase font-bold text-primary tracking-[0.24em]">
@@ -89,8 +90,12 @@ export const About = () => {
               </div>
 
               {/* Made in India Badge Pill */}
-              <div className="flex items-center gap-2.5 bg-stone-100 border border-stone-200 rounded-full px-4 py-2 self-start sm:self-center shadow-sm">
-                <MadeInIndiaLogo size={22} />
+              <div className="flex items-center gap-3 bg-stone-100 border border-stone-300/60 rounded-full px-4 py-2.5 self-start sm:self-center shadow-sm">
+                <img
+                  src={makeInIndiaImg}
+                  className="h-5 w-auto object-contain shrink-0"
+                  alt="Made In India"
+                />
                 <span className="text-[11px] font-bold text-stone-700 tracking-wider uppercase">
                   Made In India
                 </span>
