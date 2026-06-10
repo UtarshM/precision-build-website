@@ -4,7 +4,13 @@ import { PageBanner } from "@/components/site/PageBanner";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { Contact } from "@/components/site/Contact";
 import { Check, Info, ShieldAlert, Zap, Layers, Activity } from "lucide-react";
-import breweryTanksImg from "@/assets/brewery-tanks.png";
+
+// Local machine image imports
+import tpm3000TankPolisher from "@/assets/tpm3000-tank-polisher.png";
+import dishEndPolisher from "@/assets/dish-end-polisher.jpg";
+import tpm1500TankPolisher from "@/assets/tpm1500-tank-polisher.png";
+import cg150DoubleHead from "@/assets/cg150-double-head.jpg";
+import tpm4500TankPolisher from "@/assets/tpm4500-tank-polisher.png";
 
 const INDUSTRIES_DATA = [
   {
@@ -19,7 +25,7 @@ const INDUSTRIES_DATA = [
       { product: "Conveyor Sideplates", req: "Deburred & Ground Edge", speed: "High-speed linear conveyor belt feed" }
     ],
     videoPlaceholderText: "Automated milk-tank sheet satin polishing machine demonstration",
-    image: "https://images.unsplash.com/photo-1527324688151-0e627063f26a?auto=format&fit=crop&q=80&w=600"
+    image: tpm3000TankPolisher
   },
   {
     id: "pharma",
@@ -33,7 +39,7 @@ const INDUSTRIES_DATA = [
       { product: "Torispherical Heads", req: "Ra ≤ 0.2 µm Sanitary Polish", speed: "Auto-path dished head rotation table" }
     ],
     videoPlaceholderText: "Pharmaceutical reaction vessel internal mirror buffing demo video",
-    image: "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=600"
+    image: dishEndPolisher
   },
   {
     id: "beverage",
@@ -47,21 +53,7 @@ const INDUSTRIES_DATA = [
       { product: "Piping Systems", req: "Ra ≤ 0.4 µm Sanitary OD Buffing", speed: "Centerless through-feed tube line" }
     ],
     videoPlaceholderText: "Craft brewery fermenter tank body OD mirror polishing demo",
-    image: breweryTanksImg
-  },
-  {
-    id: "architectural",
-    name: "Architectural",
-    tagline: "Consistent satin, hairline, and mirror finishes for structural metals",
-    description: "Aesthetics and uniformity are paramount for architectural facades, elevator doors, escalator trims, and building entryways. Our multi-head continuous sheet and profile polishers deliver flawless hairline and No. 4 satin finishes.",
-    machines: ["SP1200-3H Heavy-Duty Sheet Polishing Machine", "SP600B-1H Sheet Polishing Machine", "VB150-L1 Conveyorised Flat Bar & Profile Polishing Machine"],
-    useCases: [
-      { product: "Cladding Sheets", req: "Flat Hairline Finish", speed: "3-station inline gantry belt-grinder" },
-      { product: "Elevator Door Panels", req: "No. 4 Satin Uniform Finish", speed: "Wet-grinding wide belt sander" },
-      { product: "Handrails & Balustrades", req: "Continuous Hairline Round Pipe", speed: "Multi-pass centerless belt polisher" }
-    ],
-    videoPlaceholderText: "Elevator panel stainless steel sheet hairline finishing line demonstration",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600"
+    image: tpm1500TankPolisher
   },
   {
     id: "automobile",
@@ -75,21 +67,7 @@ const INDUSTRIES_DATA = [
       { product: "Structural Square Frames", req: "Continuous Grit Grinding", speed: "16-Head continuous auto-feed line" }
     ],
     videoPlaceholderText: "Heavy-duty shock absorber shock rod centerless super-finishing demo",
-    image: "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&q=80&w=600"
-  },
-  {
-    id: "furniture",
-    name: "Furniture & Fixtures",
-    tagline: "High-end decorative and tactile finishes on wood and steel",
-    description: "From modern office steel structures and high-end retail display racks to wooden tabletops, chairs, and MDF moldings. Our manual and automatic belt sanding systems provide clean, paint-ready, or high-gloss tactile surfaces.",
-    machines: ["BGM-50-2H Double-Head Manual Belt Polishing Machine", "STP100-16H Square & Rectangular Tube Polishing Machine", "TBP300-2H Trolley Type Polishing Machine"],
-    useCases: [
-      { product: "Wooden Panels & MDF", req: "Smooth paint-ready fine sand", speed: "Double-head manual belt sander" },
-      { product: "Retail Display Frames", req: "Fine Satin Chrome Pre-Finish", speed: "Conveyorised flat bar belt polisher" },
-      { product: "Office Chair Bases", req: "Circular Mirror Polish", speed: "Custom-formed cotton buffing spindles" }
-    ],
-    videoPlaceholderText: "Double-head manual belt sander wooden chair frame preparation",
-    image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=600"
+    image: cg150DoubleHead
   },
   {
     id: "chemical",
@@ -103,7 +81,7 @@ const INDUSTRIES_DATA = [
       { product: "Heavy Metal Plates", req: "Scale & rust removal", speed: "Double-head manual belt grinder" }
     ],
     videoPlaceholderText: "Heavy-duty vessel weld-seam automatic grinding demonstration",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600"
+    image: tpm4500TankPolisher
   }
 ];
 
@@ -118,7 +96,7 @@ const ApplicationPage = () => {
         <title>M.B. Finishing Technologies | Industrial Applications</title>
         <meta
           name="description"
-          content="Discover how M.B. Finishing Technologies solves surface treatment challenges across Food & Dairy, Pharmaceutical, Beverage & Brewing, Architectural, Automotive, Furniture, and Chemical sectors."
+          content="Discover how M.B. Finishing Technologies solves surface treatment challenges across Food & Dairy, Pharmaceutical, Beverage & Brewing, Automotive, and Chemical sectors."
         />
       </Helmet>
 
