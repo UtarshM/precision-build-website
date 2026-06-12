@@ -56,17 +56,17 @@ export const Navbar = () => {
           )}
         >
           {/* Logo Brand Area with Tagline */}
-          <Link to="/" className="flex items-center gap-3 min-w-0 px-2 py-1.5 hover:opacity-90 transition-opacity">
+          <Link to="/" className="flex items-center gap-2 sm:gap-3 min-w-0 px-2 py-1.5 hover:opacity-90 transition-opacity">
             <img
               src={mbLogo}
               alt="M.B. Finishing Logo"
-              className="h-14 w-auto object-contain shrink-0"
+              className="h-12 sm:h-14 w-auto object-contain shrink-0"
             />
-            <div className="flex flex-col justify-center text-left shrink-0">
-              <div className="whitespace-nowrap text-sm sm:text-base md:text-lg lg:text-xl font-black uppercase tracking-[0.08em] text-stone-950 leading-none">
+            <div className="min-w-0 sm:shrink-0 flex flex-col justify-center text-left">
+              <div className="text-xs sm:text-base md:text-lg lg:text-xl font-black uppercase tracking-[0.08em] text-stone-950 leading-tight sm:leading-none sm:whitespace-nowrap">
                 M.B. Finishing Technologies
               </div>
-              <div className="whitespace-nowrap text-[9px] sm:text-[11px] md:text-xs text-stone-500 tracking-wider font-semibold uppercase mt-1.5 leading-none">
+              <div className="text-[8px] sm:text-[11px] md:text-xs text-stone-500 tracking-wider font-semibold uppercase mt-0.5 sm:mt-1.5 leading-tight sm:leading-none sm:whitespace-nowrap">
                 Redefining Finishing Excellence…
               </div>
             </div>
