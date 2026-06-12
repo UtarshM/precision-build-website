@@ -62,18 +62,18 @@ export const Navbar = () => {
               alt="M.B. Finishing Logo"
               className="h-14 w-auto object-contain shrink-0"
             />
-            <div className="min-w-0 flex flex-col justify-center text-left">
-              <div className="text-xs sm:text-sm md:text-base font-black uppercase tracking-[0.08em] text-stone-950 leading-none">
+            <div className="flex flex-col justify-center text-left shrink-0">
+              <div className="whitespace-nowrap text-sm sm:text-base md:text-lg lg:text-xl font-black uppercase tracking-[0.08em] text-stone-950 leading-none">
                 M.B. Finishing Technologies
               </div>
-              <div className="text-[8px] sm:text-[9.5px] text-stone-500 tracking-wider font-semibold uppercase mt-1 leading-none">
+              <div className="whitespace-nowrap text-[9px] sm:text-[11px] md:text-xs text-stone-500 tracking-wider font-semibold uppercase mt-1.5 leading-none">
                 Redefining Finishing Excellence…
               </div>
             </div>
           </Link>
 
           {/* Desktop Navigation Links with Dropdown */}
-          <div className="hidden xl:flex items-center gap-2 rounded-full border border-black/5 bg-white/75 px-2 py-2">
+          <div className="hidden xl:flex items-center gap-1 rounded-full border border-black/5 bg-white/75 px-2 py-2">
             {NAV_LINKS.map((link) => {
               if (link.hasDropdown) {
                 return (
@@ -82,7 +82,7 @@ export const Navbar = () => {
                       to={link.to}
                       className={({ isActive }) =>
                         cn(
-                          "inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] transition-all duration-300",
+                          "inline-flex items-center gap-1.5 rounded-full px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.15em] whitespace-nowrap transition-all duration-300",
                           isActive
                             ? "bg-stone-950 text-white shadow-[0_14px_28px_-20px_rgba(0,0,0,0.45)]"
                             : "text-foreground/72 hover:bg-black/5 hover:text-foreground"
@@ -117,7 +117,7 @@ export const Navbar = () => {
                   to={link.to}
                   className={({ isActive }) =>
                     cn(
-                      "rounded-full px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] transition-all duration-300",
+                      "rounded-full px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.15em] whitespace-nowrap transition-all duration-300",
                       isActive
                         ? "bg-stone-950 text-white shadow-[0_14px_28px_-20px_rgba(0,0,0,0.45)]"
                         : "text-foreground/72 hover:bg-black/5 hover:text-foreground"

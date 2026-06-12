@@ -29,23 +29,23 @@ export const Footer = () => {
             <div className="flex items-center gap-3 mb-6">
               <img
                 src={mbLogo}
-                alt="MB Finishing Logo"
+                alt="M.B. Finishing Logo"
                 className="h-12 w-auto object-contain shrink-0"
               />
               <div className="flex flex-col text-left">
-                <span className="text-xs uppercase font-black text-primary tracking-[0.08em] leading-none">
+                <span className="text-sm sm:text-base font-black uppercase text-primary tracking-[0.08em] leading-none">
                   M.B. Finishing Technologies
                 </span>
-                <span className="text-[8px] text-white/50 tracking-wider font-semibold uppercase mt-1 leading-none">
+                <span className="text-[10px] sm:text-[11px] text-white/50 tracking-wider font-semibold uppercase mt-1 leading-none">
                   Redefining Finishing Excellence…
                 </span>
               </div>
             </div>
 
-            <h2 className="font-display text-xl sm:text-2xl leading-[1.2] text-white/90 uppercase font-semibold">
+            <h2 className="font-display text-xs sm:text-sm leading-[1.2] text-white/90 uppercase font-semibold">
               Delivering world-class buffing & polishing solutions for industries that demand perfection.
             </h2>
-            <p className="mt-4 max-w-2xl text-xs leading-relaxed text-white/60">
+            <p className="mt-4 max-w-2xl text-[11px] sm:text-xs leading-relaxed text-white/60">
               M.B. Finishing Technologies, a subsidiary of M.B. Tools Pvt. Ltd.
               established in 1990, specializes in automatic buffing and
               polishing machines for automotive and industrial applications.
@@ -102,7 +102,16 @@ export const Footer = () => {
                 </p>
               </div>
               <div>
-                <div className="mb-1 font-semibold text-white">MB Tools (Tool Room)</div>
+                <div className="mb-1 font-semibold text-white">
+                  M.B. Finishing Pvt. Ltd.
+                </div>
+                <p>
+                  Plot No. T-165/15, next to Trishul Service Station, T Block,
+                  MIDC, Bhosari, Pimpri-Chinchwad, Maharashtra 411026
+                </p>
+              </div>
+              <div>
+                <div className="mb-1 font-semibold text-white">MB Tools</div>
                 <p>
                   C-4(21)C, near Bharat Gas, T Block, MIDC, Bhosari, Pune,
                   Maharashtra 411026

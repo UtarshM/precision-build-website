@@ -73,7 +73,7 @@ export const About = () => {
               <div className="flex items-center gap-4">
                 <img
                   src={mbLogo}
-                  alt="MB Finishing Logo"
+                  alt="M.B. Finishing Logo"
                   className="h-16 w-auto object-contain shrink-0"
                 />
                 <div className="flex flex-col text-left">

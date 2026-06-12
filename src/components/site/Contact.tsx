@@ -116,6 +116,19 @@ export const Contact = ({ isHeroSection = false }: { isHeroSection?: boolean }) 
                   </div>
                 </div>
               </div>
+              <div className="flex items-start gap-5">
+                <div className="shrink-0 size-12 rounded-full border-2 border-primary flex items-center justify-center mt-1">
+                  <MapPin className="size-5 text-primary" />
+                </div>
+                <div>
+                  <div className="text-[10px] font-body font-bold uppercase tracking-widest text-muted-foreground">
+                    M.B. Finishing Pvt. Ltd.
+                  </div>
+                  <div className="font-body text-base font-semibold leading-relaxed text-stone-950">
+                    Plot No. T-165/15, next to Trishul Service Station, T Block, MIDC, Bhosari, Pimpri-Chinchwad, Maharashtra 411026
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="aspect-[16/10] rounded-[1.75rem] border border-primary/10 overflow-hidden shadow-[0_18px_60px_-40px_rgba(20,20,20,0.3)]">
