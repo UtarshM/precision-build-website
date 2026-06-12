@@ -89,9 +89,9 @@ export const Hero = () => {
             </div>
 
             <div className="mb-6 max-w-5xl">
-              <h1 className="font-display text-3xl sm:text-4xl md:text-5xl leading-[1.1] tracking-tight text-stone-950 uppercase font-bold">
+              <h1 className="font-display text-2xl sm:text-3xl md:text-4xl leading-[1.1] tracking-tight text-stone-950 uppercase font-bold">
                 Delivering world-class <span className="text-primary block sm:inline">buffing & polishing solutions</span>
-                <span className="block text-stone-700 text-xl sm:text-2xl md:text-3xl mt-3 tracking-normal normal-case font-semibold">
+                <span className="block text-stone-700 text-lg sm:text-xl md:text-2xl mt-3 tracking-normal normal-case font-semibold">
                   for industries that demand perfection.
                 </span>
               </h1>
