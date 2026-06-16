@@ -35,47 +35,26 @@ export const Contact = ({ isHeroSection = false }: { isHeroSection?: boolean }) 
     setSubmitting(true);
 
     try {
-      const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "3c96e4a5-5b38-47d7-8198-bfce560d4774";
-      if (!accessKey) {
-        console.warn("VITE_WEB3FORMS_ACCESS_KEY is not set. Falling back to mailto link.");
-        
-        const mailtoUrl = `mailto:sale@mbtools.in?subject=Product Inquiry from ${encodeURIComponent(
-          form.name
-        )}&body=Name: ${encodeURIComponent(form.name)}%0D%0APhone: ${encodeURIComponent(
-          form.phone
-        )}%0D%0AEmail: ${encodeURIComponent(form.email)}%0D%0ARequirement: ${encodeURIComponent(
-          form.message
-        )}`;
-        window.location.href = mailtoUrl;
-
-        toast({
-          title: "Opening Email Client",
-          description: "Please send the draft email to submit your inquiry.",
-        });
-        setSubmitting(false);
-        return;
-      }
-
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const adminEmail = import.meta.env.VITE_ADMIN_EMAIL || "um18218@gmail.com";
+      const response = await fetch(`https://formsubmit.co/ajax/${adminEmail}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: accessKey,
           name: form.name,
           email: form.email,
           phone: form.phone,
           message: form.message,
-          subject: `New Inquiry from ${form.name} (M.B. Finishing Technologies)`,
-          from_name: form.name,
+          _subject: `New Inquiry from ${form.name} (M.B. Finishing Technologies)`,
+          _captcha: "false"
         }),
       });
 
       const data = await response.json();
 
-      if (data.success) {
+      if (data.success === "true" || data.success === true) {
         toast({
           title: "Inquiry sent",
           description: "Our team will connect with you shortly.",
