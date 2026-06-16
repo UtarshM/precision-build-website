@@ -7,7 +7,7 @@ const schema = z.object({
   name: z.string().trim().min(2, "Please enter your name").max(100),
   phone: z.string().trim().min(6, "Please enter a valid phone").max(30),
   email: z.string().trim().email("Please enter a valid email").max(255),
-  message: z.string().trim().min(10, "Please share your machine requirement").max(1000),
+  message: z.string().trim().min(2, "Please share your requirement").max(1000),
 });
 
 export const Contact = ({ isHeroSection = false }: { isHeroSection?: boolean }) => {
