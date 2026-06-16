@@ -25,3 +25,7 @@ dist-ssr
 Website mods input v3_27-5-26.pptx
 extracted_slides/
 
+# Local env files
+.env
+.env.*
+!.env.example

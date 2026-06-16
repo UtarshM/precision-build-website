@@ -20,7 +20,7 @@ export const Contact = ({ isHeroSection = false }: { isHeroSection?: boolean }) 
     message: ""
   });
 
-  const onSubmit = (event: React.FormEvent) => {
+  const onSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     const result = schema.safeParse(form);
     if (!result.success) {
@@ -33,19 +33,76 @@ export const Contact = ({ isHeroSection = false }: { isHeroSection?: boolean }) 
     }
 
     setSubmitting(true);
-    setTimeout(() => {
-      setSubmitting(false);
+
+    try {
+      const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+      if (!accessKey) {
+        console.warn("VITE_WEB3FORMS_ACCESS_KEY is not set. Falling back to mailto link.");
+        
+        const mailtoUrl = `mailto:sale@mbtools.in?subject=Product Inquiry from ${encodeURIComponent(
+          form.name
+        )}&body=Name: ${encodeURIComponent(form.name)}%0D%0APhone: ${encodeURIComponent(
+          form.phone
+        )}%0D%0AEmail: ${encodeURIComponent(form.email)}%0D%0ARequirement: ${encodeURIComponent(
+          form.message
+        )}`;
+        window.location.href = mailtoUrl;
+
+        toast({
+          title: "Opening Email Client",
+          description: "Please send the draft email to submit your inquiry.",
+        });
+        setSubmitting(false);
+        return;
+      }
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          message: form.message,
+          subject: `New Inquiry from ${form.name} (M.B. Finishing Technologies)`,
+          from_name: form.name,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast({
+          title: "Inquiry sent",
+          description: "Our team will connect with you shortly.",
+        });
+        setForm({
+          name: "",
+          phone: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        toast({
+          title: "Submission failed",
+          description: data.message || "Something went wrong. Please try again.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
       toast({
-        title: "Inquiry sent",
-        description: "Our team will connect with you shortly.",
+        title: "Submission error",
+        description: "Could not send the inquiry. Please try again later.",
+        variant: "destructive",
       });
-      setForm({
-        name: "",
-        phone: "",
-        email: "",
-        message: ""
-      });
-    }, 900);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
