@@ -35,7 +35,7 @@ export const Contact = ({ isHeroSection = false }: { isHeroSection?: boolean }) 
     setSubmitting(true);
 
     try {
-      const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+      const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "3c96e4a5-5b38-47d7-8198-bfce560d4774";
       if (!accessKey) {
         console.warn("VITE_WEB3FORMS_ACCESS_KEY is not set. Falling back to mailto link.");
         
