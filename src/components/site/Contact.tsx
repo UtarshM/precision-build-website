@@ -35,7 +35,7 @@ export const Contact = ({ isHeroSection = false }: { isHeroSection?: boolean }) 
     setSubmitting(true);
 
     try {
-      const adminEmail = import.meta.env.VITE_ADMIN_EMAIL || "um18218@gmail.com";
+      const adminEmail = import.meta.env.VITE_ADMIN_EMAIL || "sale@mbtools.in";
       const response = await fetch(`https://formsubmit.co/ajax/${adminEmail}`, {
         method: "POST",
         headers: {
