@@ -35,26 +35,27 @@ export const Contact = ({ isHeroSection = false }: { isHeroSection?: boolean }) 
     setSubmitting(true);
 
     try {
-      const adminEmail = import.meta.env.VITE_ADMIN_EMAIL || "sale@mbtools.in";
-      const response = await fetch(`https://formsubmit.co/ajax/${adminEmail}`, {
+      const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "50a7783b-3f6d-44a6-bb89-716b07cd22e4";
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
         body: JSON.stringify({
+          access_key: accessKey,
           name: form.name,
           email: form.email,
           phone: form.phone,
           message: form.message,
-          _subject: `New Inquiry from ${form.name} (M.B. Finishing Technologies)`,
-          _captcha: "false"
+          subject: `New Inquiry from ${form.name} (M.B. Finishing Technologies)`,
+          from_name: form.name,
         }),
       });
 
       const data = await response.json();
 
-      if (data.success === "true" || data.success === true) {
+      if (data.success) {
         toast({
           title: "Inquiry sent",
           description: "Our team will connect with you shortly.",
