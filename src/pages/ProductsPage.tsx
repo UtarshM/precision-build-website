@@ -177,11 +177,11 @@ const ProductsPage = () => {
                 
                 {/* Left Area (Product Visual, Consumables & Interlinks) */}
                 <div className="space-y-6">
-                  <div className="rounded-[2rem] overflow-hidden aspect-[4/3] border border-black/5 shadow-soft">
+                  <div className="rounded-[2rem] overflow-hidden aspect-[4/3] border border-black/5 shadow-soft bg-stone-50">
                     <img
                       src={selectedProduct.image}
                       alt={selectedProduct.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                     />
                   </div>
 

@@ -42,9 +42,10 @@ export const Services = ({ limit, showViewAll = false }: ServicesProps) => {
 
         <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
           {visibleProducts.map((product, index) => (
-            <article
+            <Link
               key={product.name}
-              className="group hover-lift overflow-hidden rounded-[1.9rem] border border-black/6 bg-white shadow-[0_24px_80px_-46px_rgba(20,20,20,0.4)]"
+              to={product.id ? `/products?id=${product.id}` : "/products"}
+              className="group hover-lift overflow-hidden rounded-[1.9rem] border border-black/6 bg-white shadow-[0_24px_80px_-46px_rgba(20,20,20,0.4)] block"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img
@@ -72,7 +73,7 @@ export const Services = ({ limit, showViewAll = false }: ServicesProps) => {
                   {product.description}
                 </p>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
 

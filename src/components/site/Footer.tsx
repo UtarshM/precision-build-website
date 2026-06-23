@@ -33,10 +33,10 @@ export const Footer = () => {
                 className="h-12 w-auto object-contain shrink-0"
               />
               <div className="flex flex-col text-left">
-                <span className="text-sm sm:text-base font-black uppercase text-primary tracking-[0.08em] leading-none">
+                <span className="text-sm sm:text-base font-black uppercase text-primary tracking-[0.08em] leading-none italic">
                   M.B. Finishing Technologies
                 </span>
-                <span className="text-[10px] sm:text-[11px] text-white/50 tracking-wider font-semibold uppercase mt-1 leading-none">
+                <span className="text-[10px] sm:text-[11px] text-white/50 tracking-wider font-semibold uppercase mt-1 leading-none italic self-end text-right">
                   Redefining Finishing Excellence…
                 </span>
               </div>
@@ -94,24 +94,21 @@ export const Footer = () => {
             </div>
             <div className="mt-6 space-y-4 text-sm leading-relaxed text-white/64">
               <div>
-                <div className="mb-1 font-semibold text-white">
+                <div className="mb-1 font-semibold text-white italic">
                   M.B. Finishing Technologies
                 </div>
+                <p className="mb-2">
+                  Plot No. T-165/15, next to Trishul Service Station, T Block,
+                  MIDC, Bhosari, Pimpri-Chinchwad, Maharashtra 411026
+                </p>
                 <p>
                   Gat No 669 & 670, Balghare Vasti, Chikhali, Pune - 411062.
                 </p>
               </div>
               <div>
-                <div className="mb-1 font-semibold text-white">
-                  M.B. Finishing Pvt. Ltd.
+                <div className="mb-1 font-semibold text-white italic">
+                  M.B. Tools Pvt. Ltd.
                 </div>
-                <p>
-                  Plot No. T-165/15, next to Trishul Service Station, T Block,
-                  MIDC, Bhosari, Pimpri-Chinchwad, Maharashtra 411026
-                </p>
-              </div>
-              <div>
-                <div className="mb-1 font-semibold text-white">MB Tools</div>
                 <p>
                   C-4(21)C, near Bharat Gas, T Block, MIDC, Bhosari, Pune,
                   Maharashtra 411026

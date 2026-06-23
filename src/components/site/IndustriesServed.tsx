@@ -1,10 +1,10 @@
-import { Disc, Car, Gauge, Database, Clock, Plane, Utensils, Layers } from "lucide-react";
+import { Car, Gauge, Plane, Utensils, Layers, FlaskConical, Droplets, Cpu, Database } from "lucide-react";
 
 const INDUSTRIES = [
   {
-    icon: Disc,
-    title: "Car / Truck Wheels",
-    desc: "Mirror buffing systems for alloy wheels and rims."
+    icon: FlaskConical,
+    title: "Pharma/Chemical Tanks & Dishends",
+    desc: "Internal & external polishing of sanitary Pharma tanks, reactors, cones, Flat sheets polishing to achieve Ra upto 0.2 μ. Matt & Mirror finish achievable."
   },
   {
     icon: Car,
@@ -13,18 +13,18 @@ const INDUSTRIES = [
   },
   {
     icon: Gauge,
-    title: "Calibrated",
-    desc: "Exact micron finishing for gauges, valves, and measuring gear."
+    title: "Hygienic Pipe ID/OD",
+    desc: "ID/OD mechanical polish to achieve Ra upto 0.2 μ."
   },
   {
-    icon: Database,
-    title: "Bottoms / Tanks",
-    desc: "Internal & external polishing of sanitary pharmaceutical tanks & reactors."
+    icon: Droplets,
+    title: "Dairy, Water & Beverage",
+    desc: "Vessels, Cones, Flat sheets polishing to achieve Ra upto 0.2 μ."
   },
   {
-    icon: Clock,
-    title: "Watch Industry",
-    desc: "Micro-buffing solutions for high-end luxury watch cases and straps."
+    icon: Cpu,
+    title: "Robotic & Special purpose Polishing/Deburring",
+    desc: "Polishing, buffing and deburring application of Casting, forging and any other complex shape."
   },
   {
     icon: Plane,
@@ -33,12 +33,12 @@ const INDUSTRIES = [
   },
   {
     icon: Utensils,
-    title: "Horeca",
+    title: "Utensil Polishing",
     desc: "Hygienic mirror finishes for commercial kitchenware, hollowware, and utensils."
   },
   {
     icon: Layers,
-    title: "Sheet Metal Working",
+    title: "Sheet Metal",
     desc: "Satin, hairline and mirror finishing of large metal sheets."
   }
 ];

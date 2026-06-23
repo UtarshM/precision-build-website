@@ -8,19 +8,19 @@ import { MadeInIndiaLogo } from "./MadeInIndiaLogo";
 const FLASHING_SLIDES = [
   {
     type: "VESSEL & TANK",
-    title: "TPM-4500SD Tank Polishing Machine",
+    title: "TPM4500-SDX Tank Polishing Machine",
     desc: "1st company to successfully develop Tank polishing in India. Automatic dual-axis shell and dished end polishing.",
     image: tpm4500TankPolisher
   },
   {
     type: "SHEET FINISHING",
-    title: "SP1200-3H Sheet Polishing Machine",
-    desc: "Premium 3-station inline gantry belt-grinder designed to produce flawless satin, hairline, and mirror finishes.",
+    title: "SP1200B Sheet Polishing Machine",
+    desc: "Premium 3-station inline belt-grinder designed to produce flawless satin, hairline, and mirror finishes.",
     image: sp1200bSheetPolisher
   },
   {
     type: "TUBE & PIPE",
-    title: "CG-150B-L1 Centerless Polishing Machine",
+    title: "CG15OW-2H Centerless Polishing Machine",
     desc: "Simultaneous dual-stage grinding and polishing for rapid, mirror-grade round pipes and bars.",
     image: cg150DoubleHead
   }
@@ -137,7 +137,7 @@ export const Hero = () => {
             
             <div className="relative overflow-hidden">
               {/* Image Transition area */}
-              <div className="relative overflow-hidden rounded-[2rem] aspect-[4/3] bg-stone-950 shadow-[0_24px_60px_-24px_rgba(0,0,0,0.35)] border border-black/5">
+              <div className="relative overflow-hidden rounded-[2rem] aspect-[4/3] bg-white shadow-[0_24px_60px_-24px_rgba(0,0,0,0.15)] border border-stone-200">
                 {FLASHING_SLIDES.map((slide, idx) => (
                   <div
                     key={slide.title}
@@ -148,12 +148,11 @@ export const Hero = () => {
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full h-full object-cover opacity-95 saturate-[1.05]"
+                      className="w-full h-full object-contain pb-20 pt-6 px-6 opacity-95 saturate-[1.05]"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-transparent to-transparent" />
                     
-                    <div className="absolute bottom-6 left-6 right-6 z-20 text-white">
-                      <h3 className="font-display text-lg md:text-xl font-bold leading-tight text-white uppercase tracking-tight bg-stone-950/60 backdrop-blur-[3px] rounded-xl px-4 py-2.5 inline-block">
+                    <div className="absolute bottom-6 inset-x-0 z-20 flex justify-center px-4 text-white">
+                      <h3 className="font-display text-xs sm:text-sm font-bold leading-tight text-white uppercase tracking-tight bg-stone-950/85 backdrop-blur-[3px] rounded-full px-5 py-2.5 text-center shadow-md">
                         {slide.title}
                       </h3>
                     </div>

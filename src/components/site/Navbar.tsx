@@ -63,10 +63,10 @@ export const Navbar = () => {
               className="h-12 sm:h-14 w-auto object-contain shrink-0"
             />
             <div className="min-w-0 sm:shrink-0 flex flex-col justify-center text-left">
-              <div className="text-xs sm:text-base md:text-lg lg:text-xl font-black uppercase tracking-[0.08em] text-stone-950 leading-tight sm:leading-none sm:whitespace-nowrap">
+              <div className="text-xs sm:text-base md:text-lg lg:text-xl font-black uppercase tracking-[0.08em] text-stone-950 leading-tight sm:leading-none sm:whitespace-nowrap italic">
                 M.B. Finishing Technologies
               </div>
-              <div className="text-[8px] sm:text-[11px] md:text-xs text-stone-500 tracking-wider font-semibold uppercase mt-0.5 sm:mt-1.5 leading-tight sm:leading-none sm:whitespace-nowrap">
+              <div className="text-[8px] sm:text-[11px] md:text-xs text-stone-500 tracking-wider font-semibold uppercase mt-0.5 sm:mt-1.5 leading-tight sm:leading-none sm:whitespace-nowrap italic self-end text-right">
                 Redefining Finishing Excellence…
               </div>
             </div>

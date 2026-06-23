@@ -103,7 +103,7 @@ export const About = () => {
             </div>
             
             <p className="text-lg md:text-xl leading-relaxed text-stone-600 mt-6 text-left">
-              <span className="font-bold text-primary">M.B. Finishing Technologies</span> a subsidy of MB tools pvt ltd established in 1990 delivers precision buffing and polishing solutions that enhance durability, aesthetics, and performance across critical industries. From <strong className="text-stone-950 font-bold">pharmaceutical tanks requiring hygienic, mirror-like finishes</strong> to <strong className="text-stone-950 font-bold">automotive components demanding consistent quality</strong>, and <strong className="text-stone-950 font-bold">high-end metal surfaces where appearance defines value</strong>, our expertise ensures every surface reflects excellence.
+              <span className="font-bold text-primary">M.B. Finishing Technologies</span> a subsidiary of M.B. Tools Pvt. Ltd. established in 1990 delivers precision buffing and polishing solutions that enhance durability, aesthetics, and performance across critical industries. From <strong className="text-stone-950 font-bold">pharmaceutical tanks requiring hygienic, mirror-like finishes</strong> to <strong className="text-stone-950 font-bold">automotive components demanding consistent quality</strong>, and <strong className="text-stone-950 font-bold">high-end metal surfaces where appearance defines value</strong>, our expertise ensures every surface reflects excellence.
             </p>
           </div>
 

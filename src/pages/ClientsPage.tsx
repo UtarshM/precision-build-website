@@ -11,7 +11,7 @@ const ClientsPage = () => {
         <title>M.B. Finishing Technologies | Clients & Industries Served</title>
         <meta
           name="description"
-          content="See the industries we supply (automotive, aerospace, horeca, tanks, etc.) and our valued global customers."
+          content="See the industries we supply (pharma/chemical, automotive, hygienic pipe, dairy, aerospace, utensil polishing, sheet metal) and our valued global customers."
         />
       </Helmet>
 

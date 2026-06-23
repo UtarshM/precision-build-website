@@ -20,9 +20,9 @@ const INDUSTRIES_DATA = [
     tagline: "Strict sanitary standards for food-contact surface safety",
     description: "Stainless steel surfaces in milk storage silos, cheese vats, and food conveyors must maintain a roughness value of Ra ≤ 0.8 µm to prevent organic matter accumulation. Our automated belt sanders and sheet polishing systems deliver uniform, easy-to-sanitize finishes.",
     machines: [
-      { name: "SP1200-3H Sheet Polishing Machine", id: "sp-1200b-sheet" },
+      { name: "SP1500B Sheet Polishing Machine", id: "sp-1500b-sheet" },
       { name: "TPM-3000SD Dish End Polishing Machine", id: "special-purpose-tank" },
-      { name: "TPM-4500SD Vessel & Tank Polishing Machine", id: "tank-machine" }
+      { name: "TPM4500-SDX Vessel & Tank Polishing Machine", id: "tank-machine" }
     ],
     useCases: [
       { product: "Milk Storage Silos", req: "Ra ≤ 0.8 µm Sanitary Satin", speed: "Wide-belt flat sheet polishing" },
@@ -38,9 +38,10 @@ const INDUSTRIES_DATA = [
     tagline: "Ultra-pure sanitary finishes with certified Ra parameters",
     description: "Critical pharmaceutical reactors, sterile mixing vessels, and drug delivery piping require extreme mirror finishes (Ra ≤ 0.2 µm or below) to eliminate microscopic pockets and prevent bacterial colonization. Our PLC-controlled gantry polishers provide repeatable path buffing.",
     machines: [
-      { name: "TPM-4500SD Vessel & Tank Polishing Machine", id: "tank-machine" },
+      { name: "TPM4500-SDX Vessel & Tank Polishing Machine", id: "tank-machine" },
       { name: "TPM-3000SD Dish End Polishing Machine", id: "special-purpose-tank" },
-      { name: "CG-150B-L1 Centerless Round Pipe Polishing Machine", id: "cg150-double-head" }
+      { name: "CG15OB Centerless Round Pipe Polishing Machine", id: "cg-150b-l1-pipe" },
+      { name: "CG15OW-2H Centerless Round Pipe Polishing Machine", id: "cg-150w-2h-pipe" }
     ],
     useCases: [
       { product: "Bio-Reactors", req: "Ra ≤ 0.2 µm Super-Mirror Polish", speed: "Pneumatic pressure tracked dual-axis boom" },
@@ -56,7 +57,7 @@ const INDUSTRIES_DATA = [
     tagline: "Bright-annealed mirror finishes for tanks and fermenters",
     description: "Brewing vessels, bright beer tanks, and distillery equipment demand corrosion-resistant surfaces. Automated external mirror buffing and internal grit-finishing prevent yeast buildup and maintain product purity during fermentation.",
     machines: [
-      { name: "TPM-4500SD Vessel & Tank Polishing Machine", id: "tank-machine" },
+      { name: "TPM4500-SDX Vessel & Tank Polishing Machine", id: "tank-machine" },
       { name: "TPM-1500SD Vessel & Tank Polishing Machine", id: "tpm-2500-tank" },
       { name: "TPM-3000SD Dish End Polishing Machine", id: "special-purpose-tank" }
     ],
@@ -74,9 +75,9 @@ const INDUSTRIES_DATA = [
     tagline: "Precision functional finishes to reduce friction and wear",
     description: "Automotive engine parts, shock absorber piston rods, bumper trims, and exhaust pipes require high-precision finishing. Polishing hydraulic piston rods decreases frictional coefficients and extends seal lifespans, while exhaust trims demand rich mirror aesthetics.",
     machines: [
-      { name: "CG-150B-L1 Centerless Round Pipe Polishing Machine", id: "cg150-double-head" },
-      { name: "STP100-16H Square & Rectangular Tube Polishing Machine", id: "square-tube-polisher" },
-      { name: "VB150-L1 Conveyorised Flat Bar & Profile Polishing Machine", id: "flatbar-conveyor-polisher" }
+      { name: "CG15OB Centerless Round Pipe Polishing Machine", id: "cg-150b-l1-pipe" },
+      { name: "CG15OW-2H Centerless Round Pipe Polishing Machine", id: "cg-150w-2h-pipe" },
+      { name: "VB150 Sheet Polishing Machine", id: "vb-150-sheet" }
     ],
     useCases: [
       { product: "Shock Absorber Rods", req: "Ra ≤ 0.05 µm Super-Finish", speed: "Micro-abrasive belt feed polishing" },
@@ -92,7 +93,7 @@ const INDUSTRIES_DATA = [
     tagline: "Corrosion-resistant metal prep and heavy deburring solutions",
     description: "Industrial chemical storage, acid scrubbers, paper mills, and water treatment tanks need high corrosion resistance. Rough surface preparation is crucial before applying protective linings, and smoothing out weld seams avoids stress-corrosion cracking.",
     machines: [
-      { name: "TPM-4500SD Vessel & Tank Polishing Machine", id: "tank-machine" },
+      { name: "TPM4500-SDX Vessel & Tank Polishing Machine", id: "tank-machine" },
       { name: "TBP300-2H Trolley Type Polishing Machine", id: "trolley-machine" },
       { name: "BGM-50-2H Double-Head Manual Belt Polishing Machine", id: "" }
     ],
