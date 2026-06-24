@@ -10,7 +10,6 @@ import flatbarConveyorPolisherComparison from "@/assets/flatbar-conveyor-polishe
 import walkBehindSheetPolisher from "@/assets/walk-behind-sheet-polisher.jpg";
 import tpm1500TankPolisher from "@/assets/tpm1500-tank-polisher.png";
 import tpm3000TankPolisher from "@/assets/tpm3000-tank-polisher.png";
-import pip3000DuctPolisher from "@/assets/pip3000-duct-polisher.png";
 
 export type Product = {
   id: string;
@@ -92,48 +91,6 @@ export const products: Product[] = [
     applicationLink: "pharma"
   },
   // --- PIPE & TUBE POLISHING MACHINES ---
-  {
-    id: "piop-2000-tank",
-    category: "tank",
-    name: "PIOP2000 Duct Polishing Machine",
-    usp: "Compact beauty to finish the small tanks in ID & OD applications",
-    image: pip3000DuctPolisher,
-    description: "The Compact beauty to finish the small tanks in ID & OD applications used in Ducts, Dairy, beverage, Pharma equipments. Heavy duty motor and enhanced polishing head assures to get the Matt & Mirror finish.",
-    specs: {
-      "Model Designation": "PIOP2000",
-      "Spindle Motor Power": "5.5 kW / 7.5 HP",
-      "Spindle / Head Speed": "500 – 3,000 RPM (Variable VFD)",
-      "Working Capacity (Shell OD)": "Ø 200 – 1000 mm",
-      "Working Capacity (Shell ID)": "Ø 200 – 1000 mm",
-      "Max Shell Length": "2000 mm",
-      "Polishing Feed Speed": "5 to 50 mm/min",
-      "Achievable Surface Ra": "Ra ≤ 0.2 µm (Sanitary Mirror Polish)",
-      "Total Machine Weight": "1450 kg"
-    },
-    consumables: ["Hard-stitched Sisal Buffing Wheels", "Chromium Oxide Green Cutting Compound Bar", "Non-woven Abrasive Rollers"],
-    applicationLink: "dairy"
-  },
-  {
-    id: "cg-150b-l1-pipe",
-    category: "pipe",
-    name: "CG15OB Centerless Round Pipe Polishing Machine",
-    usp: "Simultaneous single-stage grinding and polishing for rapid, mirror-grade round pipes",
-    image: cg150DoubleHead, // TODO: Replace with original single head image once shared
-    description: "High-speed centerless finishing system designed for continuous external (OD) polishing of round tubes, bars, and pipes. Features a single high-performance polishing head to achieve a high-quality finish.",
-    specs: {
-      "Model Designation": "CG-150B-L1 (Single Head Centerless)",
-      "Spindle Motor Power": "3.7 kW / 5 HP",
-      "Spindle / Head Speed": "1,440 – 2,800 RPM",
-      "Working Capacity (OD)": "Ø 10 mm – Ø 150 mm round pipes & bars",
-      "Through-feed Speed Rate": "0.5 – 6.0 m/min (VFD continuous auto-feed)",
-      "Polishing Consumables": "Abrasive Belt & Flap Wheel (150 mm width)",
-      "Achievable Surface Ra": "Ra ≤ 0.2 µm (Matt, Mirror)",
-      "CE Marking status": "CE-Ready / CE-Certifiable",
-      "Total Machine Weight": "Approx. 400 kg"
-    },
-    consumables: ["Heavy abrasive flap wheels (Grit 80-220)", "High-gloss cotton buffing wheels", "Liquid buffing compound / paste"],
-    applicationLink: "dairy"
-  },
   {
     id: "cg-150w-2h-pipe",
     category: "pipe",

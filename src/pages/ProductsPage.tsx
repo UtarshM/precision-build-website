@@ -105,14 +105,14 @@ const ProductsPage = () => {
                 >
                   <div>
                     {/* Visual area */}
-                    <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
+                    <div className="relative aspect-[4/3] overflow-hidden bg-white p-4">
                       <img
                         src={product.image}
                         alt={product.name}
-                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        className="h-full w-full object-contain transition-transform duration-700 group-hover:scale-105"
                         loading="lazy"
                       />
-                      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,11,8,0)_30%,rgba(15,11,8,0.3)_100%)]" />
+                      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,11,8,0)_30%,rgba(15,11,8,0.03)_100%)] pointer-events-none" />
                       
                       {/* Category tag */}
                       <div className="absolute left-5 top-5 rounded-lg border border-white/10 bg-stone-950/75 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-wider text-white backdrop-blur">
@@ -177,7 +177,7 @@ const ProductsPage = () => {
                 
                 {/* Left Area (Product Visual, Consumables & Interlinks) */}
                 <div className="space-y-6">
-                  <div className="rounded-[2rem] overflow-hidden aspect-[4/3] border border-black/5 shadow-soft bg-stone-50">
+                  <div className="rounded-[2rem] overflow-hidden aspect-[4/3] border border-black/5 shadow-soft bg-white p-6">
                     <img
                       src={selectedProduct.image}
                       alt={selectedProduct.name}
