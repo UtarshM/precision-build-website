@@ -11,6 +11,7 @@ import walkBehindSheetPolisher from "@/assets/walk-behind-sheet-polisher.jpg";
 import tpm1500TankPolisher from "@/assets/tpm1500-tank-polisher.png";
 import tpm3000TankPolisher from "@/assets/tpm3000-tank-polisher.png";
 import piop2000DuctPolisher from "@/assets/piop2000-duct-polisher.png";
+import cg150bSingleHead from "@/assets/cg150b-single-head.png";
 
 export type Product = {
   id: string;
@@ -113,6 +114,27 @@ export const products: Product[] = [
     applicationLink: "dairy"
   },
   // --- PIPE & TUBE POLISHING MACHINES ---
+  {
+    id: "cg-150b-l1-pipe",
+    category: "pipe",
+    name: "CG15OB Centerless Round Pipe Polishing Machine",
+    usp: "Simultaneous single-stage grinding and polishing for rapid, mirror-grade round pipes",
+    image: cg150bSingleHead,
+    description: "High-speed centerless finishing system designed for continuous external (OD) polishing of round tubes, bars, and pipes. Features a single high-performance polishing head to achieve a high-quality finish.",
+    specs: {
+      "Model Designation": "CG-150B-L1 (Single Head Centerless)",
+      "Spindle Motor Power": "3.7 kW / 5 HP",
+      "Spindle / Head Speed": "1,440 – 2,800 RPM",
+      "Working Capacity (OD)": "Ø 10 mm – Ø 150 mm round pipes & bars",
+      "Through-feed Speed Rate": "0.5 – 6.0 m/min (VFD continuous auto-feed)",
+      "Polishing Consumables": "Abrasive Belt & Flap Wheel (150 mm width)",
+      "Achievable Surface Ra": "Ra ≤ 0.2 µm (Matt, Mirror)",
+      "CE Marking status": "CE-Ready / CE-Certifiable",
+      "Total Machine Weight": "Approx. 400 kg"
+    },
+    consumables: ["Heavy abrasive flap wheels (Grit 80-220)", "High-gloss cotton buffing wheels", "Liquid buffing compound / paste"],
+    applicationLink: "dairy"
+  },
   {
     id: "cg-150w-2h-pipe",
     category: "pipe",
