@@ -10,6 +10,7 @@ import flatbarConveyorPolisherComparison from "@/assets/flatbar-conveyor-polishe
 import walkBehindSheetPolisher from "@/assets/walk-behind-sheet-polisher.jpg";
 import tpm1500TankPolisher from "@/assets/tpm1500-tank-polisher.png";
 import tpm3000TankPolisher from "@/assets/tpm3000-tank-polisher.png";
+import piop2000DuctPolisher from "@/assets/piop2000-duct-polisher.png";
 
 export type Product = {
   id: string;
@@ -89,6 +90,27 @@ export const products: Product[] = [
     },
     consumables: ["Cloth Abrasive belt / Flap wheels", "Sisal & Cotton buffing wheels", "Compound Bar / Liquid for shine"],
     applicationLink: "pharma"
+  },
+  {
+    id: "piop-2000-tank",
+    category: "tank",
+    name: "PIOP2000 Duct Polishing Machine",
+    usp: "Compact beauty to finish the small tanks in ID & OD applications",
+    image: piop2000DuctPolisher,
+    description: "The Compact beauty to finish the small tanks in ID & OD applications used in Ducts, Dairy, beverage, Pharma equipments. Heavy duty motor and enhanced polishing head assures to get the Matt & Mirror finish.",
+    specs: {
+      "Model Designation": "PIOP2000",
+      "Spindle Motor Power": "5.5 kW / 7.5 HP",
+      "Spindle / Head Speed": "500 – 3,000 RPM (Variable VFD)",
+      "Working Capacity (Shell OD)": "Ø 200 – 1000 mm",
+      "Working Capacity (Shell ID)": "Ø 200 – 1000 mm",
+      "Max Shell Length": "2000 mm",
+      "Polishing Feed Speed": "5 to 50 mm/min",
+      "Achievable Surface Ra": "Ra ≤ 0.2 µm (Sanitary Mirror Polish)",
+      "Total Machine Weight": "1450 kg"
+    },
+    consumables: ["Hard-stitched Sisal Buffing Wheels", "Chromium Oxide Green Cutting Compound Bar", "Non-woven Abrasive Rollers"],
+    applicationLink: "dairy"
   },
   // --- PIPE & TUBE POLISHING MACHINES ---
   {
