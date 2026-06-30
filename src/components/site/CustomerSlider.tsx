@@ -117,7 +117,7 @@ export const CustomerSlider = () => {
               {duplicatedRow1.map((item, idx) => (
                 <div
                   key={`row1-${item.name}-${idx}`}
-                  className="flex h-20 w-44 items-center justify-center shrink-0 px-4 py-2 bg-white rounded-2xl border border-black/[0.03] shadow-sm hover:scale-105 hover:border-amber-500/30 hover:shadow-md transition-all duration-300 pointer-events-auto"
+                  className="flex h-28 w-60 items-center justify-center shrink-0 px-6 py-3 bg-white rounded-2xl border border-black/[0.03] shadow-sm hover:scale-105 hover:border-amber-500/30 hover:shadow-md transition-all duration-300 pointer-events-auto"
                 >
                   <img
                     src={item.src}
@@ -137,7 +137,7 @@ export const CustomerSlider = () => {
               {duplicatedRow2.map((item, idx) => (
                 <div
                   key={`row2-${item.name}-${idx}`}
-                  className="flex h-20 w-44 items-center justify-center shrink-0 px-4 py-2 bg-white rounded-2xl border border-black/[0.03] shadow-sm hover:scale-105 hover:border-amber-500/30 hover:shadow-md transition-all duration-300 pointer-events-auto"
+                  className="flex h-28 w-60 items-center justify-center shrink-0 px-6 py-3 bg-white rounded-2xl border border-black/[0.03] shadow-sm hover:scale-105 hover:border-amber-500/30 hover:shadow-md transition-all duration-300 pointer-events-auto"
                 >
                   <img
                     src={item.src}
