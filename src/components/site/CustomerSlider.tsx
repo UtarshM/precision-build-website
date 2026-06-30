@@ -1,55 +1,89 @@
 import React from "react";
 
-// Import the 21 cropped logo images
-import absolute from "@/assets/clients/absolute.png";
-import acg from "@/assets/clients/acg.png";
-import ameya from "@/assets/clients/ameya.png";
-import atlas_copco from "@/assets/clients/atlas_copco.png";
-import cat from "@/assets/clients/cat.png";
+// Import the 38 customer logo images
+import acg_pharma from "@/assets/clients/acg_pharma.png";
+import al_can_exports from "@/assets/clients/al_can_exports.png";
+import bioaspire from "@/assets/clients/bioaspire.png";
 import cybernetik from "@/assets/clients/cybernetik.png";
-import elite_screens from "@/assets/clients/elite_screens.png";
+import diam_display from "@/assets/clients/diam_display.png";
+import difacto from "@/assets/clients/difacto.png";
+import gmm_pfaudler from "@/assets/clients/gmm_pfaudler.png";
 import gansons from "@/assets/clients/gansons.png";
-import gopalan from "@/assets/clients/gopalan.png";
-import icc from "@/assets/clients/icc.png";
-import ima_copper from "@/assets/clients/ima_copper.png";
+import gopalan_aerospace from "@/assets/clients/gopalan_aerospace.png";
+import griffyn from "@/assets/clients/griffyn.png";
+import gurukrupa_bellows from "@/assets/clients/gurukrupa_bellows.png";
+import indian_oil_logo from "@/assets/clients/indian_oil_logo.png";
+import indo_mim from "@/assets/clients/indo_mim.png";
 import jk_industries from "@/assets/clients/jk_industries.png";
-import john_deere from "@/assets/clients/john_deere.png";
-import jsw from "@/assets/clients/jsw.png";
-import kores from "@/assets/clients/kores.png";
-import kspg from "@/assets/clients/kspg.png";
+import kgn_industries from "@/assets/clients/kgn_industries.png";
+import kspg_logo from "@/assets/clients/kspg_logo.svg";
+import l_t from "@/assets/clients/l_t.png";
 import metal_forms from "@/assets/clients/metal_forms.png";
-import reliable from "@/assets/clients/reliable.png";
+import new_bio_scientific from "@/assets/clients/new_bio_scientific.png";
+import nutech from "@/assets/clients/nutech.png";
+import primesol from "@/assets/clients/primesol.png";
+import reliable_auto from "@/assets/clients/reliable_auto.png";
+import s2_engg from "@/assets/clients/s2_engg.png";
 import sk_pharma from "@/assets/clients/sk_pharma.png";
-import stauff from "@/assets/clients/stauff.png";
+import scutes_india from "@/assets/clients/scutes_india.png";
+import standard_glass from "@/assets/clients/standard_glass.png";
+import sudhir_auto from "@/assets/clients/sudhir_auto.png";
+import surya from "@/assets/clients/surya.png";
 import vulkan from "@/assets/clients/vulkan.png";
+import watermass from "@/assets/clients/watermass.png";
+import cn_water_logo from "@/assets/clients/cn_water_logo.png";
+import elitescreens_logo from "@/assets/clients/elitescreens_logo.png";
+import essem_industries from "@/assets/clients/essem_industries.png";
+import fermexsolutions_logo from "@/assets/clients/fermexsolutions_logo.png";
+import magtech from "@/assets/clients/magtech.png";
+import mapsons_process_equipment_pvt_ltd_logo from "@/assets/clients/mapsons_process_equipment_pvt_ltd_logo.png";
+import quadra_logo from "@/assets/clients/quadra_logo.png";
+import saan_engineers_pvt_ltd_logo from "@/assets/clients/saan_engineers_pvt_ltd_logo.png";
 
-// Row 1 Logos (11 items) - Scrolling Right-to-Left
+// Row 1 Logos (19 items) - Scrolling Right-to-Left
 const ROW1_LOGOS = [
-  { name: "Cybernetik Technologies", src: cybernetik },
-  { name: "JSW", src: jsw },
-  { name: "John Deere", src: john_deere },
-  { name: "Caterpillar", src: cat },
-  { name: "KSPG Automotive", src: kspg },
-  { name: "Kores", src: kores },
-  { name: "ACG", src: acg },
-  { name: "Atlas Copco", src: atlas_copco },
-  { name: "ICC", src: icc },
-  { name: "Vulkan", src: vulkan },
-  { name: "Elite Screens", src: elite_screens },
+  { name: "ACG Pharma", src: acg_pharma },
+  { name: "Al-Can Exports", src: al_can_exports },
+  { name: "Bioaspire", src: bioaspire },
+  { name: "Cybernetik", src: cybernetik },
+  { name: "Diam Display", src: diam_display },
+  { name: "Difacto", src: difacto },
+  { name: "GMM Pfaudler", src: gmm_pfaudler },
+  { name: "Gansons", src: gansons },
+  { name: "Gopalan Aerospace", src: gopalan_aerospace },
+  { name: "Griffyn", src: griffyn },
+  { name: "Gurukrupa Bellows", src: gurukrupa_bellows },
+  { name: "Indian Oil", src: indian_oil_logo },
+  { name: "Indo MIM", src: indo_mim },
+  { name: "J.K. Industries", src: jk_industries },
+  { name: "KGN Industries", src: kgn_industries },
+  { name: "KSPG", src: kspg_logo },
+  { name: "L&T", src: l_t },
+  { name: "Metal Forms", src: metal_forms },
+  { name: "New Bio Scientific", src: new_bio_scientific },
 ];
 
-// Row 2 Logos (10 items) - Scrolling Left-to-Right
+// Row 2 Logos (19 items) - Scrolling Left-to-Right
 const ROW2_LOGOS = [
-  { name: "Stauff", src: stauff },
-  { name: "Absolute", src: absolute },
-  { name: "Ameya Europe", src: ameya },
-  { name: "Reliable Autotech", src: reliable },
-  { name: "Gansons", src: gansons },
-  { name: "J.K. Industries", src: jk_industries },
-  { name: "S.K. Pharma Machinery", src: sk_pharma },
-  { name: "Gopalan Aerospace", src: gopalan },
-  { name: "Metal Forms", src: metal_forms },
-  { name: "IMA Copper", src: ima_copper },
+  { name: "Nutech", src: nutech },
+  { name: "Primesol", src: primesol },
+  { name: "Reliable Auto", src: reliable_auto },
+  { name: "S2 Engg", src: s2_engg },
+  { name: "SK Pharma", src: sk_pharma },
+  { name: "Scutes India", src: scutes_india },
+  { name: "Standard Glass", src: standard_glass },
+  { name: "Sudhir Auto", src: sudhir_auto },
+  { name: "Surya", src: surya },
+  { name: "Vulkan", src: vulkan },
+  { name: "Watermass", src: watermass },
+  { name: "CN Water", src: cn_water_logo },
+  { name: "Elite Screens", src: elitescreens_logo },
+  { name: "Essem Industries", src: essem_industries },
+  { name: "Fermex Solutions", src: fermexsolutions_logo },
+  { name: "Magtech", src: magtech },
+  { name: "Mapsons Process Equipment", src: mapsons_process_equipment_pvt_ltd_logo },
+  { name: "Quadra", src: quadra_logo },
+  { name: "Saan Engineers", src: saan_engineers_pvt_ltd_logo },
 ];
 
 export const CustomerSlider = () => {
