@@ -66,7 +66,7 @@ export const Navbar = () => {
               <div className="text-xs sm:text-base md:text-lg lg:text-xl font-black uppercase tracking-[0.08em] text-stone-950 leading-tight sm:leading-none sm:whitespace-nowrap italic">
                 M.B. Finishing Technologies
               </div>
-              <div className="text-[8px] sm:text-[11px] md:text-xs text-stone-500 tracking-wider font-semibold uppercase mt-0.5 sm:mt-1.5 leading-tight sm:leading-none sm:whitespace-nowrap italic self-end text-right">
+              <div className="hidden sm:block text-[8px] sm:text-[11px] md:text-xs text-stone-500 tracking-wider font-semibold uppercase mt-0.5 sm:mt-1.5 leading-tight sm:leading-none sm:whitespace-nowrap italic self-end text-right">
                 Redefining Finishing Excellence…
               </div>
             </div>

@@ -80,11 +80,26 @@ const ServicesPage = () => {
   return (
     <>
       <Helmet>
-        <title>M.B. Finishing Technologies | Professional Services</title>
+        <title>Precision Surface Polishing & Buffing Services | M.B. Finishing</title>
         <meta
           name="description"
-          content="Explore professional services from M.B. Finishing Technologies: dedicated technical support, fastest abrasive deliveries, pipe machining, and automated fettling."
+          content="Explore our professional services: dedicated technical support, fast abrasive deliveries, pipe machining, and custom automatic grinding/fettling."
         />
+        <link rel="canonical" href="https://www.mbfinishtech.com/services" />
+        <meta name="keywords" content="metal polishing services, technical support, abrasive supply, automated fettling, pipe machining" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Precision Surface Polishing & Buffing Services | M.B. Finishing" />
+        <meta property="og:description" content="Discover our client support, abrasive supply, and contract metal finishing services." />
+        <meta property="og:url" content="https://www.mbfinishtech.com/services" />
+        <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Precision Surface Polishing & Buffing Services | M.B. Finishing" />
+        <meta name="twitter:description" content="Explore custom automatic polishing, grinding, and technical support services." />
+        <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
       </Helmet>
 
       <SiteLayout>

@@ -7,11 +7,26 @@ const CareerPage = () => {
   return (
     <>
       <Helmet>
-        <title>M.B. Finishing Technologies | Career</title>
+        <title>Careers at M.B. Finishing Technologies | Join Our Team</title>
         <meta
           name="description"
-          content="Career opportunities at M.B. Finishing Technologies for engineers, technicians and industrial machine professionals."
+          content="Career opportunities at M.B. Finishing Technologies. Join our team of engineers, technicians, and machine builders creating world-class buffing equipment."
         />
+        <link rel="canonical" href="https://www.mbfinishtech.com/career" />
+        <meta name="keywords" content="engineering careers, machine builder jobs, Pune manufacturing jobs, M.B. Finishing recruitment" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Careers at M.B. Finishing Technologies | Join Our Team" />
+        <meta property="og:description" content="Explore career paths in machine building, technical service, and industrial sales." />
+        <meta property="og:url" content="https://www.mbfinishtech.com/career" />
+        <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Careers at M.B. Finishing Technologies | Join Our Team" />
+        <meta name="twitter:description" content="Join our engineering and production team." />
+        <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
       </Helmet>
 
       <SiteLayout>

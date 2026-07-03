@@ -49,11 +49,26 @@ const ProductsPage = () => {
   return (
     <>
       <Helmet>
-        <title>M.B. Finishing Technologies | Automatic Polishing Machines</title>
+        <title>Industrial Buffing & Polishing Machines Catalog | M.B. Finishing</title>
         <meta
           name="description"
-          content="Browse our high-capacity automatic buffing and polishing machine portfolio: tank, sheet, utensil, pipe, and customised solutions."
+          content="Explore our precision automatic buffing & polishing machines. We offer custom polishing solutions for tanks, vessels, dished ends, metal sheets, and round pipes."
         />
+        <link rel="canonical" href="https://www.mbfinishtech.com/products" />
+        <meta name="keywords" content="polishing machine catalog, sheet grinder, tank polishing machinery, automatic buffing systems, custom industrial polishers" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Industrial Buffing & Polishing Machines Catalog | M.B. Finishing" />
+        <meta property="og:description" content="Explore our advanced machine catalog: tank, vessel, sheet, utensil, and pipe buffing equipment." />
+        <meta property="og:url" content="https://www.mbfinishtech.com/products" />
+        <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Industrial Buffing & Polishing Machines Catalog | M.B. Finishing" />
+        <meta name="twitter:description" content="Explore our range of industrial sheet, pipe, tank and custom buffing machines." />
+        <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
       </Helmet>
 
       <SiteLayout>

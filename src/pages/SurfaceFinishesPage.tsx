@@ -66,11 +66,26 @@ const SurfaceFinishesPage = () => {
   return (
     <>
       <Helmet>
-        <title>M.B. Finishing Technologies | Surface Finishes & Ra Values Guide</title>
+        <title>Metal Surface Finishes & Ra Standards | M.B. Finishing</title>
         <meta
           name="description"
-          content="B2B guide to industrial surface finishes: explaining Ra roughness average parameters, mirror polish, fine satin, hairline, and sanitary standards."
+          content="Guide to industrial surface finishes: explaining Ra roughness average parameters, mirror polish, fine satin, hairline, and sanitary standards."
         />
+        <link rel="canonical" href="https://www.mbfinishtech.com/finishes" />
+        <meta name="keywords" content="surface finishes, Ra value, mirror finish, satin finish, metal roughness, sanitary polishing standards" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Metal Surface Finishes & Ra Standards | M.B. Finishing" />
+        <meta property="og:description" content="Technical guide on surface roughness (Ra value), satin, hairline, and mirror finishes." />
+        <meta property="og:url" content="https://www.mbfinishtech.com/finishes" />
+        <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Metal Surface Finishes & Ra Standards | M.B. Finishing" />
+        <meta name="twitter:description" content="Learn about Ra parameters and sanitary polishing standards." />
+        <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
       </Helmet>
 
       <SiteLayout>

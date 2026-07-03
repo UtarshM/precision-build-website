@@ -115,11 +115,26 @@ const ApplicationPage = () => {
   return (
     <>
       <Helmet>
-        <title>M.B. Finishing Technologies | Industrial Applications</title>
+        <title>Industrial Polishing Applications & Solutions | M.B. Finishing</title>
         <meta
           name="description"
           content="Discover how M.B. Finishing Technologies solves surface treatment challenges across Food & Dairy, Pharmaceutical, Beverage & Brewing, Automotive, and Chemical sectors."
         />
+        <link rel="canonical" href="https://www.mbfinishtech.com/application" />
+        <meta name="keywords" content="polishing applications, dairy buffing, pharma metal finishing, automotive metal grinding, brewery tank polishing" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Industrial Polishing Applications & Solutions | M.B. Finishing" />
+        <meta property="og:description" content="Read about how our machines solve surface treatment standards across global industries." />
+        <meta property="og:url" content="https://www.mbfinishtech.com/application" />
+        <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Industrial Polishing Applications & Solutions | M.B. Finishing" />
+        <meta name="twitter:description" content="Discover polishing solutions for food, dairy, pharmaceutical, and automotive sectors." />
+        <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
       </Helmet>
 
       <SiteLayout>
