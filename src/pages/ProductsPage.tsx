@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet-async";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { PageBanner } from "@/components/site/PageBanner";
 import { Contact } from "@/components/site/Contact";
-import { Info, BadgeCheck, Settings, ShoppingBag, Eye, X, ArrowUpRight } from "lucide-react";
+import { Info, BadgeCheck, Settings, ShoppingBag, Eye, X, ArrowUpRight, FileText, Download } from "lucide-react";
 import { products, type Product } from "@/data/siteContent";
 
 const CATEGORIES = [
@@ -106,6 +106,46 @@ const ProductsPage = () => {
                 </div>
               </div>
             )}
+          </div>
+        </section>
+
+        {/* Catalog Download Section */}
+        <section className="bg-stone-50 border-y border-stone-200/60 py-10">
+          <div className="container max-w-4xl">
+            <div className="bg-white rounded-3xl border border-stone-200/80 p-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-8">
+              <div className="flex items-center gap-5">
+                <div className="flex size-14 shrink-0 items-center justify-center rounded-full bg-amber-500/10 text-amber-600">
+                  <FileText className="size-6" />
+                </div>
+                <div className="text-left">
+                  <h3 className="font-display text-2xl font-bold text-stone-950">
+                    Product Catalogues
+                  </h3>
+                  <p className="mt-1 text-sm text-stone-500 font-medium">
+                    Download our official brochures for detailed specifications and sizing options.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex flex-wrap gap-4 shrink-0 w-full md:w-auto justify-center">
+                <a
+                  href="/mb-front.pdf"
+                  download="MB_Finishing_Technologies_Catalog_Front.pdf"
+                  className="inline-flex items-center gap-2 rounded-full bg-stone-950 text-white hover:bg-stone-850 px-6 py-3.5 text-xs font-semibold uppercase tracking-wider transition-all shadow-md active:scale-95"
+                >
+                  <Download className="size-4" />
+                  Front Page
+                </a>
+                <a
+                  href="/mb-back.pdf"
+                  download="MB_Finishing_Technologies_Catalog_Back.pdf"
+                  className="inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white text-stone-800 hover:bg-stone-50 px-6 py-3.5 text-xs font-semibold uppercase tracking-wider transition-all shadow-sm active:scale-95"
+                >
+                  <Download className="size-4" />
+                  Back Page
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 

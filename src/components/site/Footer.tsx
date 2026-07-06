@@ -68,6 +68,30 @@ export const Footer = () => {
                 </li>
               ))}
             </ul>
+
+            <div className="text-[11px] font-semibold uppercase tracking-[0.3em] text-primary/80 mt-8">
+              Downloads
+            </div>
+            <ul className="mt-4 space-y-2.5">
+              <li>
+                <a
+                  href="/mb-front.pdf"
+                  download="MB_Finishing_Technologies_Catalog_Front.pdf"
+                  className="text-xs text-white/64 transition-colors hover:text-white block hover:translate-x-0.5 transition-transform"
+                >
+                  Catalogue - Front Page
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/mb-back.pdf"
+                  download="MB_Finishing_Technologies_Catalog_Back.pdf"
+                  className="text-xs text-white/64 transition-colors hover:text-white block hover:translate-x-0.5 transition-transform"
+                >
+                  Catalogue - Back Page
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div>

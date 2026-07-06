@@ -105,6 +105,24 @@ export const Navbar = () => {
                             {item.label}
                           </Link>
                         ))}
+                        <div className="h-px bg-stone-150 my-1.5" />
+                        <div className="px-4 py-1 text-[8px] font-bold uppercase tracking-widest text-stone-400">
+                          Catalogues
+                        </div>
+                        <a
+                          href="/mb-front.pdf"
+                          download="MB_Finishing_Technologies_Catalog_Front.pdf"
+                          className="block rounded-xl px-4 py-2 text-[10px] font-semibold uppercase tracking-wider text-primary hover:bg-primary/15 hover:text-stone-950 transition-all"
+                        >
+                          Catalogue - Front Page
+                        </a>
+                        <a
+                          href="/mb-back.pdf"
+                          download="MB_Finishing_Technologies_Catalog_Back.pdf"
+                          className="block rounded-xl px-4 py-2 text-[10px] font-semibold uppercase tracking-wider text-primary hover:bg-primary/15 hover:text-stone-950 transition-all"
+                        >
+                          Catalogue - Back Page
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -169,6 +187,23 @@ export const Navbar = () => {
                               {item.label}
                             </Link>
                           ))}
+                          <div className="h-px bg-stone-100 my-1" />
+                          <a
+                            href="/mb-front.pdf"
+                            download="MB_Finishing_Technologies_Catalog_Front.pdf"
+                            onClick={() => setOpen(false)}
+                            className="rounded-xl px-4 py-2 text-xs font-semibold uppercase tracking-wider text-primary hover:bg-black/5 transition-colors"
+                          >
+                            Catalogue - Front Page
+                          </a>
+                          <a
+                            href="/mb-back.pdf"
+                            download="MB_Finishing_Technologies_Catalog_Back.pdf"
+                            onClick={() => setOpen(false)}
+                            className="rounded-xl px-4 py-2 text-xs font-semibold uppercase tracking-wider text-primary hover:bg-black/5 transition-colors"
+                          >
+                            Catalogue - Back Page
+                          </a>
                         </div>
                       )}
                     </div>
