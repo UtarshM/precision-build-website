@@ -119,30 +119,22 @@ const ProductsPage = () => {
                 </div>
                 <div className="text-left">
                   <h3 className="font-display text-2xl font-bold text-stone-950">
-                    Product Catalogues
+                    Product Catalogue
                   </h3>
                   <p className="mt-1 text-sm text-stone-500 font-medium">
-                    Download our official brochures for detailed specifications and sizing options.
+                    Download our official brochure for detailed specifications and sizing options.
                   </p>
                 </div>
               </div>
               
-              <div className="flex flex-wrap gap-4 shrink-0 w-full md:w-auto justify-center">
+              <div className="flex shrink-0 w-full md:w-auto justify-center">
                 <a
-                  href="/mb-front.pdf"
-                  download="MB_Finishing_Technologies_Catalog_Front.pdf"
+                  href="/mb-catalogue.pdf"
+                  download="MB_Finishing_Technologies_Catalog.pdf"
                   className="inline-flex items-center gap-2 rounded-full bg-stone-950 text-white hover:bg-stone-850 px-6 py-3.5 text-xs font-semibold uppercase tracking-wider transition-all shadow-md active:scale-95"
                 >
                   <Download className="size-4" />
-                  Front Page
-                </a>
-                <a
-                  href="/mb-back.pdf"
-                  download="MB_Finishing_Technologies_Catalog_Back.pdf"
-                  className="inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white text-stone-800 hover:bg-stone-50 px-6 py-3.5 text-xs font-semibold uppercase tracking-wider transition-all shadow-sm active:scale-95"
-                >
-                  <Download className="size-4" />
-                  Back Page
+                  Download Catalogue
                 </a>
               </div>
             </div>

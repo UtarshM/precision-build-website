@@ -75,20 +75,11 @@ export const Footer = () => {
             <ul className="mt-4 space-y-2.5">
               <li>
                 <a
-                  href="/mb-front.pdf"
-                  download="MB_Finishing_Technologies_Catalog_Front.pdf"
+                  href="/mb-catalogue.pdf"
+                  download="MB_Finishing_Technologies_Catalog.pdf"
                   className="text-xs text-white/64 transition-colors hover:text-white block hover:translate-x-0.5 transition-transform"
                 >
-                  Catalogue - Front Page
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/mb-back.pdf"
-                  download="MB_Finishing_Technologies_Catalog_Back.pdf"
-                  className="text-xs text-white/64 transition-colors hover:text-white block hover:translate-x-0.5 transition-transform"
-                >
-                  Catalogue - Back Page
+                  Download Catalogue
                 </a>
               </li>
             </ul>
