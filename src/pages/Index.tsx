@@ -7,7 +7,6 @@ import { Services } from "@/components/site/Services";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { VideoSection } from "@/components/site/VideoSection";
 import { WhyChoose } from "@/components/site/WhyChoose";
-import { AnnouncementModal } from "@/components/site/AnnouncementModal";
 
 const Index = () => {
   return (
@@ -67,8 +66,6 @@ const Index = () => {
           `}
         </script>
       </Helmet>
-
-      <AnnouncementModal />
 
       <SiteLayout>
         <Hero />
