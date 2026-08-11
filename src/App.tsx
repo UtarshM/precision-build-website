@@ -16,6 +16,7 @@ import ProductsPage from "./pages/ProductsPage.tsx";
 import SurfaceFinishesPage from "./pages/SurfaceFinishesPage.tsx";
 import CareerPage from "./pages/CareerPage.tsx";
 import GalleryPage from "./pages/GalleryPage.tsx";
+import ProductDetailPage from "./pages/ProductDetailPage.tsx";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +39,7 @@ const App = () => (
           <Route path="/finishes" element={<SurfaceFinishesPage />} />
           <Route path="/career" element={<CareerPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/products/:productId" element={<ProductDetailPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

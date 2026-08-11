@@ -1,10 +1,9 @@
-import { useState, useEffect } from "react";
 import { useSearchParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { PageBanner } from "@/components/site/PageBanner";
 import { Contact } from "@/components/site/Contact";
-import { Info, BadgeCheck, Settings, ShoppingBag, Eye, X, ArrowUpRight, FileText, Download } from "lucide-react";
+import { Settings, Eye, FileText, Download } from "lucide-react";
 import { products, type Product } from "@/data/siteContent";
 
 const CATEGORIES = [
@@ -20,21 +19,7 @@ const ProductsPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const activeCategory = searchParams.get("category") || "all";
 
-  // Modal State for Individual Product Specifications
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
-  // Auto-open product modal if ID is in the URL query params
-  useEffect(() => {
-    const productId = searchParams.get("id");
-    if (productId) {
-      const prod = products.find((p) => p.id === productId);
-      if (prod) {
-        setSelectedProduct(prod);
-      }
-    } else {
-      setSelectedProduct(null);
-    }
-  }, [searchParams]);
 
   // Sync state if category parameter is updated
   const handleCategoryChange = (category: string) => {
@@ -183,12 +168,12 @@ const ProductsPage = () => {
 
                   {/* Button Area */}
                   <div className="p-6 pt-0 border-t border-black/5 mt-4 flex items-center justify-between">
-                    <button
-                      onClick={() => setSelectedProduct(product)}
-                      className="inline-flex items-center gap-2 rounded-full bg-stone-950 hover:bg-primary hover:text-stone-950 text-white px-5 py-2.5 text-[10px] font-bold uppercase tracking-wider transition-colors"
+                    <Link
+                      to={`/products/${product.id}`}
+                      className="inline-flex items-center gap-2 rounded-full bg-stone-950 hover:bg-primary hover:text-stone-950 text-white px-5 py-2.5 text-[10px] font-bold uppercase tracking-wider transition-all hover:scale-105 active:scale-[0.98]"
                     >
                       <Eye className="size-3.5" /> View Specifications
-                    </button>
+                    </Link>
                     <span className="text-[10px] text-muted-foreground uppercase font-bold tracking-widest flex items-center gap-1">
                       Specs <Settings className="size-3.5 animate-spin-slow" />
                     </span>
@@ -199,127 +184,7 @@ const ProductsPage = () => {
           </div>
         </section>
 
-        {/* Specification Modal (Click for Individual Detail Page) */}
-        {selectedProduct && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-900/60 backdrop-blur-sm animate-fade-in">
-            <div className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-[2.5rem] border border-black/10 bg-white p-6 md:p-10 shadow-2xl animate-scale-in">
-              
-              {/* Close Button */}
-              <button
-                onClick={() => {
-                  setSelectedProduct(null);
-                  if (searchParams.has("id")) {
-                    const newParams = new URLSearchParams(searchParams);
-                    newParams.delete("id");
-                    setSearchParams(newParams);
-                  }
-                }}
-                className="absolute right-5 top-5 p-2 rounded-full border border-black/5 bg-stone-100 hover:bg-stone-200 text-stone-700 transition-colors"
-                aria-label="Close details"
-              >
-                <X className="size-5" />
-              </button>
 
-              <div className="grid lg:grid-cols-[1fr_1fr] gap-8 md:gap-10 items-start mt-4">
-                
-                {/* Left Area (Product Visual, Consumables & Interlinks) */}
-                <div className="space-y-6">
-                  <div className="rounded-[2rem] overflow-hidden aspect-[4/3] border border-black/5 shadow-soft bg-white p-6">
-                    <img
-                      src={selectedProduct.image}
-                      alt={selectedProduct.name}
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-
-                  {/* Consumables (Slide 3 spec) */}
-                  <div className="rounded-[1.5rem] bg-[#faf6ed] p-5 border border-primary/10">
-                    <h4 className="font-heading text-xs tracking-widest uppercase font-bold text-stone-900 mb-3 flex items-center gap-2">
-                      <ShoppingBag className="size-4 text-primary" /> Recommended Consumables:
-                    </h4>
-                    <ul className="space-y-2 text-xs text-muted-foreground font-semibold">
-                      {selectedProduct.consumables.map((item) => (
-                        <li key={item} className="flex items-center gap-2">
-                          <BadgeCheck className="size-4 text-primary shrink-0" />
-                          <span className="text-stone-800">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Interlinked with Application Page (Slide 3 spec) */}
-                  <div className="rounded-[1.5rem] border border-black/5 p-5 bg-stone-50 flex justify-between items-center">
-                    <div>
-                      <h5 className="text-[10px] uppercase text-muted-foreground font-bold tracking-widest">
-                        See In Real Operation
-                      </h5>
-                      <h4 className="font-display text-lg text-stone-900 font-semibold mt-0.5">
-                        Industry-wise Application
-                      </h4>
-                    </div>
-                    <Link
-                      to={`/application?sector=${selectedProduct.applicationLink}`}
-                      className="inline-flex size-10 rounded-full bg-stone-900 text-white hover:bg-primary hover:text-stone-950 items-center justify-center transition-colors"
-                    >
-                      <ArrowUpRight className="size-4" />
-                    </Link>
-                  </div>
-                </div>
-
-                {/* Right Area (Specs details) */}
-                <div className="space-y-6">
-                  <div>
-                    <span className="text-[10px] uppercase font-bold text-primary tracking-[0.24em]">
-                      {selectedProduct.usp}
-                    </span>
-                    <h3 className="font-display text-3xl md:text-4xl text-stone-900 uppercase font-bold mt-1">
-                      {selectedProduct.name}
-                    </h3>
-                    <p className="text-xs sm:text-sm text-stone-500 mt-2.5 leading-relaxed">
-                      {selectedProduct.description}
-                    </p>
-                  </div>
-
-                  {/* Technical Specifications Table (Slide 3 spec) */}
-                  <div>
-                    <h4 className="font-heading text-xs tracking-widest uppercase font-bold text-stone-900 mb-3 flex items-center gap-2">
-                      <Settings className="size-4 text-primary animate-spin-slow" /> Technical Specifications:
-                    </h4>
-                    <div className="border border-black/5 rounded-xl overflow-hidden shadow-soft">
-                      <table className="w-full text-left border-collapse text-xs">
-                        <thead>
-                          <tr className="bg-stone-50 border-b border-black/5 font-semibold text-stone-700">
-                            <th className="p-3">Parameter Name</th>
-                            <th className="p-3">Specification Target</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {Object.entries(selectedProduct.specs).map(([key, value]) => (
-                            <tr key={key} className="border-b border-black/5 last:border-b-0 hover:bg-[#faf6ed]/40">
-                              <td className="p-3 font-semibold text-stone-900">{key}</td>
-                              <td className="p-3 text-stone-600">{value}</td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-3">
-                    <a
-                      href="#inquiry-form"
-                      onClick={() => setSelectedProduct(null)}
-                      className="flex-1 rounded-full bg-primary hover:bg-stone-950 hover:text-white text-stone-950 text-center font-heading text-[10px] font-bold uppercase tracking-widest py-3.5 transition-colors"
-                    >
-                      Request Fast Machine Quote
-                    </a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        )}
 
         {/* Inquiries */}
         <div id="inquiry-form">
