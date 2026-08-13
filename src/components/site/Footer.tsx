@@ -8,6 +8,7 @@ const QUICK_LINKS = [
   { label: "Clients", to: "/clients" },
   { label: "Application", to: "/application" },
   { label: "Services", to: "/services" },
+  { label: "Blog", to: "/blog" },
   { label: "Contact Us", to: "/contact" },
 ];
 
