@@ -48,7 +48,7 @@ You cannot jump straight to a mirror polish. The process requires a progressive 
 
 ### Dynamic Pressure and Automation Parameters
 
-In manual polishing, pressure varies based on operator fatigue. This inconsistency leads to hot spots, wall thinning, and non-uniform reflectivity. Automated systems—such as our Column & Boom **TPM4500-SDX Tank & Dishend Polishing Machine**—solve this by using automated, closed-loop pressure feedback:
+In manual polishing, pressure varies based on operator fatigue. This inconsistency leads to hot spots, wall thinning, and non-uniform reflectivity. Automated systems—such as our Column & Boom <a href="/products/tpm4500-sdx-automatic-tank-polishing-machine" class="text-primary hover:underline font-bold">TPM4500-SDX Tank & Dishend Polishing Machine</a>—solve this by using automated, closed-loop pressure feedback:
 
 * **Pneumatic Floating Buffing Head**:
   Maintains constant radial contact pressure between the buffing wheel and the tank shell, even if the tank is slightly out-of-round.
@@ -88,7 +88,7 @@ In architectural metalworking, commercial elevator construction, and stainless s
 
 However, many fabricators still rely on manual walk-behind sheet grinders or handheld grinders to polish sheets. While functional for small-batch custom projects, manual finishing quickly becomes a bottleneck for high-volume B2B production lines. 
 
-This guide compares manual sheet buffing with automated conveyor systems (like our **SP1200B Sheet Polishing Machine**) across four key operational areas: surface consistency, cycle times, operator safety, and long-term return on investment (ROI).
+This guide compares manual sheet buffing with automated conveyor systems (like our <a href="/products/sp1200b-automatic-sheet-buffing-machine" class="text-primary hover:underline font-bold">SP1200B Sheet Polishing Machine</a>) across four key operational areas: surface consistency, cycle times, operator safety, and long-term return on investment (ROI).
 
 ---
 

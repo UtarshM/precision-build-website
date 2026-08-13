@@ -16,11 +16,11 @@ const NAV_LINKS = [
 ];
 
 const PRODUCT_DROPDOWN_ITEMS = [
-  { label: "Tank polishing solutions", to: "/products?category=tank" },
-  { label: "Sheet polishing solutions", to: "/products?category=sheet" },
-  { label: "Utensil polishing solutions", to: "/products?category=utensil" },
-  { label: "Pipe polishing solutions", to: "/products?category=pipe" },
-  { label: "Customised solutions", to: "/products?category=custom" },
+  { label: "Tank polishing solutions", to: "/products/category/tank" },
+  { label: "Sheet polishing solutions", to: "/products/category/sheet" },
+  { label: "Utensil polishing solutions", to: "/products/category/utensil" },
+  { label: "Pipe polishing solutions", to: "/products/category/pipe" },
+  { label: "Customised solutions", to: "/products/category/custom" },
 ];
 
 export const Navbar = () => {

@@ -1,4 +1,4 @@
-import { useSearchParams, Link } from "react-router-dom";
+import { useSearchParams, Link, useParams, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { PageBanner } from "@/components/site/PageBanner";
@@ -15,15 +15,58 @@ const CATEGORIES = [
   { id: "custom", label: "Customised Solutions" }
 ];
 
+const CATEGORY_SEO: Record<string, { title: string; description: string; keywords: string; canonical: string }> = {
+  all: {
+    title: "Industrial Buffing & Polishing Machines Catalog | M.B. Finishing",
+    description: "Explore our precision automatic buffing & polishing machines. We offer custom polishing solutions for tanks, vessels, dished ends, metal sheets, and round pipes.",
+    keywords: "polishing machine catalog, sheet grinder, tank polishing machinery, automatic buffing systems, custom industrial polishers",
+    canonical: "https://www.mbfinishtech.com/products"
+  },
+  tank: {
+    title: "Automatic Vessel & Tank Polishing Machines | M.B. Finishing",
+    description: "Discover our automatic Column & Boom tank polishing machines. Specialized solutions for sanitary finishing (Ra ≤ 0.2 µm) of storage shells, reactors, and dished ends.",
+    keywords: "tank polishing machine, vessel buffing, dished head polishing, automatic shell polisher, pharma reactor finishing",
+    canonical: "https://www.mbfinishtech.com/products/category/tank"
+  },
+  sheet: {
+    title: "Metal Sheet Polishing & Buffing Conveyor Machines | M.B. Finishing",
+    description: "High-efficiency conveyor-fed sheet polishing machines. Deliver consistent satin, hairline, or mirror finishes on stainless steel, aluminium, and brass plates.",
+    keywords: "sheet polishing machine, conveyor buffing, metal sheet sander, wide belt sander, automatic flatbar polisher",
+    canonical: "https://www.mbfinishtech.com/products/category/sheet"
+  },
+  utensil: {
+    title: "Automatic Cookware & Utensil Polishing Machines | M.B. Finishing",
+    description: "Explore our automatic cookware and utensil buffing machinery. Tailored systems for rapid high-gloss surface polishing of pots, pans, bowls, and hollowware.",
+    keywords: "utensil polishing machine, cookware buffing, automatic pot polisher, kitchenware finishing machine",
+    canonical: "https://www.mbfinishtech.com/products/category/utensil"
+  },
+  pipe: {
+    title: "Centerless Round Pipe & Tube Polishing Machines | M.B. Finishing",
+    description: "Premium centerless round pipe polishing machines. Multi-head through-feed systems for mirror-grade finish on stainless steel tubes, bars, and rods.",
+    keywords: "pipe polishing machine, tube buffing, centerless round polisher, tube grinder, automatic bar finisher",
+    canonical: "https://www.mbfinishtech.com/products/category/pipe"
+  },
+  custom: {
+    title: "Customized Metal Surface Finishing Machinery | M.B. Finishing",
+    description: "Tailored industrial polishing machinery designed for unique shapes, materials, and automation throughput requirements. Partner with our engineering team.",
+    keywords: "custom polishing machine, custom buffing systems, specialized grinding machinery, surface finishing automation",
+    canonical: "https://www.mbfinishtech.com/products/category/custom"
+  }
+};
+
 const ProductsPage = () => {
+  const { categoryId } = useParams();
+  const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
-  const activeCategory = searchParams.get("category") || "all";
+  const activeCategory = categoryId || searchParams.get("category") || "all";
 
-
-
-  // Sync state if category parameter is updated
+  // Sync state if category parameter is updated using clean routing paths
   const handleCategoryChange = (category: string) => {
-    setSearchParams({ category });
+    if (category === "all") {
+      navigate("/products");
+    } else {
+      navigate(`/products/category/${category}`);
+    }
   };
 
   const filteredProducts =
@@ -31,28 +74,27 @@ const ProductsPage = () => {
       ? products
       : products.filter((p) => p.category === activeCategory);
 
+  const seo = CATEGORY_SEO[activeCategory] || CATEGORY_SEO.all;
+
   return (
     <>
       <Helmet>
-        <title>Industrial Buffing & Polishing Machines Catalog | M.B. Finishing</title>
-        <meta
-          name="description"
-          content="Explore our precision automatic buffing & polishing machines. We offer custom polishing solutions for tanks, vessels, dished ends, metal sheets, and round pipes."
-        />
-        <link rel="canonical" href="https://www.mbfinishtech.com/products" />
-        <meta name="keywords" content="polishing machine catalog, sheet grinder, tank polishing machinery, automatic buffing systems, custom industrial polishers" />
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
+        <link rel="canonical" href={seo.canonical} />
+        <meta name="keywords" content={seo.keywords} />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Industrial Buffing & Polishing Machines Catalog | M.B. Finishing" />
-        <meta property="og:description" content="Explore our advanced machine catalog: tank, vessel, sheet, utensil, and pipe buffing equipment." />
-        <meta property="og:url" content="https://www.mbfinishtech.com/products" />
+        <meta property="og:title" content={seo.title} />
+        <meta property="og:description" content={seo.description} />
+        <meta property="og:url" content={seo.canonical} />
         <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Industrial Buffing & Polishing Machines Catalog | M.B. Finishing" />
-        <meta name="twitter:description" content="Explore our range of industrial sheet, pipe, tank and custom buffing machines." />
+        <meta name="twitter:title" content={seo.title} />
+        <meta name="twitter:description" content={seo.description} />
         <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
       </Helmet>
 

@@ -32,6 +32,11 @@ const ProductDetailPage = () => {
 
   const categoryLabel = CATEGORY_MAP[product.category] || "Solutions";
 
+  // Get up to 3 related products in the same category
+  const relatedProducts = products
+    .filter((p) => p.category === product.category && p.id !== product.id)
+    .slice(0, 3);
+
   // Dynamic Structured Data (JSON-LD) for SEO
   const productSchema = {
     "@context": "https://schema.org/",
@@ -215,6 +220,50 @@ const ProductDetailPage = () => {
               </div>
 
             </div>
+
+            {/* Related Products Section */}
+            {relatedProducts.length > 0 && (
+              <div className="mt-20 pt-16 border-t border-black/5">
+                <h3 className="font-display text-2xl text-stone-900 uppercase font-black mb-8 text-center md:text-left">
+                  Related Machinery Solutions
+                </h3>
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {relatedProducts.map((p) => (
+                    <article 
+                      key={p.id}
+                      className="group/item hover-lift overflow-hidden rounded-[2rem] border border-black/5 bg-white p-6 shadow-soft flex flex-col justify-between transition-all duration-300"
+                    >
+                      <div>
+                        <div className="rounded-2xl overflow-hidden aspect-[4/3] border border-black/5 shadow-soft bg-white p-4 mb-4 flex items-center justify-center">
+                          <img
+                            src={p.image}
+                            alt={p.name}
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
+                        <span className="text-[9px] uppercase font-bold text-primary tracking-[0.2em] block mb-1">
+                          {p.usp}
+                        </span>
+                        <h4 className="font-display text-base font-bold text-stone-900 leading-snug group-hover/item:text-primary transition-colors">
+                          <Link to={`/products/${p.id}`}>
+                            {p.name}
+                          </Link>
+                        </h4>
+                      </div>
+                      <div className="pt-4 mt-4 border-t border-black/5">
+                        <Link 
+                          to={`/products/${p.id}`}
+                          className="inline-flex w-full items-center justify-center rounded-full bg-stone-950 text-white hover:bg-primary hover:text-stone-950 py-2.5 text-[9px] font-bold uppercase tracking-widest transition-colors"
+                        >
+                          View Specifications
+                        </Link>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            )}
+
           </div>
         </section>
 
