@@ -28,7 +28,7 @@ export type Product = {
 export const products: Product[] = [
   // --- TANK POLISHING MACHINES ---
   {
-    id: "tank-machine",
+    id: "tpm4500-sdx-automatic-tank-polishing-machine",
     category: "tank",
     name: "TPM4500-SDX Tank & Dishend Polishing Machine",
     usp: "1st company to successfully develop Tank polishing in India",
@@ -50,7 +50,7 @@ export const products: Product[] = [
     applicationLink: "pharma"
   },
   {
-    id: "special-purpose-tank",
+    id: "tpm3000-sd-dished-end-polishing-machine",
     category: "tank",
     name: "TPM3000-SD Tank & Dishend Polishing Machine",
     usp: "Dual-axis automatic arm path tracking designed for elliptical & torispherical dish ends",
@@ -71,7 +71,7 @@ export const products: Product[] = [
     applicationLink: "pharma"
   },
   {
-    id: "tpm-2500-tank",
+    id: "tpm2500-sdx-tank-shell-polisher",
     category: "tank",
     name: "TPM1500-SD Tank & Dishend Polishing Machine",
     usp: "Medium gantry dual-axis system with HMI interface for tanks up to 1.5m diameter",
@@ -93,7 +93,7 @@ export const products: Product[] = [
     applicationLink: "pharma"
   },
   {
-    id: "piop-2000-tank",
+    id: "piop2000-automatic-duct-polisher",
     category: "tank",
     name: "PIOP2000 Duct Polishing Machine",
     usp: "Compact beauty to finish the small tanks in ID & OD applications",
@@ -115,7 +115,7 @@ export const products: Product[] = [
   },
   // --- PIPE & TUBE POLISHING MACHINES ---
   {
-    id: "cg-150b-l1-pipe",
+    id: "cg150b-single-head-round-pipe-polishing-machine",
     category: "pipe",
     name: "CG15OB Centerless Round Pipe Polishing Machine",
     usp: "Simultaneous single-stage grinding and polishing for rapid, mirror-grade round pipes",
@@ -136,7 +136,7 @@ export const products: Product[] = [
     applicationLink: "dairy"
   },
   {
-    id: "cg-150w-2h-pipe",
+    id: "cg150w-double-head-pipe-polisher",
     category: "pipe",
     name: "CG15OW-2H Centerless Round Pipe Polishing Machine",
     usp: "Simultaneous dual-stage grinding and polishing for rapid, mirror-grade round pipes",
@@ -158,7 +158,7 @@ export const products: Product[] = [
   },
   // --- SHEET & FLAT SURFACE POLISHING MACHINES ---
   {
-    id: "sp-1500b-sheet",
+    id: "sp1500b-heavy-duty-sheet-polisher",
     category: "sheet",
     name: "SP1500B Sheet Polishing Machine",
     usp: "Wide belt sander for large sheets of SS, M.S., Aluminium & copper",
@@ -180,7 +180,7 @@ export const products: Product[] = [
     applicationLink: "dairy"
   },
   {
-    id: "sp-1200-sheet",
+    id: "sp1200b-automatic-sheet-buffing-machine",
     category: "sheet",
     name: "SP1200 Heavy-Duty Sheet Polishing Machine",
     usp: "Wide belt sander for large sheets of SS, M.S., Aluminium & copper",
@@ -202,7 +202,7 @@ export const products: Product[] = [
     applicationLink: "dairy"
   },
   {
-    id: "sp-600b-sheet",
+    id: "sp600b-compact-sheet-polisher",
     category: "sheet",
     name: "SP600B Sheet Polishing Machine",
     usp: "Enclosed wet-grinding wide belt sander for dust-free, cool-running sheet finishing",
@@ -224,7 +224,7 @@ export const products: Product[] = [
     applicationLink: "dairy"
   },
   {
-    id: "trolley-machine",
+    id: "manual-belt-trolley-polishing-machine",
     category: "sheet",
     name: "TBP300-2H Trolley Type Polishing Machine",
     usp: "Double-head trolley system for heavy sheet metal & flat plates",
@@ -247,7 +247,7 @@ export const products: Product[] = [
   },
   // --- SPECIAL PURPOSE / CUSTOM MACHINES ---
   {
-    id: "sp-300-sheet",
+    id: "sp300b-wet-sheet-polisher",
     category: "sheet",
     name: "SP300 Sheet Polishing Machine",
     usp: "Can have combination heads from 2 to 6 heads inline",
@@ -269,7 +269,7 @@ export const products: Product[] = [
     applicationLink: "dairy"
   },
   {
-    id: "vb-150-sheet",
+    id: "vb150-vacuum-bed-sheet-polisher",
     category: "sheet",
     name: "VB150 Sheet Polishing Machine",
     usp: "Can have combination heads from 2 to 6 heads inline",
@@ -292,7 +292,7 @@ export const products: Product[] = [
   },
   // --- UTENSIL POLISHING SOLUTIONS ---
   {
-    id: "utensil-machine",
+    id: "automatic-utensil-buffing-machine",
     category: "utensil",
     name: "UPM-120B Automatic Utensil Polishing Machine",
     usp: "High-efficiency automated polishing for kitchenware, cookware and utensils",

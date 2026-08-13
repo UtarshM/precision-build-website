@@ -11,7 +11,7 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
-    id: "mirror-polish-vessels-tanks",
+    id: "how-to-achieve-mirror-polish-on-vessels-and-tanks",
     title: "How to Achieve Ra ≤ 0.2 µm Mirror Polish on Stainless Steel Vessels and Tanks",
     excerpt: "Achieving a sanitary mirror finish (Ra ≤ 0.2 µm) is critical for pharmaceutical reactors and food-grade storage tanks. Learn the technical parameters, buffing sequences, and automatic pressure tracking rules that guarantee success.",
     date: "August 12, 2026",
@@ -74,7 +74,7 @@ By utilizing automated tank polishing systems, manufacturers consistently reduce
     `
   },
   {
-    id: "sheet-buffing-automation-manual-vs-conveyor",
+    id: "manual-vs-automated-sheet-polishing-conveyor-machines",
     title: "The Role of Automation in Industrial Sheet Buffing: Manual vs. Automatic Conveyor Polishers",
     excerpt: "Metal fabricators face rising throughput requirements and strict quality audits. This guide compares manual sheet buffing with automated conveyor-fed sheet polishing machines on surface consistency, cycle times, safety, and B2B ROI.",
     date: "August 10, 2026",
