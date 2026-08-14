@@ -7,25 +7,25 @@ const ContactPage = () => {
   return (
     <>
       <Helmet>
-        <title>Contact M.B. Finishing Technologies | Machine Quotes & Support</title>
+        <title>Polishing Machine Manufacturer Pune | Contact Us | M.B. Finishing</title>
         <meta
           name="description"
-          content="Get in touch with M.B. Finishing Technologies. Contact us for buffing and polishing machine sales, customized technical quotes, and after-sales support."
+          content="Get in touch with M.B. Finishing, a leading industrial polishing machine manufacturer in Pune, Maharashtra. Contact us for custom quotes and machine support."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/contact" />
-        <meta name="keywords" content="contact M.B. Finishing, buffing machine support, sales inquiries Pune, industrial machinery contact" />
+        <meta name="keywords" content="Polishing Machine Manufacturer Pune, polishing machine manufacturer Pune, polishing machine manufacturer Maharashtra, polishing machine supplier Pune, industrial polishing machine manufacturer Pune, polishing machine company Pune, polishing machine manufacturer India, buffing machine manufacturer Pune" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Contact M.B. Finishing Technologies | Machine Quotes & Support" />
-        <meta property="og:description" content="Reach out to our offices in Bhosari or Chikhali, Pune. Contact us for custom quotes and machine information." />
+        <meta property="og:title" content="Polishing Machine Manufacturer Pune | Contact Us | M.B. Finishing" />
+        <meta property="og:description" content="Get in touch with M.B. Finishing, a leading industrial polishing machine manufacturer in Pune, Maharashtra." />
         <meta property="og:url" content="https://www.mbfinishtech.com/contact" />
         <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact M.B. Finishing Technologies | Machine Quotes & Support" />
-        <meta name="twitter:description" content="Get in touch with our team for machine specifications, pricing, and sales inquiries." />
+        <meta name="twitter:title" content="Polishing Machine Manufacturer Pune | Contact Us | M.B. Finishing" />
+        <meta name="twitter:description" content="Industrial polishing machine manufacturer Pune. Contact us for custom quotes." />
         <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
       </Helmet>
 

@@ -104,36 +104,83 @@ const INDUSTRIES_DATA = [
     ],
     videoPlaceholderText: "Heavy-duty vessel weld-seam automatic grinding demonstration",
     image: tpm4500TankPolisher
+  },
+  {
+    id: "aerospace",
+    name: "Aerospace",
+    tagline: "Precision metal surface finishing and scale removal",
+    description: "Aerospace rocket bodies, fuel cells, and structural alloys require ultra-precision finishing to maximize structural integrity and aerodynamic efficiency. Our automated Column & Boom and sheet polishers deliver scale-free surfaces with zero thermal stress.",
+    machines: [
+      { name: "SP1500B Sheet Polishing Machine", id: "sp1500b-heavy-duty-sheet-polisher" },
+      { name: "TPM4500-SDX Vessel & Tank Polishing Machine", id: "tpm4500-sdx-automatic-tank-polishing-machine" }
+    ],
+    useCases: [
+      { product: "Fuel Containment Shells", req: "Zero scale, precise thickness", speed: "Closed-loop feedback buffing boom" },
+      { product: "Alloy Plates", req: "Ra ≤ 0.4 µm mirror gloss", speed: "Conveyor sheet belt satin line" }
+    ],
+    videoPlaceholderText: "Aerospace alloy plate high-precision surface buffing demo",
+    image: tpm4500TankPolisher
   }
 ];
+
+const APPLICATION_SEO: Record<string, { title: string; description: string; keywords: string }> = {
+  dairy: {
+    title: "Food & Dairy Metal Surface Polishing | M.B. Finishing",
+    description: "Sanitary surface finishing for food & dairy silos, storage tanks, and conveyors. We deliver easy-to-sanitize finishes to EHEDG standards.",
+    keywords: "food and dairy polishing, sanitary satin finish, stainless steel food silos, food grade buffing, milk tank polishing"
+  },
+  pharma: {
+    title: "Pharma Tank Polishing Machine | M.B. Finishing",
+    description: "High-grade pharmaceutical tank polishing machines. Specialized in mirror-finish reactors, bio-vessels, and sterile piping matching US FDA/ASME standards.",
+    keywords: "pharmaceutical polishing machine, pharma polishing machine, pharma tank polishing machine, pharmaceutical tank polishing, pharmaceutical equipment polishing, hygienic surface finishing, pharma vessel polishing machine, SS pharma tank polishing"
+  },
+  beverage: {
+    title: "Brewery & Beverage Tank Buffing Systems | M.B. Finishing",
+    description: "Brewery fermentation tanks, beer tanks, and distillery copper stills external mirror finishing and internal grit-polishing solutions.",
+    keywords: "brewery tank polishing, beverage vessel buffing, beer fermenters polishing, copper still buffing, sanitary tube line"
+  },
+  automobile: {
+    title: "Automotive Polishing Machine | M.B. Finishing",
+    description: "Automotive component and piston rod centerless polishing machines. Reduce frictional coefficients and wear with micro-abrasive surface finishing.",
+    keywords: "automotive polishing machine, automotive buffing machine, automotive parts polishing machine, auto component polishing, metal component polishing machine"
+  },
+  chemical: {
+    title: "Chemical Vessel Polishing Machine | M.B. Finishing",
+    description: "Chemical reactor vessel polishing machines. Heavy scale grinding, weld seam flattening, and protective prep grinding for chemical storage tanks.",
+    keywords: "chemical tank polishing machine, chemical vessel polishing machine, reactor polishing machine, stainless steel reactor polishing, process vessel polishing machine, chemical equipment polishing"
+  },
+  aerospace: {
+    title: "Aerospace Surface Finishing Solutions | M.B. Finishing",
+    description: "Precision aerospace surface finishing for structural components and fuel containment tanks. Micro-smooth, scale-free alloy sheet polishing.",
+    keywords: "aerospace polishing machine, aerospace surface finishing, precision metal finishing, aerospace component polishing, aerospace finishing machine"
+  }
+};
 
 const ApplicationPage = () => {
   const [activeTab, setActiveTab] = useState("dairy");
 
   const currentIndustry = INDUSTRIES_DATA.find((ind) => ind.id === activeTab) || INDUSTRIES_DATA[0];
+  const seo = APPLICATION_SEO[activeTab] || APPLICATION_SEO.dairy;
 
   return (
     <>
       <Helmet>
-        <title>Industrial Polishing Applications & Solutions | M.B. Finishing</title>
-        <meta
-          name="description"
-          content="Discover how M.B. Finishing Technologies solves surface treatment challenges across Food & Dairy, Pharmaceutical, Beverage & Brewing, Automotive, and Chemical sectors."
-        />
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
         <link rel="canonical" href="https://www.mbfinishtech.com/application" />
-        <meta name="keywords" content="polishing applications, dairy buffing, pharma metal finishing, automotive metal grinding, brewery tank polishing" />
+        <meta name="keywords" content={seo.keywords} />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Industrial Polishing Applications & Solutions | M.B. Finishing" />
-        <meta property="og:description" content="Read about how our machines solve surface treatment standards across global industries." />
+        <meta property="og:title" content={seo.title} />
+        <meta property="og:description" content={seo.description} />
         <meta property="og:url" content="https://www.mbfinishtech.com/application" />
         <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Industrial Polishing Applications & Solutions | M.B. Finishing" />
-        <meta name="twitter:description" content="Discover polishing solutions for food, dairy, pharmaceutical, and automotive sectors." />
+        <meta name="twitter:title" content={seo.title} />
+        <meta name="twitter:description" content={seo.description} />
         <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
       </Helmet>
 

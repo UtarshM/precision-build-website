@@ -12,26 +12,26 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>M.B. Finishing Technologies | Industrial Buffing & Polishing Machines</title>
+        <title>Industrial Polishing Machine Manufacturer | M.B. Finishing</title>
         <meta
           name="description"
-          content="ISO 9001:2015 certified manufacturer of automatic buffing and polishing machines in India. Tailored solutions for tanks, vessels, dished ends, sheets, tubes, and pipes."
+          content="M.B. Finishing is a leading industrial polishing machine manufacturer in India. We design automatic metal polishing, buffing, and surface finishing machines."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/" />
-        <meta name="keywords" content="vessel polishing machine, tank buffing machine, dishend polishing machine, sheet polishing machine, pipe polishing machine, automatic metal polisher, industrial buffing Pune, M.B. Finishing Technologies" />
+        <meta name="keywords" content="Industrial Polishing Machine Manufacturer, polishing machine manufacturer, polishing machine manufacturer in India, industrial polishing machines, automatic polishing machines, industrial buffing machines, metal polishing machines, automatic buffing machine, metal finishing machines, surface finishing machines, polishing and buffing machines" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="M.B. Finishing Technologies | Industrial Buffing & Polishing Machines" />
-        <meta property="og:description" content="ISO 9001:2015 certified manufacturer of automatic buffing and polishing machines in India. High-precision surface finishing solutions." />
+        <meta property="og:title" content="Industrial Polishing Machine Manufacturer | M.B. Finishing" />
+        <meta property="og:description" content="M.B. Finishing is a leading industrial polishing machine manufacturer in India. We design automatic metal polishing, buffing, and surface finishing machines." />
         <meta property="og:url" content="https://www.mbfinishtech.com/" />
         <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
         <meta property="og:site_name" content="M.B. Finishing Technologies" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="M.B. Finishing Technologies | Industrial Buffing & Polishing Machines" />
-        <meta name="twitter:description" content="ISO 9001:2015 certified manufacturer of automatic buffing and polishing machines in India." />
+        <meta name="twitter:title" content="Industrial Polishing Machine Manufacturer | M.B. Finishing" />
+        <meta name="twitter:description" content="Leading industrial polishing machine manufacturer in India. Automated buffing and surface finishing machines." />
         <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
 
         {/* Structured Data (JSON-LD) */}

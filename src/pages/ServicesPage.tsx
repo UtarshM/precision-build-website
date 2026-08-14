@@ -80,25 +80,25 @@ const ServicesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Precision Surface Polishing & Buffing Services | M.B. Finishing</title>
+        <title>Polishing Machine Service | Technical Support & Commissioning | M.B. Finishing</title>
         <meta
           name="description"
-          content="Explore our professional services: dedicated technical support, fast abrasive deliveries, pipe machining, and custom automatic grinding/fettling."
+          content="Professional polishing machine services: expert installation, commissioning, maintenance, spare parts, and dedicated B2B technical support in India."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/services" />
-        <meta name="keywords" content="metal polishing services, technical support, abrasive supply, automated fettling, pipe machining" />
+        <meta name="keywords" content="Polishing Machine Service, industrial polishing services, polishing machine installation, polishing machine commissioning, polishing machine maintenance, polishing machine after sales service, polishing machine technical support, polishing machine spare parts" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Precision Surface Polishing & Buffing Services | M.B. Finishing" />
-        <meta property="og:description" content="Discover our client support, abrasive supply, and contract metal finishing services." />
+        <meta property="og:title" content="Polishing Machine Service | Technical Support | M.B. Finishing" />
+        <meta property="og:description" content="Professional polishing machine services: installation, commissioning, maintenance, spare parts, and dedicated B2B technical support." />
         <meta property="og:url" content="https://www.mbfinishtech.com/services" />
         <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Precision Surface Polishing & Buffing Services | M.B. Finishing" />
-        <meta name="twitter:description" content="Explore custom automatic polishing, grinding, and technical support services." />
+        <meta name="twitter:title" content="Polishing Machine Service | Technical Support | M.B. Finishing" />
+        <meta name="twitter:description" content="Professional polishing machine installation, commissioning, and support service." />
         <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
       </Helmet>
 

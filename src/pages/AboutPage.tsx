@@ -7,25 +7,25 @@ const AboutPage = () => {
   return (
     <>
       <Helmet>
-        <title>About M.B. Finishing Technologies | Buffing Machine Manufacturer</title>
+        <title>Polishing Machine Manufacturer India | About Us | M.B. Finishing</title>
         <meta
           name="description"
-          content="Established in 1990, M.B. Finishing Technologies (a subsidiary of M.B. Tools) is an ISO 9001:2015 certified pioneer in automated buffing and polishing machines in India."
+          content="M.B. Finishing is a certified industrial polishing machine manufacturer in India, producing automatic buffing, grinding, and metal finishing machines since 1990."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/about" />
-        <meta name="keywords" content="about M.B. Finishing, polishing machine manufacturer, buffing machine exporter India, Pune machine manufacturer, ISO 9001:2015 machinery" />
+        <meta name="keywords" content="Polishing Machine Manufacturer India, industrial polishing machine manufacturer, automatic polishing machine manufacturer, buffing machine manufacturer, metal finishing machine manufacturer, polishing machine company India, polishing machine manufacturer Pune, polishing machine manufacturer Maharashtra, Indian polishing machine manufacturer" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="About M.B. Finishing Technologies | Buffing Machine Manufacturer" />
-        <meta property="og:description" content="Read about our journey, engineering standards, and ISO 9001:2015 certified manufacturing facility." />
+        <meta property="og:title" content="Polishing Machine Manufacturer India | About Us | M.B. Finishing" />
+        <meta property="og:description" content="Certified industrial polishing machine manufacturer in India. Leading supplier of automatic buffing and metal finishing machines." />
         <meta property="og:url" content="https://www.mbfinishtech.com/about" />
         <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About M.B. Finishing Technologies | Buffing Machine Manufacturer" />
-        <meta name="twitter:description" content="ISO 9001:2015 certified manufacturer of automatic buffing and polishing machines." />
+        <meta name="twitter:title" content="Polishing Machine Manufacturer India | About Us | M.B. Finishing" />
+        <meta name="twitter:description" content="Certified industrial polishing machine manufacturer in India since 1990." />
         <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
       </Helmet>
 

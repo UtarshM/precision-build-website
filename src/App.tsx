@@ -19,6 +19,7 @@ import GalleryPage from "./pages/GalleryPage.tsx";
 import ProductDetailPage from "./pages/ProductDetailPage.tsx";
 import BlogPage from "./pages/BlogPage.tsx";
 import BlogPostDetailPage from "./pages/BlogPostDetailPage.tsx";
+import CataloguePage from "./pages/CataloguePage.tsx";
 
 const queryClient = new QueryClient();
 
@@ -45,6 +46,7 @@ const App = () => (
           <Route path="/products/:productId" element={<ProductDetailPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:blogId" element={<BlogPostDetailPage />} />
+          <Route path="/catalogue" element={<CataloguePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

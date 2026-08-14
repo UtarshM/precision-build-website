@@ -14,9 +14,11 @@ const QUICK_LINKS = [
 
 const PRODUCT_CATEGORIES = [
   { label: "Tank polishing solutions", to: "/products/category/tank" },
+  { label: "Dish end polishing", to: "/products/category/dishend" },
   { label: "Sheet polishing solutions", to: "/products/category/sheet" },
-  { label: "Utensil polishing solutions", to: "/products/category/utensil" },
   { label: "Pipe polishing solutions", to: "/products/category/pipe" },
+  { label: "Centerless polishing", to: "/products/category/centerless" },
+  { label: "Utensil polishing solutions", to: "/products/category/utensil" },
   { label: "Customised solutions", to: "/products/category/custom" },
 ];
 
@@ -75,13 +77,12 @@ export const Footer = () => {
             </div>
             <ul className="mt-4 space-y-2.5">
               <li>
-                <a
-                  href="/mb-catalogue.pdf"
-                  download="MB_Finishing_Technologies_Catalog.pdf"
+                <Link
+                  to="/catalogue"
                   className="text-xs text-white/64 transition-colors hover:text-white block hover:translate-x-0.5 transition-transform"
                 >
-                  Download Catalogue
-                </a>
+                  Product Catalogue
+                </Link>
               </li>
             </ul>
           </div>
