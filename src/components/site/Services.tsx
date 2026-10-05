@@ -25,17 +25,14 @@ export const Services = ({ limit, showViewAll = false }: ServicesProps) => {
       <div className="container">
         <div className="mb-16 grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-end">
           <div className="max-w-4xl">
-            <div className="industrial-badge mb-6">Products</div>
-            <h2 className="font-display text-5xl leading-[0.92] tracking-tight text-stone-950 md:text-6xl">
-              A machine portfolio presented with more clarity, confidence and
-              visual depth.
+            <div className="industrial-badge mb-6">PRODUCTS</div>
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-stone-950 uppercase font-bold">
+              High-Performance Metal Polishing & Buffing Machines
             </h2>
           </div>
           <div className="rounded-[1.75rem] border border-black/5 bg-white/75 p-6 backdrop-blur">
-            <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
-              Standard and special-purpose buffing and polishing machines for
-              cookware, pipe, coil, rod, sheet and high-demand industrial
-              finishing environments.
+            <p className="text-sm leading-relaxed text-muted-foreground md:text-base font-medium">
+              Standard and custom automatic polishing machines engineered for cookware, pipe, coil, sheet metal, and demanding industrial surface finishing environments.
             </p>
           </div>
         </div>

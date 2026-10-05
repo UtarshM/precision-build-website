@@ -96,9 +96,9 @@ export const CustomerSlider = () => {
       <div className="container">
         {/* Section Title */}
         <div className="mx-auto mb-16 max-w-3xl text-center">
-          <h2 className="font-display text-4xl uppercase font-bold text-stone-950 tracking-tight">
+          <h1 className="font-display text-4xl md:text-5xl uppercase font-black text-stone-950 tracking-tight">
             Our Valued Clients
-          </h2>
+          </h1>
           <p className="mt-4 text-sm uppercase tracking-widest text-stone-500 font-semibold">
             Trusted by industry leaders worldwide
           </p>

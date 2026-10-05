@@ -165,22 +165,22 @@ const ApplicationPage = () => {
   return (
     <>
       <Helmet>
-        <title>{seo.title}</title>
-        <meta name="description" content={seo.description} />
+        <title>Industrial Surface Finishing Applications | MB Finish Tech</title>
+        <meta name="description" content="Deliver precision surface finishes across pharma vessels, dairy tanks, and automotive parts with automated polishing machinery engineered for your plant line." />
         <link rel="canonical" href="https://www.mbfinishtech.com/application" />
         <meta name="keywords" content={seo.keywords} />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={seo.title} />
-        <meta property="og:description" content={seo.description} />
+        <meta property="og:title" content="Industrial Surface Finishing Applications | MB Finish Tech" />
+        <meta property="og:description" content="Deliver precision surface finishes across pharma vessels, dairy tanks, and automotive parts with automated polishing machinery engineered for your plant line." />
         <meta property="og:url" content="https://www.mbfinishtech.com/application" />
         <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={seo.title} />
-        <meta name="twitter:description" content={seo.description} />
+        <meta name="twitter:title" content="Industrial Surface Finishing Applications | MB Finish Tech" />
+        <meta name="twitter:description" content="Deliver precision surface finishes across pharma vessels, dairy tanks, and automotive parts with automated polishing machinery engineered for your plant line." />
         <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
       </Helmet>
 
@@ -190,9 +190,9 @@ const ApplicationPage = () => {
           <div className="container">
             <div className="text-center mb-12">
               <div className="industrial-badge mx-auto mb-4">Select Industry</div>
-              <h2 className="font-display text-4xl tracking-tight text-stone-950 md:text-5xl">
+              <h1 className="font-display text-4xl tracking-tight text-stone-950 md:text-5xl font-black uppercase">
                 Tailored solutions for sector-specific standards
-              </h2>
+              </h1>
             </div>
 
             {/* Desktop Tabs */}

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Award, Cog, ShieldCheck } from "lucide-react";
 import tpm4500TankPolisher from "@/assets/tpm4500-tank-polisher.png";
 import sp1200bSheetPolisher from "@/assets/sp1200b-sheet-polisher.jpg";
@@ -28,19 +29,19 @@ const FLASHING_SLIDES = [
 
 const HORIZONTAL_VALUES = [
   {
-    title: "High-Precision Buffing Machines",
+    title: "Industrial Buffing Systems",
     icon: Cog,
-    text: "Engineered for high-quality surface finishing across demanding industrial production lines."
+    text: "Engineered for consistent, high-precision surface finishing across demanding metal production lines."
   },
   {
-    title: "Advanced Polishing Solutions",
+    title: "Automated Polishing Setup",
     icon: Award,
-    text: "Efficient and cost-effective machine solutions tailored for standard and special-purpose requirements."
+    text: "Reliable equipment tailored for tanks, dished ends, and custom industrial finishing needs."
   },
   {
-    title: "Certified Manufacturing Quality",
+    title: "Certified Manufacturing",
     icon: ShieldCheck,
-    text: "Built under an ISO 9001:2015 certified system to improve durability, consistency and aesthetics."
+    text: "Built under ISO 9001:2015 standards to ensure long machine life, low maintenance, and uniform Ra values."
   }
 ];
 
@@ -89,17 +90,14 @@ export const Hero = () => {
             </div>
 
             <div className="mb-6 max-w-5xl">
-              <h1 className="font-display text-2xl sm:text-3xl md:text-4xl leading-[1.1] tracking-tight text-stone-950 uppercase font-bold">
-                Delivering world-class <span className="text-primary block sm:inline">buffing & polishing solutions</span>
-                <span className="block text-stone-700 text-lg sm:text-xl md:text-2xl mt-3 tracking-normal normal-case font-semibold">
-                  for industries that demand perfection.
-                </span>
+              <h1 className="font-display text-3xl sm:text-4xl md:text-5xl leading-[1.12] tracking-tight text-stone-950 uppercase font-bold">
+                High-Performance Metal Polishing Machines & Automatic Buffing Systems
               </h1>
             </div>
 
             {/* Writeup Change */}
             <p className="max-w-3xl text-base sm:text-lg leading-relaxed text-stone-600 font-medium">
-              We specialize in precision buffing and polishing solutions designed to enhance durability, aesthetics, and performance. From pharmaceutical tanks and automotive components to high-end metal finishes, our expertise ensures every surface reflects excellence.
+              As a trusted industrial polishing machine manufacturer, M.B. Finishing Technologies designs advanced automatic buffing machines and heavy-duty metal finishing machines. From pharmaceutical vessels and automotive components to cookware, our precision polishing and buffing machines deliver uniform surface finishing, high Ra control, and unmatched durability.
             </p>
 
             {/* Why Choose Us detailed bullets */}
@@ -107,27 +105,43 @@ export const Hero = () => {
               <div className="flex items-start gap-3">
                 <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-primary/25 text-primary font-bold text-xs mt-0.5">✔</span>
                 <p className="text-stone-700 font-medium leading-relaxed">
-                  <strong className="text-stone-950 font-bold">Cutting-Edge Technology</strong> – Advanced machines and polishing systems for consistent, flawless results to achieve desired finish & Ra value.
+                  <strong className="text-stone-950 font-bold">Advanced Automation</strong> – High-speed automatic polishing machines engineered for repeatable Ra value and mirror finish.
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-primary/25 text-primary font-bold text-xs mt-0.5">✔</span>
                 <p className="text-stone-700 font-medium leading-relaxed">
-                  <strong className="text-stone-950 font-bold">Industry Expertise</strong> – Experience serving pharma, automotive, Aerospace, Utensil and other manufacturing sectors.
+                  <strong className="text-stone-950 font-bold">Built for Heavy Industry</strong> – Reliable industrial buffing machines serving pharma, automotive, aerospace, and utensil sectors.
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-primary/25 text-primary font-bold text-xs mt-0.5">✔</span>
                 <p className="text-stone-700 font-medium leading-relaxed">
-                  <strong className="text-stone-950 font-bold">Customized Solutions</strong> – Tailored processes to meet your specifications and compliance standards.
+                  <strong className="text-stone-950 font-bold">Custom Surface Finishing</strong> – Tailored metal finishing solutions built to strict international manufacturing standards.
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-primary/25 text-primary font-bold text-xs mt-0.5">✔</span>
                 <p className="text-stone-700 font-medium leading-relaxed">
-                  <strong className="text-stone-950 font-bold">Excellent customer service</strong> – Dedicated team for after sales service covering pan India.
+                  <strong className="text-stone-950 font-bold">Pan-India Support</strong> – Rapid service support and genuine machine parts across India.
                 </p>
               </div>
+            </div>
+
+            {/* Action CTA Buttons */}
+            <div className="mt-10 flex flex-wrap items-center gap-4">
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-2 rounded-full bg-stone-950 text-white hover:bg-primary hover:text-stone-950 px-8 py-4 text-xs font-bold uppercase tracking-widest transition-all shadow-md active:scale-95"
+              >
+                Request a Quote →
+              </Link>
+              <Link
+                to="/products"
+                className="inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 px-8 py-4 text-xs font-bold uppercase tracking-widest transition-all shadow-sm active:scale-95"
+              >
+                Explore Machines
+              </Link>
             </div>
           </div>
 

@@ -8,25 +8,25 @@ const GalleryPage = () => {
   return (
     <>
       <Helmet>
-        <title>Machine Gallery & Polishing Projects | M.B. Finishing</title>
+        <title>Industrial Polishing Machine Working Videos | MB Finish</title>
         <meta
           name="description"
-          content="View high-resolution machine photos and video demonstrations of automatic buffing and polishing machines in action at M.B. Finishing."
+          content="Watch automatic tank, sheet, and centerless pipe buffing machines operate on factory floors. See actual surface finishing results on industrial metal parts."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/gallery" />
         <meta name="keywords" content="polishing gallery, machine videos, buffing photos, industrial machinery gallery" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Machine Gallery & Polishing Projects | M.B. Finishing" />
-        <meta property="og:description" content="Watch video demonstrations and browse machine category photos." />
+        <meta property="og:title" content="Industrial Polishing Machine Working Videos | MB Finish" />
+        <meta property="og:description" content="Watch automatic tank, sheet, and centerless pipe buffing machines operate on factory floors. See actual surface finishing results on industrial metal parts." />
         <meta property="og:url" content="https://www.mbfinishtech.com/gallery" />
         <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Machine Gallery & Polishing Projects | M.B. Finishing" />
-        <meta name="twitter:description" content="View machine photo galleries and video demonstrations." />
+        <meta name="twitter:title" content="Industrial Polishing Machine Working Videos | MB Finish" />
+        <meta name="twitter:description" content="Watch automatic tank, sheet, and centerless pipe buffing machines operate on factory floors. See actual surface finishing results on industrial metal parts." />
         <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
       </Helmet>
 

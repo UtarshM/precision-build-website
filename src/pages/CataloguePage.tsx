@@ -26,25 +26,25 @@ const CataloguePage = () => {
   return (
     <>
       <Helmet>
-        <title>Polishing Machine Catalogue | Download Brochure | M.B. Finishing</title>
+        <title>Industrial Polishing Machine Catalogue PDF | MB Finish Tech</title>
         <meta
           name="description"
-          content="Download our complete consolidated industrial polishing machine catalogue. Detailed technical specifications, layout blueprints, and US FDA finish standards."
+          content="Download our technical metal polishing machine catalogue PDF. Review engineering specs for automatic tube, sheet, and dishend buffing systems built in India."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/catalogue" />
         <meta name="keywords" content="Polishing Machine Catalogue, polishing machine catalogue, polishing machine manufacturer catalogue, industrial polishing machine catalogue, buffing machine catalogue, tank polishing machine catalogue, sheet polishing machine catalogue, pipe polishing machine catalogue, utensil polishing machine catalogue, polishing machine brochure" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Polishing Machine Catalogue | M.B. Finishing" />
-        <meta property="og:description" content="Download our consolidated industrial polishing and buffing machine catalogue with full technical drawings and specifications." />
+        <meta property="og:title" content="Industrial Polishing Machine Catalogue PDF | MB Finish Tech" />
+        <meta property="og:description" content="Download our technical metal polishing machine catalogue PDF. Review engineering specs for automatic tube, sheet, and dishend buffing systems built in India." />
         <meta property="og:url" content="https://www.mbfinishtech.com/catalogue" />
         <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Polishing Machine Catalogue | M.B. Finishing" />
-        <meta name="twitter:description" content="Download our industrial polishing machine catalogue." />
+        <meta name="twitter:title" content="Industrial Polishing Machine Catalogue PDF | MB Finish Tech" />
+        <meta name="twitter:description" content="Download our technical metal polishing machine catalogue PDF. Review engineering specs for automatic tube, sheet, and dishend buffing systems built in India." />
         <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
       </Helmet>
 

@@ -7,31 +7,32 @@ import { Services } from "@/components/site/Services";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { VideoSection } from "@/components/site/VideoSection";
 import { WhyChoose } from "@/components/site/WhyChoose";
+import { FaqSection } from "@/components/site/FaqSection";
 
 const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Industrial Polishing Machine Manufacturer | M.B. Finishing</title>
+        <title>Metal Polishing & Buffing Machines India | MB Finish Tech</title>
         <meta
           name="description"
-          content="M.B. Finishing is a leading industrial polishing machine manufacturer in India. We design automatic metal polishing, buffing, and surface finishing machines."
+          content="Source heavy-duty metal polishing and buffing machines engineered in India. Automate your plant finishing lines with custom systems from MB Finishing today."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/" />
-        <meta name="keywords" content="Industrial Polishing Machine Manufacturer, polishing machine manufacturer, polishing machine manufacturer in India, industrial polishing machines, automatic polishing machines, industrial buffing machines, metal polishing machines, automatic buffing machine, metal finishing machines, surface finishing machines, polishing and buffing machines" />
+        <meta name="keywords" content="Metal Polishing & Buffing Machines India, industrial polishing machine manufacturer, polishing machine manufacturer in India, automatic polishing machines, industrial buffing machines, metal polishing machines, automatic buffing machine, metal finishing machines, surface finishing machines, polishing and buffing machines" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Industrial Polishing Machine Manufacturer | M.B. Finishing" />
-        <meta property="og:description" content="M.B. Finishing is a leading industrial polishing machine manufacturer in India. We design automatic metal polishing, buffing, and surface finishing machines." />
+        <meta property="og:title" content="Metal Polishing & Buffing Machines India | MB Finish Tech" />
+        <meta property="og:description" content="Source heavy-duty metal polishing and buffing machines engineered in India. Automate your plant finishing lines with custom systems from MB Finishing today." />
         <meta property="og:url" content="https://www.mbfinishtech.com/" />
         <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
         <meta property="og:site_name" content="M.B. Finishing Technologies" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Industrial Polishing Machine Manufacturer | M.B. Finishing" />
-        <meta name="twitter:description" content="Leading industrial polishing machine manufacturer in India. Automated buffing and surface finishing machines." />
+        <meta name="twitter:title" content="Metal Polishing & Buffing Machines India | MB Finish Tech" />
+        <meta name="twitter:description" content="Source heavy-duty metal polishing and buffing machines engineered in India. Automate your plant finishing lines with custom systems from MB Finishing today." />
         <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
 
         {/* Structured Data (JSON-LD) */}
@@ -74,6 +75,7 @@ const Index = () => {
         <WhyChoose />
         <Projects />
         <VideoSection />
+        <FaqSection />
         <CTA />
       </SiteLayout>
     </>

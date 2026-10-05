@@ -9,25 +9,25 @@ const BlogPage = () => {
   return (
     <>
       <Helmet>
-        <title>Technical Metal Polishing Guides & Blogs | M.B. Finishing</title>
+        <title>Industrial Metal Finishing Blog | MB Finishing Technologies</title>
         <meta
           name="description"
-          content="Explore technical guides, engineering studies, and industry updates on automatic buffing, mirror finish parameters, surface roughness, and sheet polishers."
+          content="Read practical engineering guides on industrial polishing techniques, buffing wheel setups, and surface roughness control for heavy manufacturing production lines."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/blog" />
         <meta name="keywords" content="metal polishing blog, buffing guides, vessel polishing machine, sheet polisher automation, mirror finish Ra" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Technical Metal Polishing Guides & Blogs | M.B. Finishing" />
-        <meta property="og:description" content="Explore B2B technical guides and industry updates on metal polishing automation, surface finish standards, and buffing machinery." />
+        <meta property="og:title" content="Industrial Metal Finishing Blog | MB Finishing Technologies" />
+        <meta property="og:description" content="Read practical engineering guides on industrial polishing techniques, buffing wheel setups, and surface roughness control for heavy manufacturing production lines." />
         <meta property="og:url" content="https://www.mbfinishtech.com/blog" />
         <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Technical Metal Polishing Guides & Blogs | M.B. Finishing" />
-        <meta name="twitter:description" content="Read our latest engineering guides on achieving mirror finishes and automating sheet polishing." />
+        <meta name="twitter:title" content="Industrial Metal Finishing Blog | MB Finishing Technologies" />
+        <meta name="twitter:description" content="Read practical engineering guides on industrial polishing techniques, buffing wheel setups, and surface roughness control for heavy manufacturing production lines." />
         <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
       </Helmet>
 

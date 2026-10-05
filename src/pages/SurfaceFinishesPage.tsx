@@ -66,25 +66,25 @@ const SurfaceFinishesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Metal Surface Finishes & Ra Standards | M.B. Finishing</title>
+        <title>Ra Surface Roughness Values Explained | MB Finishing Tech</title>
         <meta
           name="description"
-          content="Guide to industrial surface finishes: explaining Ra roughness average parameters, mirror polish, fine satin, hairline, and sanitary standards."
+          content="Achieve precise Ra 0.40 µm pharma sanitary standards, No.4 satin, and No.8 mirror polishes on stainless steel using automated machinery built for your plant."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/finishes" />
         <meta name="keywords" content="surface finishes, Ra value, mirror finish, satin finish, metal roughness, sanitary polishing standards" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Metal Surface Finishes & Ra Standards | M.B. Finishing" />
-        <meta property="og:description" content="Technical guide on surface roughness (Ra value), satin, hairline, and mirror finishes." />
+        <meta property="og:title" content="Ra Surface Roughness Values Explained | MB Finishing Tech" />
+        <meta property="og:description" content="Achieve precise Ra 0.40 µm pharma sanitary standards, No.4 satin, and No.8 mirror polishes on stainless steel using automated machinery built for your plant." />
         <meta property="og:url" content="https://www.mbfinishtech.com/finishes" />
         <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Metal Surface Finishes & Ra Standards | M.B. Finishing" />
-        <meta name="twitter:description" content="Learn about Ra parameters and sanitary polishing standards." />
+        <meta name="twitter:title" content="Ra Surface Roughness Values Explained | MB Finishing Tech" />
+        <meta name="twitter:description" content="Achieve precise Ra 0.40 µm pharma sanitary standards, No.4 satin, and No.8 mirror polishes on stainless steel using automated machinery built for your plant." />
         <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
       </Helmet>
 

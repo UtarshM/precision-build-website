@@ -19,52 +19,87 @@ const CATEGORIES = [
 
 const CATEGORY_SEO: Record<string, { title: string; description: string; keywords: string; canonical: string }> = {
   all: {
-    title: "Industrial Buffing & Polishing Machines Catalog | M.B. Finishing",
-    description: "Explore our precision automatic buffing & polishing machines. We offer custom polishing solutions for tanks, vessels, dished ends, metal sheets, and round pipes.",
+    title: "Industrial Polishing & Buffing Machine Models | MB Tech",
+    description: "Explore our heavy-duty metal polishing and buffing machines. Review technical specs for pipe, sheet, tank, and utensil finishing equipment made in Pune.",
     keywords: "polishing machine catalog, sheet grinder, tank polishing machinery, automatic buffing systems, custom industrial polishers",
     canonical: "https://www.mbfinishtech.com/products"
   },
   tank: {
-    title: "Tank Polishing Machine Manufacturer | M.B. Finishing",
-    description: "M.B. Finishing is a premier tank polishing machine manufacturer in India. We supply stainless steel, SS, and automatic tank and reactor vessel buffing systems.",
+    title: "Tank Polishing Machine Manufacturer | MB Finish Tech",
+    description: "Automate inner and outer tank surface finishing with high-precision tank polishing machines. Build mirror finishes on stainless steel vessels and reactors.",
     keywords: "Tank Polishing Machine, tank polishing machine manufacturer, tank polishing machine manufacturer in India, stainless steel tank polishing machine, SS tank polishing machine, automatic tank polishing machine, industrial tank polishing machine, storage tank polishing machine, vessel polishing machine, chemical tank polishing machine, pharmaceutical tank polishing machine, reactor polishing machine, tank buffing machine",
     canonical: "https://www.mbfinishtech.com/products/category/tank"
   },
   sheet: {
-    title: "Sheet Polishing Machine Manufacturer | M.B. Finishing",
-    description: "Discover our automatic wide belt sheet polishing machines. Perfect for No.4 satin, hairline, and No.8 mirror finish on stainless steel, aluminium, and brass sheets.",
+    title: "Sheet Polishing Machine Manufacturer | MB Finish Tech",
+    description: "Achieve No.4 hairline and No.8 mirror finishes on stainless steel plates with automated wide-belt sheet polishing machines built for high plant throughput.",
     keywords: "Sheet Polishing Machine, sheet polishing machine manufacturer, stainless steel sheet polishing machine, SS sheet polishing machine, metal sheet polishing machine, automatic sheet polishing machine, industrial sheet polishing machine, aluminium sheet polishing machine, brass sheet polishing machine, copper sheet polishing machine, MS sheet polishing machine, sheet buffing machine, wide belt polishing machine, No.4 finish, hairline finish, No.8 mirror finish",
     canonical: "https://www.mbfinishtech.com/products/category/sheet"
   },
   pipe: {
-    title: "Pipe Polishing Machine Manufacturer & Supplier | M.B. Finishing",
-    description: "High-speed automatic pipe and tube polishing machines for mirror finish. Leading pipe polishing machine manufacturer in India for stainless steel round tubes.",
+    title: "Round Pipe Polishing Machine Manufacturer | MB Tech India",
+    description: "Achieve Ra 0.2 micron mirror finishes on stainless steel pipes with heavy-duty centerless polishing machines. Engineered for round tube manufacturing lines.",
     keywords: "Pipe Polishing Machine, pipe polishing machine manufacturer, pipe polishing machine manufacturer in India, stainless steel pipe polishing machine, SS pipe polishing machine, tube polishing machine, round pipe polishing machine, automatic pipe polishing machine, industrial pipe polishing machine, pipe buffing machine, stainless steel tube polishing machine, mirror finish pipe polishing machine",
     canonical: "https://www.mbfinishtech.com/products/category/pipe"
   },
   utensil: {
-    title: "Automatic Cookware & Utensil Polishing Machines | M.B. Finishing",
-    description: "High-productivity utensil buffing & cookware polishing machines. Specialized in stainless steel pot, pan, bowl, and hollowware surface mirror polishing.",
+    title: "Utensil Polishing Machine Manufacturer | MB Finish Tech",
+    description: "Boost cookware production output with automatic utensil buffing machines. Achieve consistent mirror polishes on stainless steel pots, pans, and containers.",
     keywords: "Utensil Polishing Machine, automatic utensil polishing machine, stainless steel utensil polishing machine, utensil polishing machine manufacturer, cookware polishing machine, automatic cookware polishing machine, kitchenware polishing machine, metal utensil polishing machine, pot polishing machine, pan polishing machine, hollowware polishing machine, utensil buffing machine",
     canonical: "https://www.mbfinishtech.com/products/category/utensil"
   },
   centerless: {
-    title: "Centerless Pipe & Tube Polishing Machines | M.B. Finishing",
-    description: "Professional centerless polishing machine manufacturer in India. Through-feed automatic tube and round pipe buffing machines for consistent linear finishes.",
+    title: "Centerless Pipe Polishing Machine Manufacturer | MB Tech",
+    description: "Polish round stainless steel tubes and pipes with high-speed centerless buffing equipment. Deliver uniform mirror or satin finishes across production runs.",
     keywords: "Centerless Polishing Machine, centerless polishing machine, centreless polishing machine, centerless pipe polishing machine, centreless pipe polishing machine, centerless tube polishing machine, centerless tube buffing machine, centerless polishing machine manufacturer",
     canonical: "https://www.mbfinishtech.com/products/category/centerless"
   },
   dishend: {
-    title: "Dish End Polishing Machine Manufacturer | M.B. Finishing",
-    description: "Specialized dish end polishing machines. Automatic dual-axis head tracking systems for torispherical, elliptical, and flat tank/vessel head buffing.",
+    title: "Dished End Polishing Machine Manufacturer | MB Tech India",
+    description: "Finish torispherical and dished ends with automatic contour-tracking buffing machinery. Reduce manual grinding on pressure vessels and storage tank heads.",
     keywords: "Dish End Polishing Machine, dish end polishing machine, dishend polishing machine, tank head polishing machine, vessel head polishing machine, dish head polishing machine, torispherical dish end polishing machine, elliptical dish end polishing machine, flat dish end polishing machine, automatic dish end polishing machine",
     canonical: "https://www.mbfinishtech.com/products/category/dishend"
   },
   custom: {
-    title: "Customized Polishing Machine Manufacturer | M.B. Finishing",
-    description: "Expert customized polishing machine manufacturer in India. We design special purpose machines (SPM) for complex metal buffing and custom surface finishing.",
+    title: "Custom SPM Polishing Machine Manufacturer | MB Tech India",
+    description: "Build purpose-engineered SPM polishing machines tailored to your manufacturing geometry. Consult with our engineering team in Pune for custom machinery.",
     keywords: "Customized Polishing Machine, customized polishing machine manufacturer, custom polishing machine, custom polishing machine manufacturer, special purpose polishing machine, special purpose polishing machine manufacturer, custom metal polishing machine, customized buffing machine, industrial polishing machine custom, special purpose machine polishing",
     canonical: "https://www.mbfinishtech.com/products/category/custom"
+  }
+};
+
+const CATEGORY_HEADINGS: Record<string, { h1: string; subtitle: string }> = {
+  all: {
+    h1: "Industrial Metal Polishing & Buffing Machines",
+    subtitle: "Precision-engineered automated surface finishing systems for pipes, sheets, tanks, and cookware."
+  },
+  tank: {
+    h1: "Industrial Tank & Vessel Polishing Machines",
+    subtitle: "Heavy-duty automatic dual-axis shell and dished end polishing solutions for vessel & tank manufacturing."
+  },
+  dishend: {
+    h1: "Industrial Dish End & Torispherical Polishing Machines",
+    subtitle: "Automatic contour-tracking polishing systems for dished ends, torispherical heads, and tank bottoms."
+  },
+  sheet: {
+    h1: "Heavy-Duty Sheet Polishing & Buffing Machines",
+    subtitle: "Sheet polishing systems from 150mm to 1500mm width delivering No.4 satin, hairline, and No.8 mirror finishes."
+  },
+  pipe: {
+    h1: "High-Precision Round Pipe Polishing Machines",
+    subtitle: "High-speed centerless round pipe and multi-head tube polishing systems for continuous production."
+  },
+  centerless: {
+    h1: "Centerless Round Pipe & Tube Polishing Machines",
+    subtitle: "Continuous through-feed centerless pipe buffing machines for high-precision OD mirror finishing."
+  },
+  utensil: {
+    h1: "Automatic Utensil & Cookware Buffing Machines",
+    subtitle: "Automated mirror and satin buffing machines for stainless steel pots, pans, bowls, and hollowware."
+  },
+  custom: {
+    h1: "Custom-Built Industrial Polishing Solutions",
+    subtitle: "Special purpose machines (SPMs) custom-engineered for complex metal geometries and bespoke plant lines."
   }
 };
 
@@ -95,6 +130,7 @@ const ProductsPage = () => {
   })();
 
   const seo = CATEGORY_SEO[activeCategory] || CATEGORY_SEO.all;
+  const currentHeading = CATEGORY_HEADINGS[activeCategory] || CATEGORY_HEADINGS.all;
 
   return (
     <>
@@ -122,6 +158,17 @@ const ProductsPage = () => {
         {/* Categories Tab Selector */}
         <section className="pt-32 md:pt-40 pb-12 bg-[#faf6ed]">
           <div className="container">
+            {/* Main Category H1 & Subtitle */}
+            <div className="text-center mb-10 max-w-4xl mx-auto">
+              <div className="industrial-badge mx-auto mb-4">MACHINERY RANGE</div>
+              <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight text-stone-950">
+                {currentHeading.h1}
+              </h1>
+              <p className="mt-4 text-stone-600 text-sm sm:text-base font-medium max-w-2xl mx-auto leading-relaxed">
+                {currentHeading.subtitle}
+              </p>
+            </div>
+
             {/* Tab Buttons */}
             <div className="flex flex-wrap justify-center gap-2.5">
               {CATEGORIES.map((cat) => (

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { BookOpen, Award, Target, Landmark, ShieldCheck, Heart, Sparkles, Milestone } from "lucide-react";
+import { Link } from "react-router-dom";
+import { BookOpen, Award, Target, Landmark, ShieldCheck, Heart, Sparkles, Milestone, ArrowRight } from "lucide-react";
 import mbLogo from "@/assets/mb-finishing-logo.png";
 import makeInIndiaImg from "@/assets/make-in-india.png";
 import { MadeInIndiaLogo } from "./MadeInIndiaLogo";
@@ -8,22 +9,22 @@ const PILLARS = [
   {
     num: "01",
     title: "Engineering",
-    text: "Precision-engineered machinery designed specifically for high-capacity, consistent industrial-scale production."
+    text: "Precision-engineered metal polishing machines designed specifically for high-capacity, uniform finish, and reliable industrial-scale production."
   },
   {
     num: "02",
     title: "Quality",
-    text: "Strict adherence to ISO 9001:2015 manufacturing standard parameters to guarantee durable service life."
+    text: "Strict adherence to ISO 9001:2015 manufacturing standard parameters to guarantee durable service life and consistent surface finishing."
   },
   {
     num: "03",
     title: "Service",
-    text: "Quick-response post-sales field engineering support and readily available stock of critical abrasives."
+    text: "Quick-response post-sales field engineering support and readily available tooling for our automatic buffing and polishing systems."
   },
   {
     num: "04",
     title: "Integrity",
-    text: "Built on 35+ years of trust, transparent business partnerships, and strong manufacturing ethics."
+    text: "Built on 35+ years of trust, transparent business partnerships, and strong manufacturing ethics across India and global markets."
   }
 ];
 
@@ -65,51 +66,78 @@ export const About = () => {
         {/* Main Brand Section */}
         <div className="grid items-stretch gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 mb-20">
           
-          {/* Left panel */}
+          {/* Left panel (Company Profile) */}
           <div className="premium-panel h-full flex flex-col justify-between p-8 md:p-12 border-black/5 bg-white shadow-soft">
-            
-            {/* Logo and Made in India Branding */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-8">
-              <div className="flex items-center gap-4">
-                <img
-                  src={mbLogo}
-                  alt="M.B. Finishing Logo"
-                  className="h-16 w-auto object-contain shrink-0"
-                />
-                <div className="flex flex-col text-left">
-                  <span className="text-[10px] uppercase font-bold text-primary tracking-[0.24em]">
-                    ISO 9001:2015 Certified
-                  </span>
-                  <h3 className="font-display text-2xl text-stone-900 uppercase font-bold leading-none mt-1">
-                    M.B. Finishing Technologies
-                  </h3>
-                  <span className="text-[9px] text-stone-500 tracking-wider font-semibold uppercase mt-1 leading-none">
-                    A Subsidiary of M.B. Tools Pvt. Ltd.
+            <div>
+              {/* Logo and Made in India Branding */}
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-8">
+                <div className="flex items-center gap-4">
+                  <img
+                    src={mbLogo}
+                    alt="M.B. Finishing Logo"
+                    className="h-16 w-auto object-contain shrink-0"
+                  />
+                  <div className="flex flex-col text-left">
+                    <span className="text-[10px] uppercase font-bold text-primary tracking-[0.24em]">
+                      ISO 9001:2015 Certified
+                    </span>
+                    <h3 className="font-display text-2xl text-stone-900 uppercase font-bold leading-none mt-1">
+                      M.B. Finishing Technologies
+                    </h3>
+                    <span className="text-[9px] text-stone-500 tracking-wider font-semibold uppercase mt-1 leading-none">
+                      A Subsidiary of M.B. Tools Pvt. Ltd.
+                    </span>
+                  </div>
+                </div>
+
+                {/* Made in India Badge Pill */}
+                <div className="flex items-center gap-3 bg-stone-100 border border-stone-300/60 rounded-full px-4 py-2.5 self-start sm:self-center shadow-sm">
+                  <img
+                    src={makeInIndiaImg}
+                    className="h-5 w-auto object-contain shrink-0"
+                    alt="Made In India"
+                  />
+                  <span className="text-[11px] font-bold text-stone-700 tracking-wider uppercase">
+                    Made In India
                   </span>
                 </div>
               </div>
-
-              {/* Made in India Badge Pill */}
-              <div className="flex items-center gap-3 bg-stone-100 border border-stone-300/60 rounded-full px-4 py-2.5 self-start sm:self-center shadow-sm">
-                <img
-                  src={makeInIndiaImg}
-                  className="h-5 w-auto object-contain shrink-0"
-                  alt="Made In India"
-                />
-                <span className="text-[11px] font-bold text-stone-700 tracking-wider uppercase">
-                  Made In India
+              
+              <div className="mb-4">
+                <span className="text-[10px] uppercase font-bold text-primary tracking-[0.22em] block mb-2">
+                  ISO 9001:2015 Certified | Made in India
                 </span>
+                <h2 className="font-display text-2xl sm:text-3xl font-black uppercase text-stone-950 tracking-tight leading-tight">
+                  Precision Metal Polishing & Surface Finishing Systems
+                </h2>
+                <p className="text-xs sm:text-sm font-bold uppercase tracking-wider text-stone-500 mt-2">
+                  M.B. Finishing Technologies — A Subsidiary of M.B. Tools Pvt. Ltd.
+                </p>
               </div>
+
+              <p className="text-base sm:text-lg leading-relaxed text-stone-600 mt-4 text-left font-medium">
+                Established in 1990, we manufacture high-precision metal polishing machines and buffing systems built for demanding industrial environments. From pharmaceutical vessels and storage tanks requiring uniform mirror finishes to automotive components and cookware, our equipment delivers consistent surface quality, tight Ra control, and dependable operational efficiency.
+              </p>
             </div>
-            
-            <p className="text-lg md:text-xl leading-relaxed text-stone-600 mt-6 text-left">
-              <span className="font-bold text-primary">M.B. Finishing Technologies</span> a subsidiary of M.B. Tools Pvt. Ltd. established in 1990 delivers precision buffing and polishing solutions that enhance durability, aesthetics, and performance across critical industries. From <strong className="text-stone-950 font-bold">pharmaceutical tanks requiring hygienic, mirror-like finishes</strong> to <strong className="text-stone-950 font-bold">automotive components demanding consistent quality</strong>, and <strong className="text-stone-950 font-bold">high-end metal surfaces where appearance defines value</strong>, our expertise ensures every surface reflects excellence.
-            </p>
+
+            <div className="pt-8">
+              <Link
+                to="/about"
+                className="inline-flex items-center gap-2 rounded-full bg-stone-950 text-white hover:bg-primary hover:text-stone-950 px-8 py-3.5 text-xs font-bold uppercase tracking-widest transition-all shadow-md active:scale-95"
+              >
+                Learn More About Us →
+              </Link>
+            </div>
           </div>
 
           {/* Right Concept Box (Vision, Mission, Values) */}
           <div className="premium-panel h-full flex flex-col p-8 md:p-12 border-black/5 bg-[#fbf7ef] shadow-soft">
-            <div className="industrial-badge mb-6">Our Core Focus</div>
+            <div className="mb-4">
+              <span className="industrial-badge mb-3">Our Core Focus</span>
+              <h2 className="font-display text-2xl font-bold uppercase text-stone-950 tracking-tight">
+                Our Core Focus
+              </h2>
+            </div>
             
             {/* Accordion tabs */}
             <div className="flex border-b border-black/5 mb-8">
@@ -123,7 +151,7 @@ export const About = () => {
                       : "text-muted-foreground hover:text-stone-900"
                   }`}
                 >
-                  {concept}
+                  {concept === "values" ? "Pillars" : concept}
                 </button>
               ))}
             </div>
@@ -135,9 +163,9 @@ export const About = () => {
                   <div className="flex size-14 items-center justify-center rounded-full bg-primary/10 text-primary mb-5">
                     <Target className="size-6" />
                   </div>
-                  <h3 className="font-display text-3xl text-stone-950 uppercase font-semibold">Our Vision</h3>
-                  <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
-                    To be India's most trusted surface finishing machine manufacturer — recognised globally for engineering excellence and the ability to convert any finishing challenge into a reliable, automated solution.
+                  <h3 className="font-display text-2xl sm:text-3xl text-stone-950 uppercase font-semibold">Our Vision</h3>
+                  <p className="mt-4 text-sm text-stone-600 leading-relaxed font-medium">
+                    To be India's most trusted industrial polishing machine manufacturer—recognized globally for robust engineering, low maintenance designs, and the ability to solve complex surface finishing challenges.
                   </p>
                 </div>
               )}
@@ -146,9 +174,9 @@ export const About = () => {
                   <div className="flex size-14 items-center justify-center rounded-full bg-primary/10 text-primary mb-5">
                     <BookOpen className="size-6" />
                   </div>
-                  <h3 className="font-display text-3xl text-stone-950 uppercase font-semibold">Our Mission</h3>
-                  <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
-                    To engineer and deliver automatic surface finishing machines that solve real production challenges — enabling our customers to achieve international surface quality standards, reduce manual dependency, and scale their finishing operations with confidence.
+                  <h3 className="font-display text-2xl sm:text-3xl text-stone-950 uppercase font-semibold">Our Mission</h3>
+                  <p className="mt-4 text-sm text-stone-600 leading-relaxed font-medium">
+                    To design and supply high-performance automatic polishing and buffing machines that minimize manual dependency, improve workplace safety, and deliver repeatable, export-grade surface finishes.
                   </p>
                 </div>
               )}
@@ -157,13 +185,10 @@ export const About = () => {
                   <div className="flex size-14 items-center justify-center rounded-full bg-primary/10 text-primary mb-5">
                     <Heart className="size-6" />
                   </div>
-                  <h3 className="font-display text-3xl text-stone-950 uppercase font-semibold">The 4 pillars of Excellence</h3>
-                  <ul className="mt-4 text-sm text-muted-foreground leading-relaxed space-y-2">
-                    <li>• Engineering</li>
-                    <li>• Quality</li>
-                    <li>• Service</li>
-                    <li>• Integrity</li>
-                  </ul>
+                  <h3 className="font-display text-2xl sm:text-3xl text-stone-950 uppercase font-semibold">The 4 Pillars of Excellence</h3>
+                  <p className="mt-4 text-sm text-stone-600 leading-relaxed font-medium">
+                    Our operations are driven by precision engineering, uncompromising quality standards, dedicated technical service, and absolute business integrity. Every metal finishing and buffing system we build is designed to deliver repeatable performance, long service life, and dependable support for modern production lines.
+                  </p>
                 </div>
               )}
             </div>
@@ -173,12 +198,12 @@ export const About = () => {
         {/* 4 Pillars of Excellence section */}
         <div className="mb-24">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <div className="industrial-badge mx-auto mb-4">Our Values</div>
+            <div className="industrial-badge mx-auto mb-4">OUR VALUES</div>
             <h2 className="font-display text-4xl sm:text-5xl uppercase font-bold text-stone-950 leading-tight">
-              The 4 Pillars of Excellence
+              THE 4 PILLARS OF EXCELLENCE
             </h2>
-            <p className="text-stone-500 text-xs sm:text-sm mt-3 leading-relaxed">
-              Our operations and machine quality are guided strictly by four key pillars of industrial manufacturing.
+            <p className="text-stone-600 text-xs sm:text-sm mt-3 leading-relaxed font-medium">
+              How our standards as an industrial polishing machine manufacturer guide every piece of equipment we build.
             </p>
           </div>
 

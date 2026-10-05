@@ -80,25 +80,25 @@ const ServicesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Polishing Machine Service | Technical Support & Commissioning | M.B. Finishing</title>
+        <title>Industrial Polishing Machine Maintenance and Spare Parts</title>
         <meta
           name="description"
-          content="Professional polishing machine services: expert installation, commissioning, maintenance, spare parts, and dedicated B2B technical support in India."
+          content="Keep your production running with on-site polishing machine maintenance, precision commissioning, and genuine spare parts across industrial plants in India."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/services" />
         <meta name="keywords" content="Polishing Machine Service, industrial polishing services, polishing machine installation, polishing machine commissioning, polishing machine maintenance, polishing machine after sales service, polishing machine technical support, polishing machine spare parts" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Polishing Machine Service | Technical Support | M.B. Finishing" />
-        <meta property="og:description" content="Professional polishing machine services: installation, commissioning, maintenance, spare parts, and dedicated B2B technical support." />
+        <meta property="og:title" content="Industrial Polishing Machine Maintenance and Spare Parts" />
+        <meta property="og:description" content="Keep your production running with on-site polishing machine maintenance, precision commissioning, and genuine spare parts across industrial plants in India." />
         <meta property="og:url" content="https://www.mbfinishtech.com/services" />
         <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Polishing Machine Service | Technical Support | M.B. Finishing" />
-        <meta name="twitter:description" content="Professional polishing machine installation, commissioning, and support service." />
+        <meta name="twitter:title" content="Industrial Polishing Machine Maintenance and Spare Parts" />
+        <meta name="twitter:description" content="Keep your production running with on-site polishing machine maintenance, precision commissioning, and genuine spare parts across industrial plants in India." />
         <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
       </Helmet>
 
@@ -106,6 +106,16 @@ const ServicesPage = () => {
         {/* Core Services Section */}
         <section className="section-shell bg-[#fbf7ef] pt-32 md:pt-40">
           <div className="container">
+            <div className="text-center mb-16">
+              <div className="industrial-badge mx-auto mb-4">ENGINEERING SUPPORT</div>
+              <h1 className="font-display text-4xl tracking-tight text-stone-950 md:text-5xl font-black uppercase">
+                Surface Finishing & Polishing Services
+              </h1>
+              <p className="mt-4 text-base text-stone-600 max-w-2xl mx-auto font-medium">
+                Comprehensive machine maintenance, abrasive tooling support, and specialized contract engineering across India.
+              </p>
+            </div>
+
             <div className="grid gap-12 lg:grid-cols-1">
               {SERVICES_LIST.map((service, index) => {
                 const Icon = service.icon;

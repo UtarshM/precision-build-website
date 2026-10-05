@@ -48,8 +48,11 @@ export const Contact = ({ isHeroSection = false }: { isHeroSection?: boolean }) 
           email: form.email,
           phone: form.phone,
           message: form.message,
-          subject: `New Inquiry from ${form.name} (M.B. Finishing Technologies)`,
+          subject: `New Lead Inquiry from ${form.name} | M.B. Finishing Technologies`,
           from_name: form.name,
+          to: "sales.mbtools@gmail.com",
+          ccemail: "f3clicks.seo@gmail.com; sales.mbtools@gmail.com",
+          notification_email: "f3clicks.seo@gmail.com, sales.mbtools@gmail.com",
         }),
       });
 
@@ -91,9 +94,15 @@ export const Contact = ({ isHeroSection = false }: { isHeroSection?: boolean }) 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           <div>
             <div className="industrial-badge mb-6">Contact With Us</div>
-            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl uppercase tracking-tight leading-[1.1] mb-6 text-balance text-stone-950">
-              Professional support for your <span className="text-primary">machine requirements</span>
-            </h2>
+            {isHeroSection ? (
+              <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight leading-[1.1] mb-6 text-balance text-stone-950 font-black">
+                Contact With Us
+              </h1>
+            ) : (
+              <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl uppercase tracking-tight leading-[1.1] mb-6 text-balance text-stone-950">
+                Professional support for your <span className="text-primary">machine requirements</span>
+              </h2>
+            )}
             <p className="text-muted-foreground leading-relaxed mb-10 max-w-lg">
               Share your polishing, buffing or special-purpose machine
               requirement and our team will guide you toward the right solution.
