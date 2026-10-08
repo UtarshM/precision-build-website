@@ -197,20 +197,20 @@ Ready to discuss your requirements? [Get in touch with the team](/contact) to ge
     faqs: [
       {
         question: "Can I use the same tank polishing machine for carbon steel and stainless steel?",
-        answer: ""
+        answer: "Technically, yes, if the machine's specifications support both materials. However, you must never use the same abrasive belts across different metals. Carbon steel particles embedded in the belt will contaminate stainless steel surfaces and cause rust spots. Maintain separate belt inventories for each material."
       },
       {
-        question: "Technically, yes, if the machine's specifications support both materials. However, you must never use the same abrasive belts across different metals. Carbon steel particles embedded in the belt will contaminate stainless steel surfaces and cause rust spots. Maintain separate belt inventories for each material. What is the typical lead time for a custom tank polishing machine?",
-        answer: ""
+        question: "What is the typical lead time for a custom tank polishing machine?",
+        answer: "Lead times vary by manufacturer and configuration, but most metal polishing machines with custom specifications take 8 to 16 weeks from order confirmation to delivery. Standard models may ship sooner."
       },
       {
-        question: "Lead times vary by manufacturer and configuration, but most metal polishing machines with custom specifications take 8 to 16 weeks from order confirmation to delivery. Standard models may ship sooner. Do I need a separate machine for internal tank polishing?",
-        answer: ""
+        question: "Do I need a separate machine for internal tank polishing?",
+        answer: "Yes. External tank polishing machines are designed to work on the outer surface. Internal polishing requires specialized tooling, such as internal ID polishing heads that enter the tank through an opening. Some manufacturers offer both as modular options on the same base frame."
       },
       {
-        question: "Yes. External tank polishing machines are designed to work on the outer surface. Internal polishing requires specialized tooling, such as internal ID polishing heads that enter the tank through an opening. Some manufacturers offer both as modular options on the same base frame. How often do abrasive belts need replacement?",
+        question: "How often do abrasive belts need replacement?",
         answer: "Belt life depends on the material hardness, contact pressure, and grit size. On average, a single belt lasts 20 to 50 tank cycles on 304 stainless steel. Harder alloys reduce belt life. Keep usage logs to establish your own replacement intervals and optimize ordering."
-      },
+      }
     ],
     content: `
 Buying a tank polishing machine is not a casual purchase. It is a long-term capital decision that directly affects your product quality, production speed, and operating costs for years to come. And when stainless steel is the material involved, the margin for error shrinks further because every scratch, heat mark, or uneven patch shows up clearly on the finished surface.
@@ -366,20 +366,20 @@ When you are ready to discuss your stainless steel tank polishing requirements i
     faqs: [
       {
         question: "Can I achieve a mirror finish with manual polishing?",
-        answer: ""
+        answer: "Yes, but it takes significantly longer and the results vary between operators and even between different sections of the same tank. For consistent mirror finishes at production volumes, an automatic buffing machine integrated into an automated polishing system is far more reliable."
       },
       {
-        question: "Yes, but it takes significantly longer and the results vary between operators and even between different sections of the same tank. For consistent mirror finishes at production volumes, an automatic buffing machine integrated into an automated polishing system is far more reliable. Is machine polishing suitable for small-diameter tanks?",
-        answer: ""
+        question: "Is machine polishing suitable for small-diameter tanks?",
+        answer: "Most modern metal polishing machines accommodate a wide diameter range. Confirm the minimum workpiece diameter with the manufacturer before purchasing. Many machines handle tanks as small as 300 mm in diameter."
       },
       {
-        question: "Most modern metal polishing machines accommodate a wide diameter range. Confirm the minimum workpiece diameter with the manufacturer before purchasing. Many machines handle tanks as small as 300 mm in diameter. What happens to my manual polishers when I automate?",
-        answer: ""
+        question: "What happens to my manual polishers when I automate?",
+        answer: "They transition to higher-value roles: machine operation, quality inspection, programming, and maintenance. The skills they developed through manual polishing give them a strong understanding of abrasive behavior and finish expectations, which makes them excellent machine operators."
       },
       {
-        question: "They transition to higher-value roles: machine operation, quality inspection, programming, and maintenance. The skills they developed through manual polishing give them a strong understanding of abrasive behavior and finish expectations, which makes them excellent machine operators. How long does a tank polishing machine last?",
+        question: "How long does a tank polishing machine last?",
         answer: "With proper maintenance, a well-built machine from a reputable industrial polishing machine manufacturer operates reliably for 10 to 15 years or more. Consumable parts (contact wheels, belts, pneumatic seals) are replaced periodically, but the core machine frame and drive systems are built for long-term duty."
-      },
+      }
     ],
     content: `
 If you run a stainless steel fabrication facility, you have probably debated this question more than once. Should you continue polishing tanks by hand, or is it time to invest in a dedicated polishing machine?
@@ -537,24 +537,24 @@ Ready to evaluate which machine fits your production setup? [Connect with the te
     faqs: [
       {
         question: "Can one machine polish both the inside and outside of a dish end?",
-        answer: ""
+        answer: "External polishing is the primary function of most automatic polishing machines. Internal polishing requires specialized tooling (an ID polishing head that enters the concave side). Some manufacturers offer internal polishing as an add-on module, but it is typically a separate process."
       },
       {
-        question: "External polishing is the primary function of most automatic polishing machines. Internal polishing requires specialized tooling (an ID polishing head that enters the concave side). Some manufacturers offer internal polishing as an add-on module, but it is typically a separate process. What is the typical cycle time for polishing a dish end?",
-        answer: ""
+        question: "What is the typical cycle time for polishing a dish end?",
+        answer: "For a 1,200 mm diameter stainless steel dish end going from rough-formed to satin finish (Ra 0.8), expect 20 to 45 minutes on a machine. Mirror-finish cycles add another 15 to 30 minutes for the buffing stage. Manual polishing of the same dish end can take 2 to 4 hours."
       },
       {
-        question: "For a 1,200 mm diameter stainless steel dish end going from rough-formed to satin finish (Ra 0.8), expect 20 to 45 minutes on a machine. Mirror-finish cycles add another 15 to 30 minutes for the buffing stage. Manual polishing of the same dish end can take 2 to 4 hours. Do I need a separate machine for dish ends and tank shells?",
-        answer: ""
+        question: "Do I need a separate machine for dish ends and tank shells?",
+        answer: "Not necessarily. Combined machines handle both geometries. However, if your volumes are high and you run shells and dish ends continuously, separate dedicated machines keep both stations running without changeover interruptions."
       },
       {
-        question: "Not necessarily. Combined machines handle both geometries. However, if your volumes are high and you run shells and dish ends continuously, separate dedicated machines keep both stations running without changeover interruptions. What grit sequence works best for pharmaceutical-grade dish ends?",
-        answer: ""
+        question: "What grit sequence works best for pharmaceutical-grade dish ends?",
+        answer: "A common sequence is 80, 120, 240, 400, and 600 grit, followed by a buffing pass with polishing compound. The exact sequence depends on the starting surface condition and the target Ra. Surface finishing machines with quick-change belt systems make grit transitions fast and efficient."
       },
       {
-        question: "A common sequence is 80, 120, 240, 400, and 600 grit, followed by a buffing pass with polishing compound. The exact sequence depends on the starting surface condition and the target Ra. Surface finishing machines with quick-change belt systems make grit transitions fast and efficient. How does dish end polishing differ from tank shell polishing?",
+        question: "How does dish end polishing differ from tank shell polishing?",
         answer: "The primary difference is geometry. Shell polishing involves a straight linear traverse along a cylinder. Dish end polishing requires a radial traverse that tracks a curved profile. The machine kinematics are different, but the abrasive principles are identical. Industrial buffing machines and industrial polishing machine manufacturer systems designed for dish ends account for this curved path in their head movement programming."
-      },
+      }
     ],
     content: `
 Every pressure vessel, storage tank, and process vessel has two critical components at its ends: dish ends. These curved caps seal the vessel, contain internal pressure, and come into direct contact with the product stored inside. In industries like pharmaceuticals, dairy, food processing, and chemicals, the surface quality of these dish ends is just as important as the surface quality of the tank shell itself.
