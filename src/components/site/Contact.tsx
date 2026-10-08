@@ -47,9 +47,9 @@ export const Contact = ({ isHeroSection = false }: { isHeroSection?: boolean }) 
         subject: `New Lead Inquiry from ${form.name} | M.B. Finishing Technologies`,
         from_name: form.name,
         replyto: form.email,
-        to: "sales.mbtools@gmail.com",
-        ccemail: "f3clicks.seo@gmail.com; sales.mbtools@gmail.com",
-        notification_email: "f3clicks.seo@gmail.com, sales.mbtools@gmail.com",
+        to: "sale@mbtools.in",
+        ccemail: "f3clicks.seo@gmail.com; sale@mbtools.in; sales.mbtools@gmail.com",
+        notification_email: "f3clicks.seo@gmail.com, sale@mbtools.in, sales.mbtools@gmail.com",
       };
 
       let response = await fetch("https://api.web3forms.com/submit", {
@@ -70,7 +70,7 @@ export const Contact = ({ isHeroSection = false }: { isHeroSection?: boolean }) 
           name: form.name,
           email: form.email,
           phone: form.phone,
-          message: `${form.message}\n\n[Lead Notification Target: sales.mbtools@gmail.com & f3clicks.seo@gmail.com]`,
+          message: `${form.message}\n\n[Lead Routing Notice: Forward to sale@mbtools.in & f3clicks.seo@gmail.com]`,
           subject: `New Lead Inquiry from ${form.name} | M.B. Finishing Technologies`,
           from_name: form.name,
           replyto: form.email,

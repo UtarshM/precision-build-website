@@ -8,6 +8,8 @@ import { blogPosts } from "@/data/blogContent";
 // Simple inline markdown formatting function
 const formatInlineMarkdown = (text: string) => {
   let html = text;
+  // Ensure space before markdown link if preceded by a word or punctuation without space
+  html = html.replace(/([a-zA-Z0-9,\.?])\[([^\]]+)\]\(([^)]+)\)/g, '$1 <a href="$3" class="text-primary hover:underline font-semibold">$2</a>');
   // Bold **text**
   html = html.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
   // Markdown links [text](url)
@@ -23,36 +25,43 @@ const renderMarkdownContent = (content: string) => {
   const normalized = content
     .replace(/\r\n/g, "\n")
     .replace(/^([#]+[^\n]+)\n([^\n#])/gm, "$1\n\n$2")
-    .replace(/([^\n])\n([#]+[^\n]+)/gm, "$1\n\n$2");
+    .replace(/([^\n])\n([#]+[^\n]+)/gm, "$1\n\n$2")
+    .replace(/^(\(H[1-4]\)[^\n]+)\n([^\n])/gim, "$1\n\n$2")
+    .replace(/([^\n])\n(\(H[1-4]\)[^\n]+)/gim, "$1\n\n$2");
 
   const blocks = normalized.split(/\n\n+/);
   return blocks.map((block, idx) => {
     const trimmed = block.trim();
     if (!trimmed) return null;
 
-    // Headings #### H4
-    if (trimmed.startsWith("####")) {
+    // Redundant H1 marker if placed in body
+    if (/^\(H1\)\s*/i.test(trimmed)) {
+      return null;
+    }
+
+    // Headings #### H4 or (H4)
+    if (trimmed.startsWith("####") || /^\(H4\)\s*/i.test(trimmed)) {
       return (
         <h4 key={idx} className="font-display text-lg md:text-xl font-bold text-stone-900 mt-6 mb-3 tracking-tight">
-          {trimmed.replace(/^####\s+/, "")}
+          {trimmed.replace(/^####\s+/, "").replace(/^\(H4\)\s*/i, "")}
         </h4>
       );
     }
 
-    // Headings ### H3
-    if (trimmed.startsWith("###")) {
+    // Headings ### H3 or (H3)
+    if (trimmed.startsWith("###") || /^\(H3\)\s*/i.test(trimmed)) {
       return (
         <h3 key={idx} className="font-display text-xl md:text-2xl font-bold text-stone-900 mt-8 mb-4 tracking-tight border-b border-black/5 pb-2">
-          {trimmed.replace(/^###\s+/, "")}
+          {trimmed.replace(/^###\s+/, "").replace(/^\(H3\)\s*/i, "")}
         </h3>
       );
     }
 
-    // Headings ## H2
-    if (trimmed.startsWith("##")) {
+    // Headings ## H2 or (H2)
+    if (trimmed.startsWith("##") || /^\(H2\)\s*/i.test(trimmed)) {
       return (
         <h2 key={idx} className="font-display text-2xl md:text-3xl font-black text-stone-950 mt-10 mb-4 tracking-tight border-b border-black/10 pb-2">
-          {trimmed.replace(/^##\s+/, "")}
+          {trimmed.replace(/^##\s+/, "").replace(/^\(H2\)\s*/i, "")}
         </h2>
       );
     }
