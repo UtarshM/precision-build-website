@@ -48,9 +48,28 @@ export const Contact = ({ isHeroSection = false }: { isHeroSection?: boolean }) 
         from_name: form.name,
         replyto: form.email,
         to: "sale@mbtools.in",
-        ccemail: "f3clicks.seo@gmail.com; sale@mbtools.in; sales.mbtools@gmail.com",
-        notification_email: "f3clicks.seo@gmail.com, sale@mbtools.in, sales.mbtools@gmail.com",
+        ccemail: "f3clicks.seo@gmail.com; sale@mbtools.in",
+        notification_email: "f3clicks.seo@gmail.com, sale@mbtools.in",
       };
+
+      // Dual-dispatch to FormSubmit to guarantee direct delivery to both sale@mbtools.in and f3clicks.seo@gmail.com
+      fetch("https://formsubmit.co/ajax/sale@mbtools.in", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          message: form.message,
+          _subject: `New Lead Inquiry from ${form.name} | M.B. Finishing Technologies`,
+          _replyto: form.email,
+          _cc: "f3clicks.seo@gmail.com",
+          _captcha: "false",
+        }),
+      }).catch((e) => console.warn("FormSubmit dual-dispatch note:", e));
 
       let response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
