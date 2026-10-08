@@ -36,27 +36,80 @@ export const Contact = ({ isHeroSection = false }: { isHeroSection?: boolean }) 
 
     try {
       const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "50a7783b-3f6d-44a6-bb89-716b07cd22e4";
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const secondaryKey = import.meta.env.VITE_WEB3FORMS_SECONDARY_KEY;
+
+      const payload: Record<string, string> = {
+        access_key: accessKey,
+        name: form.name,
+        email: form.email,
+        phone: form.phone,
+        message: form.message,
+        subject: `New Lead Inquiry from ${form.name} | M.B. Finishing Technologies`,
+        from_name: form.name,
+        replyto: form.email,
+        to: "sales.mbtools@gmail.com",
+        ccemail: "f3clicks.seo@gmail.com; sales.mbtools@gmail.com",
+        notification_email: "f3clicks.seo@gmail.com, sales.mbtools@gmail.com",
+      };
+
+      let response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify({
+        body: JSON.stringify(payload),
+      });
+
+      let data = await response.json();
+
+      // If ccemail fails because the key is on a free plan, retry without pro fields so lead is never lost
+      if (!data.success && (data.message?.toLowerCase().includes("pro feature") || data.message?.toLowerCase().includes("ccemail"))) {
+        const cleanPayload = {
           access_key: accessKey,
           name: form.name,
           email: form.email,
           phone: form.phone,
-          message: form.message,
+          message: `${form.message}\n\n[Lead Notification Target: sales.mbtools@gmail.com & f3clicks.seo@gmail.com]`,
           subject: `New Lead Inquiry from ${form.name} | M.B. Finishing Technologies`,
           from_name: form.name,
-          to: "sales.mbtools@gmail.com",
-          ccemail: "f3clicks.seo@gmail.com; sales.mbtools@gmail.com",
-          notification_email: "f3clicks.seo@gmail.com, sales.mbtools@gmail.com",
-        }),
-      });
+          replyto: form.email,
+        };
+        response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(cleanPayload),
+        });
+        data = await response.json();
+      }
 
-      const data = await response.json();
+      // Also deliver to secondary key if configured
+      if (secondaryKey) {
+        try {
+          await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify({
+              access_key: secondaryKey,
+              name: form.name,
+              email: form.email,
+              phone: form.phone,
+              message: form.message,
+              subject: `New Lead Inquiry from ${form.name} | M.B. Finishing Technologies`,
+              from_name: form.name,
+              replyto: form.email,
+            }),
+          });
+        } catch (secondaryErr) {
+          console.warn("Secondary email notification error:", secondaryErr);
+        }
+      }
 
       if (data.success) {
         toast({

@@ -19,50 +19,50 @@ const CATEGORIES = [
 
 const CATEGORY_SEO: Record<string, { title: string; description: string; keywords: string; canonical: string }> = {
   all: {
-    title: "Industrial Polishing & Buffing Machine Models | MB Tech",
-    description: "Explore our heavy-duty metal polishing and buffing machines. Review technical specs for pipe, sheet, tank, and utensil finishing equipment made in Pune.",
+    title: "Automatic Metal Polishing Machinery in India | MB Tech",
+    description: "Automate your production lines with high-output sheet, pipe, and tank polishing machines made in India. Download direct machinery catalogues from MB Tech now.",
     keywords: "polishing machine catalog, sheet grinder, tank polishing machinery, automatic buffing systems, custom industrial polishers",
     canonical: "https://www.mbfinishtech.com/products"
   },
   tank: {
-    title: "Tank Polishing Machine Manufacturer | MB Finish Tech",
-    description: "Automate inner and outer tank surface finishing with high-precision tank polishing machines. Build mirror finishes on stainless steel vessels and reactors.",
+    title: "Stainless Steel Tank & Dish End Polishing Machine India",
+    description: "Finish chemical and pharmaceutical stainless steel storage vessels to mirror standards. Source automatic tank buffing machines engineered for your factory line.",
     keywords: "Tank Polishing Machine, tank polishing machine manufacturer, tank polishing machine manufacturer in India, stainless steel tank polishing machine, SS tank polishing machine, automatic tank polishing machine, industrial tank polishing machine, storage tank polishing machine, vessel polishing machine, chemical tank polishing machine, pharmaceutical tank polishing machine, reactor polishing machine, tank buffing machine",
     canonical: "https://www.mbfinishtech.com/products/category/tank"
   },
   sheet: {
-    title: "Sheet Polishing Machine Manufacturer | MB Finish Tech",
-    description: "Achieve No.4 hairline and No.8 mirror finishes on stainless steel plates with automated wide-belt sheet polishing machines built for high plant throughput.",
+    title: "Automatic Stainless Steel Sheet Polishing Machines India",
+    description: "Deliver consistent No.4, hairline, and mirror finishes on stainless steel, brass, and aluminium plates with wide belt sheet buffing systems made in India.",
     keywords: "Sheet Polishing Machine, sheet polishing machine manufacturer, stainless steel sheet polishing machine, SS sheet polishing machine, metal sheet polishing machine, automatic sheet polishing machine, industrial sheet polishing machine, aluminium sheet polishing machine, brass sheet polishing machine, copper sheet polishing machine, MS sheet polishing machine, sheet buffing machine, wide belt polishing machine, No.4 finish, hairline finish, No.8 mirror finish",
     canonical: "https://www.mbfinishtech.com/products/category/sheet"
   },
   pipe: {
-    title: "Round Pipe Polishing Machine Manufacturer | MB Tech India",
-    description: "Achieve Ra 0.2 micron mirror finishes on stainless steel pipes with heavy-duty centerless polishing machines. Engineered for round tube manufacturing lines.",
+    title: "Stainless Steel Pipe & Tube Polishing Machines | MB Tech",
+    description: "Deliver high-precision mirror finishes on stainless steel round tubes and industrial pipes. Source automatic pipe buffing machinery made in India for your plant.",
     keywords: "Pipe Polishing Machine, pipe polishing machine manufacturer, pipe polishing machine manufacturer in India, stainless steel pipe polishing machine, SS pipe polishing machine, tube polishing machine, round pipe polishing machine, automatic pipe polishing machine, industrial pipe polishing machine, pipe buffing machine, stainless steel tube polishing machine, mirror finish pipe polishing machine",
     canonical: "https://www.mbfinishtech.com/products/category/pipe"
   },
   utensil: {
-    title: "Utensil Polishing Machine Manufacturer | MB Finish Tech",
-    description: "Boost cookware production output with automatic utensil buffing machines. Achieve consistent mirror polishes on stainless steel pots, pans, and containers.",
+    title: "Automatic SS Utensil Polishing Machines | MB Finish Tech",
+    description: "Scale your cookware output with automatic kitchenware, pot, and pan polishing systems made in India. Cut manual buffing bottlenecks across your factory floor.",
     keywords: "Utensil Polishing Machine, automatic utensil polishing machine, stainless steel utensil polishing machine, utensil polishing machine manufacturer, cookware polishing machine, automatic cookware polishing machine, kitchenware polishing machine, metal utensil polishing machine, pot polishing machine, pan polishing machine, hollowware polishing machine, utensil buffing machine",
     canonical: "https://www.mbfinishtech.com/products/category/utensil"
   },
   centerless: {
-    title: "Centerless Pipe Polishing Machine Manufacturer | MB Tech",
-    description: "Polish round stainless steel tubes and pipes with high-speed centerless buffing equipment. Deliver uniform mirror or satin finishes across production runs.",
+    title: "Centerless Tube & Pipe Polishing Machines | MB Finish Tech",
+    description: "Finish round tubes and cylindrical rods with continuous centerless polishing machinery built in India. Boost throughput across your automated production line.",
     keywords: "Centerless Polishing Machine, centerless polishing machine, centreless polishing machine, centerless pipe polishing machine, centreless pipe polishing machine, centerless tube polishing machine, centerless tube buffing machine, centerless polishing machine manufacturer",
     canonical: "https://www.mbfinishtech.com/products/category/centerless"
   },
   dishend: {
-    title: "Dished End Polishing Machine Manufacturer | MB Tech India",
-    description: "Finish torispherical and dished ends with automatic contour-tracking buffing machinery. Reduce manual grinding on pressure vessels and storage tank heads.",
+    title: "Automatic Dish End & Tank Head Polishing Machine India",
+    description: "Polish torispherical, elliptical, and flat dishends uniformly. Source heavy-duty tank head buffing machinery engineered in India by MB Finishing Technologies.",
     keywords: "Dish End Polishing Machine, dish end polishing machine, dishend polishing machine, tank head polishing machine, vessel head polishing machine, dish head polishing machine, torispherical dish end polishing machine, elliptical dish end polishing machine, flat dish end polishing machine, automatic dish end polishing machine",
     canonical: "https://www.mbfinishtech.com/products/category/dishend"
   },
   custom: {
-    title: "Custom SPM Polishing Machine Manufacturer | MB Tech India",
-    description: "Build purpose-engineered SPM polishing machines tailored to your manufacturing geometry. Consult with our engineering team in Pune for custom machinery.",
+    title: "Special Purpose Metal Polishing Machines | MB Finish Tech",
+    description: "Cut finishing bottlenecks on irregular parts with special purpose polishing and buffing machines engineered in India to match your plant build",
     keywords: "Customized Polishing Machine, customized polishing machine manufacturer, custom polishing machine, custom polishing machine manufacturer, special purpose polishing machine, special purpose polishing machine manufacturer, custom metal polishing machine, customized buffing machine, industrial polishing machine custom, special purpose machine polishing",
     canonical: "https://www.mbfinishtech.com/products/category/custom"
   }

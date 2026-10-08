@@ -30,7 +30,7 @@ export const blogPosts: BlogPost[] = [
     title: "What Is a Tank Polishing Machine and How Does It Work?",
     metaTitle: "What Is a Tank Polishing Machine & How It Works",
     metaDescription: "A tank polishing machine automates surface finishing on tanks and vessels. Know how it works, its components, and why industries rely on it daily.",
-    excerpt: "A tank polishing machine automates surface finishing on tanks and vessels. Learn how it operates, key components, grit sequence, and why industries rely on it daily.",
+    excerpt: "A tank polishing machine automates surface finishing on tanks and vessels. Know how it works, its components, and why industries rely on it daily.",
     date: "October 5, 2026",
     readTime: "6 min read",
     author: "M.B. Technical Editorial Team",

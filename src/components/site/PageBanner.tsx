@@ -1,15 +1,18 @@
 type PageBannerProps = {
-  eyebrow: string;
+  eyebrow?: string;
   title: string;
-  description: string;
+  description?: string;
+  subtitle?: string;
 };
 
 export const PageBanner = ({
   eyebrow,
   title,
   description,
+  subtitle,
 }: PageBannerProps) => {
-  const hasContent = eyebrow || title || description;
+  const desc = description || subtitle;
+  const hasContent = eyebrow || title || desc;
 
   return (
     <section className="relative overflow-hidden bg-gradient-hero pb-16 pt-32 md:pb-20 md:pt-40">
@@ -34,9 +37,9 @@ export const PageBanner = ({
                   {title}
                 </h1>
               ) : null}
-              {description ? (
+              {desc ? (
                 <p className="mt-6 max-w-[60ch] text-lg leading-relaxed text-muted-foreground md:text-xl">
-                  {description}
+                  {desc}
                 </p>
               ) : null}
             </>

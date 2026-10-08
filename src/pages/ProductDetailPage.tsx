@@ -63,68 +63,68 @@ const ProductDetailPage = () => {
 
   const PRODUCT_SEO: Record<string, { title: string; keywords: string; description: string }> = {
     "tpm4500-sdx-automatic-tank-polishing-machine": {
-      title: "TPM4500-SDX Automatic Tank Polishing Machine | MB Finish",
-      description: "Polish stainless steel tanks and dished ends with the TPM4500-SDX. Delivers Ra 0.20 µm mirror finishes on pharmaceutical and chemical vessels up to 4500 mm dia.",
+      title: "TPM4500-SDX Automatic Tank & Dish End Polishing Machine",
+      description: "Automate internal ID and external OD polishing on chemical reactors and large storage tanks with the TPM4500-SDX system. Built for heavy manufacturing plants.",
       keywords: "TPM4500-SDX, automatic tank polishing machine, heavy duty tank polishing machine, stainless steel tank polishing machine, internal tank polishing machine, external tank polishing machine, ID OD tank polishing machine, vessel polishing machine, chemical reactor polishing machine, storage tank polishing machine, tank buffing machine"
     },
     "tpm3000-sd-dished-end-polishing-machine": {
-      title: "TPM3000-SD Dished End Polishing Machine | MB Finish Tech",
-      description: "Automate dish end and torispherical head polishing with the TPM3000-SD. Built for dished ends up to 3000 mm diameter across dairy and pharma storage vessels.",
+      title: "TPM3000-SD Dish End Polishing Machine | MB Finish Tech",
+      description: "Polish torispherical, elliptical, and flat vessel heads with the TPM3000-SD automatic dishend buffing machine. Built in India for industrial fabricators.",
       keywords: "TPM3000-SD, tank head polishing machine, vessel head polishing machine, tank dish end polishing machine, torispherical dish end polishing machine, elliptical dish end polishing machine, flat dish end polishing machine, automatic dish end polishing machine, tank head buffing machine"
     },
     "tpm2500-sdx-tank-shell-polisher": {
-      title: "TPM2500-SDX Tank Shell Polishing Machine | MB Finish Tech",
-      description: "Achieve mirror finishes on tank shells and cylindrical vessels up to 2500 mm diameter with the TPM2500-SDX automatic Column and Boom polishing machine.",
+      title: "TPM2500-SDX Automatic Tank Shell Polishing Machine | MB",
+      description: "Achieve mirror finishes on medium stainless steel tank shells and chemical vessels with the TPM2500-SDX internal and external surface finishing polisher.",
       keywords: "TPM2500-SDX, medium tank polishing machine, stainless steel vessel polishing machine, chemical vessel polishing machine, automatic vessel polishing machine, internal tank polishing machine, external tank polishing machine, ID OD tank polishing machine"
     },
     "piop2000-automatic-duct-polisher": {
-      title: "PIOP2000 Automatic Duct Polishing Machine | MB Tech India",
-      description: "Polish inner and outer duct surfaces with the PIOP2000 duct polishing machine. Built for HVAC, dairy, and sanitary duct fabricators needing clean Ra finishes.",
+      title: "PIOP2000 Automatic Duct Polishing Machine | MB Finish Tech",
+      description: "Polish stainless steel ducting, small vessels, and pharma equipment to mirror finishes. Source the PIOP2000 automatic duct polisher built for factory lines.",
       keywords: "PIOP2000, duct polishing machine manufacturer, small tank polishing machine, small vessel polishing machine, internal duct polishing machine, external duct polishing machine, stainless steel duct polishing machine, pharma equipment polishing machine, dairy equipment polishing machine, beverage equipment polishing machine, mirror finish polishing machine"
     },
     "cg150b-single-head-round-pipe-polishing-machine": {
-      title: "CG150B Single Head Round Pipe Polishing Machine | MB Tech",
-      description: "Grind and buff stainless steel round pipes with the CG150B single-head centerless polisher. Handles pipe OD from 10 mm to 150 mm for clean industrial finishes.",
+      title: "CG150B Centerless Round Pipe Polishing Machine | MB Tech",
+      description: "Finish round tubes continuously with the CG150B single-head centerless pipe polishing machine. Achieve uniform mirror finishes across stainless steel lines.",
       keywords: "CG150B, centerless pipe polishing machine, centreless pipe polishing machine, round tube polishing machine, round pipe polishing machine, tube polishing machine, stainless steel pipe polishing machine, automatic pipe polishing machine, continuous pipe polishing machine, OD pipe polishing machine, mirror finish pipe polishing machine"
     },
     "cg150w-double-head-pipe-polisher": {
-      title: "CG150W Double Head Pipe Polishing Machine | MB Finish",
-      description: "Cut cycle times with two-stage grinding and buffing in one pass. The CG150W double-head pipe polishing machine delivers satin to mirror finishes on SS pipes.",
+      title: "CG150W-2H Dual Head Centerless Pipe Polishing Machine",
+      description: "Cut cycle times with two-stage grinding and polishing on stainless steel tubes. Equip your workshop with the CG150W-2H dual-head centerless machine today.",
       keywords: "CG150W, dual head pipe polishing machine, double head pipe polishing machine, centerless tube polishing machine, automatic tube polishing machine, stainless steel tube polishing machine, pipe grinding and polishing machine, two-stage pipe polishing machine, mirror finish tube polishing machine"
     },
     "sp1500b-heavy-duty-sheet-polisher": {
-      title: "SP1500B Heavy Duty Sheet Polishing Machine | MB Tech India",
-      description: "Polish stainless steel plates up to 1500 mm width with the SP1500B heavy-duty sheet polisher. Delivers uniform No.4 satin and hairline finishes with ease.",
+      title: "SP1500B Heavy Duty Stainless Steel Sheet Polishing Machine",
+      description: "Produce No.4 satin and hairline finishes on wide stainless steel and aluminium plates with the heavy-duty SP1500B sheet polishing system made in India.",
       keywords: "SP1500B, SS sheet polishing machine, automatic sheet polishing machine, wide belt sheet polishing machine, industrial sheet polishing machine, stainless steel sheet finishing machine, aluminium sheet polishing machine, brass sheet polishing machine, copper sheet polishing machine, No.4 satin finish machine, hairline finish machine"
     },
     "sp1200b-automatic-sheet-buffing-machine": {
-      title: "SP1200B Automatic Sheet Buffing Machine | MB Finish Tech",
-      description: "Automate plate polishing for sheets up to 1200 mm width with the SP1200B. Built for stainless steel and aluminum finishing lines needing high throughput.",
+      title: "SP1200 Heavy Duty Sheet Buffing Machine | MB Finish Tech",
+      description: "Deliver uniform surface finishes across wide stainless steel and aluminium plates. Equip your sheet metal production facility with the SP1200 buffing system.",
       keywords: "SP1200B, heavy duty sheet polishing machine, industrial sheet polishing machine, stainless steel sheet polishing machine, automatic sheet polishing machine, wide belt polishing machine, metal sheet finishing machine, SS sheet buffing machine, aluminium sheet finishing machine"
     },
     "sp600b-compact-sheet-polisher": {
-      title: "SP600B Compact Sheet Polishing Machine | MB Finish Tech",
-      description: "Finish metal sheets up to 600 mm width with the compact SP600B sheet polisher. Ideal for small to mid-scale fabricators wanting consistent hairline finishes.",
+      title: "SP600B Wet Sheet Polishing Machine | MB Finish Tech India",
+      description: "Eliminate factory dust and heat warp with the SP600B enclosed wet sheet polishing machine. Engineered in India for high-precision stainless steel finishing.",
       keywords: "SP600B, wet grinding polishing machine, wet polishing machine for stainless steel, enclosed sheet polishing machine, dust free polishing machine, stainless steel sheet finishing machine, wet belt polishing machine, wide belt wet polishing machine, metal sheet wet grinding machine"
     },
     "manual-belt-trolley-polishing-machine": {
-      title: "Manual Belt Trolley Polishing Machine | MB Finish Tech",
-      description: "Remove scale, rust, and heavy weld seams on flat plates and structural sections with our manual belt trolley polishing machine. Built for heavy fabrication.",
+      title: "TBP300-2H Trolley Type Plate Polishing Machine | MB Tech",
+      description: "Polish flat plates, MS sheets, and aluminium sections with the TBP300-2H double-head trolley polisher. Heavy-duty build designed for industrial fabrication.",
       keywords: "TBP300-2H, trolley polishing machine, trolley type polishing machine, flat plate polishing machine, flat sheet polishing machine, MS sheet polishing machine, SS sheet polishing machine, metal plate polishing machine, double head polishing machine, aluminium section polishing machine"
     },
     "sp300b-wet-sheet-polisher": {
-      title: "SP300B Wet Sheet Polishing Machine | MB Tech India",
-      description: "Prevent heat deformation on thin metal sheets with the SP300B wet sheet polishing machine. Built for precision wet grinding on SS, brass, and aluminum plates.",
+      title: "SP300 Wet Sheet Polishing Machine for Stainless Steel | MB",
+      description: "Achieve No.8 mirror and No.4 satin finishes on stainless steel, copper, and brass plates with the SP300 wet belt sheet polishing machine built in India.",
       keywords: "SP300B, No.8 mirror finish machine, No.4 satin finish machine, hairline finish machine, stainless steel mirror polishing machine, aluminium sheet polishing machine, brass sheet polishing machine, inline sheet polishing machine, multi-head sheet polishing machine"
     },
     "vb150-vacuum-bed-sheet-polisher": {
-      title: "VB150 Vacuum Bed Sheet Polishing Machine | MB Finish Tech",
-      description: "Hold thin sheet metal securely during buffing with the VB150 vacuum bed polisher. Prevents plate slippage and warpage for precision hairline and satin polishes.",
+      title: "VB150 Vacuum Bed Automatic Sheet Polishing Machine | MB",
+      description: "Secure thin metal plates firmly during high-speed finishing. The VB150 vacuum bed sheet polisher delivers uniform No.4 and hairline textures without slip.",
       keywords: "VB150, inline sheet polishing machine, multi-head polishing machine, stainless steel sheet polishing, metal sheet finishing machine, No.4 finish polishing, hairline polishing machine, mirror finish polishing machine, industrial sheet buffing machine"
     },
     "automatic-utensil-buffing-machine": {
-      title: "Automatic Utensil Buffing Machine | MB Finish Tech India",
-      description: "Automate mirror buffing on stainless steel pots, pans, and cookware. Our automatic utensil polishing machine boosts output while cutting manual labor costs.",
+      title: "UPM-120B Automatic Utensil Polishing Machine | MB Tech",
+      description: "Automate mirror polishing on cookware, pots, and hollowware. The UPM-120B automatic utensil buffing machine eliminates manual finishing steps on your shop line.",
       keywords: "UPM-120B, stainless steel utensil polishing machine, cookware polishing machine, automatic cookware polishing machine, kitchenware polishing machine, utensil buffing machine, stainless steel pot polishing machine, stainless steel pan polishing machine, hollowware polishing machine, mirror polishing machine for utensils"
     }
   };

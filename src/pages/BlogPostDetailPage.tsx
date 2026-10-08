@@ -151,7 +151,7 @@ const BlogPostDetailPage = () => {
     "@type": "BlogPosting",
     "headline": post.metaTitle || post.title,
     "image": post.image?.startsWith("http") ? post.image : `https://www.mbfinishtech.com${post.image || "/favicon.png"}`,
-    "datePublished": "2026-08-12T12:00:00+05:30",
+    "datePublished": post.date ? new Date(post.date).toISOString() : "2026-10-05T12:00:00+05:30",
     "author": {
       "@type": "Organization",
       "name": "M.B. Finishing Technologies",
